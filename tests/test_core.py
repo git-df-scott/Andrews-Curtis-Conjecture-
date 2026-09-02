@@ -45,7 +45,7 @@ def test_trivial_group_check():
 
 
 def test_greedy_easy():
-    p = Presentation.from_strings(2, "x y x Y", "y x")     # easy
+    p = Presentation.from_strings(2, "x y^2", "y")     # easy (my earlier example was not a trivial-group presentation)
     path = greedy_search(p, max_rel_len=8)
     assert path is not None and verify_certificate(p, path)
 
