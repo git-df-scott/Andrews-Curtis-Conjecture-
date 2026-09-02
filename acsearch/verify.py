@@ -1,0 +1,78 @@
+"""Verification utilities: certificates and trivial-group checks."""
+from __future__ import annotations
+from typing import Sequence, Tuple
+from .words import Word, cyclic_canonical, unparse
+from .moves import apply_path, Move
+from .presentation import Presentation, standard_key
+
+
+def verify_certificate(p: Presentation, path: Sequence[Move]) -> bool:
+    """Replay ``path`` from ``p`` and check that the result is the standard
+    presentation up to conjugating / inverting / permuting relators."""
+    end = apply_path(p.rels, path)
+    return tuple(sorted(cyclic_canonical(r) for r in end)) == standard_key(p.n)
+
+
+def describe_path(p: Presentation, path: Sequence[Move]) -> str:
+    lines = [str(p)]
+    rels = p.rels
+    from .moves import apply_move
+    for mv in path:
+        rels = apply_move(rels, mv)
+        lines.append(f"{mv[0]}({mv[1]},{mv[2]}) -> " + ", ".join(unparse(r) for r in rels))
+    return "\n".join(lines)
+
+
+def abelianization_is_trivial(p: Presentation) -> bool:
+    """Necessary condition: the relator exponent matrix is unimodular."""
+    from fractions import Fraction
+    M = [[Fraction(v) for v in row] for row in p.abelianization_matrix()]
+    n = len(M)
+    if n != p.n:
+        return False
+    det = Fraction(1)
+    for c in range(n):
+        piv = next((r for r in range(c, n) if M[r][c] != 0), None)
+        if piv is None:
+            return False
+        if piv != c:
+            M[c], M[piv] = M[piv], M[c]
+            det = -det
+        det *= M[c][c]
+        for r in range(c + 1, n):
+            f = M[r][c] / M[c][c]
+            for k in range(c, n):
+                M[r][k] -= f * M[c][k]
+    return abs(det) == 1
+
+
+def group_order(p: Presentation, max_cosets: int = 200000):
+    """Order of the group presented by p via Todd-Coxeter (sympy).  Returns
+    None if enumeration does not complete within max_cosets."""
+    from sympy.combinatorics.free_groups import free_group
+    from sympy.combinatorics.fp_groups import FpGroup
+    names = "xyzuvw"[: p.n]
+    F, *gens = free_group(", ".join(names))
+    def to_elt(w):
+        e = F.identity
+        for a in w:
+            g = gens[abs(a) - 1]
+            e = e * (g if a > 0 else g ** -1)
+        return e
+    G = FpGroup(F, [to_elt(r) for r in p.rels])
+    try:
+        return G.order(strategy="relator_based") if False else _order(G, max_cosets)
+    except Exception:
+        return None
+
+
+def _order(G, max_cosets):
+    from sympy.combinatorics.coset_table import CosetTable
+    from sympy.combinatorics.fp_groups import coset_enumeration_r
+    C = coset_enumeration_r(G, [], max_cosets=max_cosets)
+    C.compress()
+    return len(C.table)
+
+
+def presents_trivial_group(p: Presentation, max_cosets: int = 200000) -> bool:
+    return abelianization_is_trivial(p) and group_order(p, max_cosets) == 1
