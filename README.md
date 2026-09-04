@@ -1,5 +1,20 @@
 # Andrews-Curtis Conjecture: search framework and literature status
 
+Latest result: [ASTRA_FIRST_STRIKE.md](ASTRA_FIRST_STRIKE.md). A ten-move
+certificate closes the standard modular/triangle marking for AK(3). Two
+torsion-free laboratory comparisons remain unknown. New proofs exclude
+quantifier-free algebraic and profinite-continuous separators; exact witnesses
+invalidate treating Dehn reduction as geodesic normalization. No CE or
+complete orbit algorithm was obtained.
+
+- [HYPERBOLIC_QUOTIENT_THEOREM.md](HYPERBOLIC_QUOTIENT_THEOREM.md) — proofs
+- [QUOTIENT_LEDGER.md](QUOTIENT_LEDGER.md) — exact marked targets and results
+- [OPEN_LANES.md](OPEN_LANES.md) — single next theorem strike
+- [CLOSED_LANES.md](CLOSED_LANES.md) — closures with explicit scope
+- [certificates/astra_first_strike.json](certificates/astra_first_strike.json) — frozen exact data
+
+Replay the standalone checker with `python scripts/check_first_strike.py`.
+
 `acsearch` is a small Python package for studying balanced presentations of the
 trivial group under Andrews-Curtis (AC) moves:
 
@@ -7,8 +22,8 @@ trivial group under Andrews-Curtis (AC) moves:
 - `acsearch.presentation` - presentations, canonical forms modulo signed
   generator permutations (a subgroup of Aut(F_n), under which AC-triviality is
   invariant)
-- `acsearch.moves` - elementary AC moves (certificate moves) and the
-  length-bounded cyclic-word move set used for exhaustive closure
+- `acsearch.moves` - elementary AC moves (certificate moves) and a
+  bounded cyclic-word move set whose residual cutoff is not certified complete
 - `acsearch.search` - greedy best-first search (Shehper et al. 2024 style) and
   breadth-first closure of the standard presentation within a length bound
 - `acsearch.verify` - certificate replay and Todd-Coxeter check that a
@@ -33,7 +48,7 @@ documents are:
 - [`STABLE_VS_UNSTABLE.md`](STABLE_VS_UNSTABLE.md) — stabilization constraints and the corrected `AK(3)` status
 - [`CANDIDATE_LEDGER.md`](CANDIDATE_LEDGER.md) — exact candidate routing
 - [`ATTACK_MATRIX.md`](ATTACK_MATRIX.md) — ranked invariant-first attacks
-- [`ASTRA_HANDOFF.md`](ASTRA_HANDOFF.md) — bounded high-compute handoff and CE/CEC criteria
+- [`ASTRA_HANDOFF.md`](ASTRA_HANDOFF.md) — current supersession and preserved prior handoff
 - [`HYPERBOLIC_QUOTIENTS.md`](HYPERBOLIC_QUOTIENTS.md) — exact quotient action,
   finite blindness, concrete target families, and YELLOW verdict
 - [`INVARIANT_CANDIDATES.md`](INVARIANT_CANDIDATES.md) — the surviving orbit

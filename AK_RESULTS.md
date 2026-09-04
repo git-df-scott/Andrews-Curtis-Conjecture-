@@ -1,5 +1,12 @@
 # Frontier results after the hyperbolic invariant gate
 
+**Superseding first-strike result:** the AK(3) entry for the distinguished
+`Delta(2,3,7)` marking is **SAME ORBIT**, not UNKNOWN. Ten elementary moves
+already work in `C2*C3`, so the triangle result and the P3/P4 consequences
+follow by functoriality. H_SC and H_OR remain UNKNOWN. The historical table
+below records the earlier gate; current marked results and certificate are in
+`QUOTIENT_LEDGER.md` and `certificates/astra_first_strike.json`.
+
 ## Outcome
 
 No nonconstant computable AC invariant survived the move proof and controls.

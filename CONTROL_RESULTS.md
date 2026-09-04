@@ -1,5 +1,16 @@
 # Hyperbolic-invariant control results
 
+## First-strike controls
+
+Current suite: **23 passing tests**, including all 16 prior tests. New checks
+replay the ten-move modular path by independent normal forms and PSL matrices,
+both small-cancellation certificates by independent prefix counts, and both
+Dehn equality witnesses by literal rewrites. Four corrupted certificates are
+rejected. A regression covers the repaired missing cyclic shortening edge.
+Exact artifacts: `certificates/astra_first_strike.json`, `SHA256SUMS`, and
+`first_strike_validation.txt` in that directory. Full scope and runtime are
+in `ASTRA_FIRST_STRIKE.md`. No new census or AC radius search was run.
+
 ## Scope
 
 This was a bounded invariance/calibration run.  It did not enumerate a short

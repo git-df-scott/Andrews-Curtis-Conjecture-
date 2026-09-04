@@ -1,5 +1,16 @@
 # Invariant battlefield
 
+## First-strike additions
+
+`HYPERBOLIC_QUOTIENT_THEOREM.md` proves that quantifier-free group-language
+AC-invariant predicates are constant on normally generating pairs of a
+non-elementary torsion-free hyperbolic group. It also proves equality of
+profinite orbit closures for quotient images of free normally generating
+pairs. Neither result creates a separating invariant. Quantified/nonalgebraic
+constructions are not closed by these statements. The fixed H_SC/H_OR orbit
+questions remain UNKNOWN; the standard triangle marking for AK(3) is closed
+by a positive path. See `CLOSED_LANES.md` for exact scopes.
+
 ## Admission rule
 
 An output is an ACC invariant only after all three obligations are discharged:

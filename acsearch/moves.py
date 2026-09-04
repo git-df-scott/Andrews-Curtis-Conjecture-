@@ -14,9 +14,9 @@ Two views of the same equivalence relation are provided.
    those moves by the multiset of conjugacy classes {[r_i]^{+-1}}, and the only
    remaining move is
         [r_i] <- [ rot(r_i) . g . rot(r_j)^{+-1} . g^-1 ]
-   for an arbitrary conjugator g.  With a bound on total length this move set
-   is finite and gives exactly the length-bounded AC graph (Havas-Ramsay /
-   Miasnikov-Myasnikov style enumeration).
+   for a bounded conjugator g. This implementation enumerates a finite
+   collection of legal moves. Its residual-conjugator cutoff is not a
+   certified completeness theorem for the full length-bounded AC graph.
 """
 from __future__ import annotations
 from itertools import product
@@ -103,9 +103,8 @@ def cyclic_neighbors(rels: Tuple[Word, ...], n: int, max_total: int,
     total length <= max_total.  ``rels`` must be a sorted tuple of cyclic
     canonical words; the output is likewise canonical.
 
-    Every AC move sequence that stays within the length bound can be realised
-    by these moves (rotations absorb the conjugators that cancel into r_i or
-    r_j; the residual conjugator g is enumerated explicitly).
+    Output edges are sound. Completeness of the residual-conjugator cutoff
+    is not certified here; noncontact is not an orbit-separation certificate.
     """
     m = len(rels)
     total = sum(len(r) for r in rels)
@@ -116,9 +115,9 @@ def cyclic_neighbors(rels: Tuple[Word, ...], n: int, max_total: int,
             if i == j:
                 continue
             rj = rels[j]
-            gmax = (budget - len(ri) - len(rj)) // 2 + slack
-            if gmax < 0:
-                continue
+            # Even when the uncancelled product exceeds budget, g=1 can
+            # produce a shortening edge. Never skip that case.
+            gmax = max(0, (budget - len(ri) - len(rj)) // 2 + slack)
             seen = set()
             rots_i = list(rotations(ri))
             rots_j = list(rotations(rj)) + list(rotations(inverse(rj)))

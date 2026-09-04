@@ -1,5 +1,17 @@
 # Andrews–Curtis campaign status — 2026-09-04
 
+## Latest: first Astra strike
+
+See [ASTRA_FIRST_STRIKE.md](ASTRA_FIRST_STRIKE.md) for the current result.
+The standard modular/triangle marking is closed for AK(3) by ten exact AC
+moves. Both torsion-free laboratory comparisons remain UNKNOWN. New no-go
+proofs exclude quantifier-free algebraic and profinite-continuous separators.
+Dehn reduction was explicitly falsified as a canonical/geodesic shortcut.
+All 23 current tests pass; independent certificates and corrupted controls
+are frozen. The bounded cyclic-neighbor implementation lost an unsupported
+completeness claim and gained a missing shortening-edge repair. No CE,
+separation, new nonconstant invariant, or complete orbit algorithm resulted.
+
 ## Executive status
 
 - **ACC:** open. No counterexample is known.

@@ -1,5 +1,10 @@
 # Candidate ledger
 
+**Latest routing:** `ASTRA_FIRST_STRIKE.md` and `OPEN_LANES.md` supersede the
+old SC-AC-PEAK-1 task below. AK(3)'s exact H_SC/H_OR word images are now checked,
+but their AC comparisons remain UNKNOWN. The standard triangle marking is
+closed by the modular ten-move path. No free-group candidate status changed.
+
 This ledger separates mathematical status, public certificates, and search labels. Only the first two can change the frontier.
 
 ## Rank-2 priority queue

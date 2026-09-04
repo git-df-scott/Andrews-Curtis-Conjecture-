@@ -1,0 +1,15 @@
+ACC first-strike validation; no AC orbit search
+Python: 3.12.13
+COMMAND: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -m acsearch.first_strike
+{"certificate": "certificates/astra_first_strike.json", "runtime_seconds": 0.23407954100002826, "modular_moves": 10, "orbit_search_states": 0}
+EXIT: 0; elapsed_seconds: 0.273331
+COMMAND: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python scripts/check_first_strike.py
+{"dehn_witnesses": "PASS (literal rewrite proofs)", "modular_path": "PASS (normal forms and PSL matrices)", "separation_claim": "NONE", "small_cancellation": "PASS (independent prefix counts)"}
+EXIT: 0; elapsed_seconds: 0.035684
+COMMAND: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -m pytest -q
+.......................                                                  [100%]
+23 passed in 0.89s
+EXIT: 0; elapsed_seconds: 1.133329
+COMMAND: git diff --check
+EXIT: 0; elapsed_seconds: 0.003473
+Deterministic JSON regeneration: byte-identical SHA-256 0e8291535c3a6525d08e99c6d7a4129c3ee86b22f0fa629b5dcf025f87e8ca3f

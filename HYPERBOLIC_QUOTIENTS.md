@@ -1,5 +1,12 @@
 # Hyperbolic-quotient feasibility audit — 2026-09-04
 
+**First-strike update:** the historical audit below is preserved. The standard
+`C2*C3` and `Delta(2,3,7)` markings are now closed for AK(3) by a ten-move
+positive certificate. H_SC/H_OR are independently recertified but still have
+UNKNOWN target components. See `QUOTIENT_LEDGER.md` and
+`HYPERBOLIC_QUOTIENT_THEOREM.md` for current proofs, including the
+quantifier-free/profinite no-go results and Dehn-normalization counterexamples.
+
 ## Verdict
 
 **YELLOW.** Infinite hyperbolic quotients are not ruled out, and quotienting

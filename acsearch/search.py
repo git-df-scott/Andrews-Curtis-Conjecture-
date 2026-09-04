@@ -60,8 +60,9 @@ def greedy_search(p: Presentation, max_rel_len: int, max_nodes: int = 1_000_000,
 def bfs_closure(start: Tuple[Word, ...], n: int, max_total: int,
                 limit: int | None = None, use_symmetry: bool = True,
                 slack: int = 0, verbose: bool = False) -> Dict[Tuple[Word, ...], int]:
-    """Breadth-first closure of ``start`` in the cyclic-word AC graph with
-    total length <= max_total.  Returns dict state -> distance.  States are
+    """Reachable states under the implemented bounded cyclic moves, with
+    total length <= max_total. Not a certified full AC component census.
+    Returns dict state -> distance in this implemented graph. States are
     sorted tuples of cyclic canonical words (optionally canonical under signed
     generator permutations).
     """

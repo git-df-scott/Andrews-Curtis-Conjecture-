@@ -1,5 +1,13 @@
 # Astra invariant-first attack matrix
 
+**Latest prioritization:** `SC-AC-SHORTEN-2` in `OPEN_LANES.md` supersedes the
+raw Dehn-based peak plan below. Dehn irreducibility is not geodesicity, with
+counterexamples now certified in both fixed groups. Require an explicit
+geodesic peak bound covering arbitrary conjugation before any component
+enumeration. `ASTRA_FIRST_STRIKE.md` records the marked triangle closure and
+the quantifier-free/profinite no-go proofs. The older ranking is retained as
+history, not permission to run previously closed lanes.
+
 No attack below earns candidate compute until its “AC gate” is proved. Costs are for the first theorem-bearing prototype, not an open-ended run.
 
 ## Hyperbolic-strike disposition

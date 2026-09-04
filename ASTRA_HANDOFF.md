@@ -1,5 +1,26 @@
 # Astra handoff — hyperbolic-quotient feasibility strike
 
+## First-strike supersession — 2026-09-04
+
+The current entry point is [ASTRA_FIRST_STRIKE.md](ASTRA_FIRST_STRIKE.md).
+The prior handoff below is retained as history. Its following items are
+superseded:
+
+- AK(3) in the standard `Delta(2,3,7)` marking is now **SAME ORBIT**, by the
+  ten-move certificate in `C2*C3`; every further quotient with `x²=y³=1`
+  inherits it. Other markings are not automatically covered.
+- “Dehn-geodesic” cannot mean the existing Dehn reducer: exact equal
+  irreducible words of unequal lengths are now frozen for both laboratories.
+- Quantifier-free group-language invariant predicates and profinite-continuous
+  labels have explicit no-go proofs in `HYPERBOLIC_QUOTIENT_THEOREM.md`.
+- The next task is **SC-AC-SHORTEN-2** in `OPEN_LANES.md`, requiring a genuine
+  geodesic peak bound before component enumeration. No 96-hour run is started
+  merely because the former handoff allowed that cap.
+
+H_SC and H_OR remain certified research laboratories with UNKNOWN AK(3)
+components. No new AC invariant or complete orbit algorithm exists here.
+All original free-group frontier corrections remain binding.
+
 ## Decision
 
 **HYPERBOLIC ROUTE: YELLOW.**

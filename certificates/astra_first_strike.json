@@ -1,0 +1,247 @@
+{
+  "base_commit": "b19113c5e507eaceb51aeb58f30c47433c85980b",
+  "laboratories": {
+    "H_OR": {
+      "ak3_images": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "dehn_counterexample": {
+        "boundary_rotation": 27,
+        "boundary_split": 55,
+        "equality_trace": [
+          {
+            "cut": 31,
+            "offset": 29,
+            "relator": "XyXyXYxxxYYXXyyyXyyXXYYxyyXXXyXYYYXYYYxYxYXYXyxYXXXXXXyXYYxYY"
+          },
+          {
+            "cut": 31,
+            "offset": 0,
+            "relator": "xYXXXXXXyXYYxYYXyXyXYxxxYYXXyyyXyyXXYYxyyXXXyXYYYXYYYxYxYXYXy"
+          }
+        ],
+        "lengths": [
+          55,
+          57
+        ],
+        "relator_a": "YYxYYYxxyyXXXyxYxYxyyXyyxYxxxxxxyXYxyxyXyXyyyxyyyxYxxxYYXyyxx",
+        "relator_b": "YYxYYXyXyXYxxxYYXXyyyXyyXXYYxyyXXXyXYYYXYYYxYxYXYXyxYXXXXXXyX",
+        "result": "EQUAL_IRREDUCIBLE_WORDS_OF_UNEQUAL_LENGTH",
+        "shared_prefix_length": 5,
+        "u": "xYXXXXXXyXYYxYYXyXyXYxxxYYXXyXyXyXYxxxYYXXyyyXyyXXYYxyy",
+        "v": "YxyxyXyXyyyxyyyxYxxxYYXyyxxxYxxxxxxyXYxyxyXyXyyyxyyyxYxxx",
+        "witnesses_tested": 28
+      },
+      "exponent_vectors": [
+        [
+          -14,
+          -7
+        ]
+      ],
+      "orbit_result": "UNKNOWN",
+      "overlap_pair_count": 7381,
+      "relators": [
+        "yXYYxYYXyXyXYxxxYYXXyyyXyyXXYYxyyXXXyXYYYXYYYxYxYXYXyxYXXXXXX"
+      ],
+      "small_cancellation": {
+        "c_prime": true,
+        "denominator": 6,
+        "max_piece_length": 7,
+        "proper_power_flags": [
+          false
+        ],
+        "relator_lengths": [
+          61
+        ],
+        "symmetrized_size": 122
+      },
+      "standard_images": [
+        "x",
+        "y"
+      ]
+    },
+    "H_SC": {
+      "ak3_images": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "dehn_counterexample": {
+        "boundary_rotation": 25,
+        "boundary_split": 53,
+        "equality_trace": [
+          {
+            "cut": 31,
+            "offset": 29,
+            "relator": "XYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYY"
+          },
+          {
+            "cut": 31,
+            "offset": 0,
+            "relator": "XYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXy"
+          }
+        ],
+        "lengths": [
+          53,
+          55
+        ],
+        "relator_a": "YYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyX",
+        "relator_b": "YYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXY",
+        "result": "EQUAL_IRREDUCIBLE_WORDS_OF_UNEQUAL_LENGTH",
+        "shared_prefix_length": 7,
+        "u": "XYXYxyXYYYxxxYXYxYxxYXXYXyyxyXYYxyxxyXXyXyxyXXXyyyxYX",
+        "v": "YxYxyyyXXyxYxYYXYYXyXYxyXyxYXyxYxyyxyyXyXYxxYYYXyXyXYXY",
+        "witnesses_tested": 26
+      },
+      "exponent_vectors": [
+        [
+          -7,
+          -10
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "orbit_result": "UNKNOWN",
+      "overlap_pair_count": 29646,
+      "relators": [
+        "YXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxY",
+        "xYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYx"
+      ],
+      "small_cancellation": {
+        "c_prime": true,
+        "denominator": 6,
+        "max_piece_length": 8,
+        "proper_power_flags": [
+          false,
+          false
+        ],
+        "relator_lengths": [
+          61,
+          61
+        ],
+        "symmetrized_size": 244
+      },
+      "standard_images": [
+        "x",
+        "y"
+      ]
+    }
+  },
+  "modular_ak3": {
+    "candidate": [
+      "xxxYYYY",
+      "xyxYXY"
+    ],
+    "marking": [
+      "x",
+      "y"
+    ],
+    "moves": [
+      [
+        "M",
+        1,
+        -1
+      ],
+      [
+        "M",
+        1,
+        -1
+      ],
+      [
+        "M",
+        0,
+        -2
+      ],
+      [
+        "C",
+        0,
+        1
+      ],
+      [
+        "M",
+        1,
+        -1
+      ],
+      [
+        "M",
+        0,
+        2
+      ],
+      [
+        "M",
+        1,
+        -1
+      ],
+      [
+        "M",
+        0,
+        2
+      ],
+      [
+        "C",
+        0,
+        -2
+      ],
+      [
+        "I",
+        1,
+        0
+      ]
+    ],
+    "presentation": [
+      "xx",
+      "yyy"
+    ],
+    "result": "SAME_ORBIT",
+    "search_states": 0,
+    "states": [
+      [
+        "xyy",
+        "xyxyyxyy"
+      ],
+      [
+        "xyy",
+        "xyxyy"
+      ],
+      [
+        "xyy",
+        "xy"
+      ],
+      [
+        "xyx",
+        "xy"
+      ],
+      [
+        "y",
+        "xy"
+      ],
+      [
+        "y",
+        "x"
+      ],
+      [
+        "yx",
+        "x"
+      ],
+      [
+        "yx",
+        "yy"
+      ],
+      [
+        "yxyy",
+        "yy"
+      ],
+      [
+        "x",
+        "yy"
+      ],
+      [
+        "x",
+        "y"
+      ]
+    ]
+  },
+  "schema": "acc-first-strike-v1"
+}
