@@ -1,0 +1,2430 @@
+{
+  "branching_word_failure": {
+    "false_identity_word": "YXY",
+    "initial": [
+      "x",
+      "y"
+    ],
+    "steps": [
+      {
+        "after": [
+          "xy",
+          "y"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "xy",
+          "yxy"
+        ],
+        "move": [
+          "M",
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  "conditional_seam_type_count": {
+    "formula": "1+8*R*3**(R-1) for R>=1; 1 for R=0",
+    "values": {
+      "0": 1,
+      "1": 9,
+      "15": 573956281,
+      "2": 49,
+      "23": 5774114968057,
+      "3": 217,
+      "4": 865
+    }
+  },
+  "family_infinite_distinctness": {
+    "all_counts": [
+      12,
+      13,
+      13,
+      14,
+      14,
+      12,
+      15,
+      12,
+      15,
+      12,
+      14,
+      14,
+      11,
+      15,
+      12,
+      14,
+      14,
+      12,
+      12,
+      15,
+      16,
+      15,
+      15,
+      13,
+      16,
+      14,
+      13,
+      14,
+      12,
+      15,
+      16,
+      13,
+      14,
+      12,
+      12,
+      14,
+      15,
+      15,
+      11,
+      13,
+      12,
+      15,
+      16,
+      15,
+      14,
+      12,
+      14,
+      11,
+      13,
+      11,
+      15,
+      15,
+      12,
+      13,
+      11,
+      15,
+      11,
+      15,
+      13,
+      15,
+      13,
+      13,
+      15,
+      16,
+      15,
+      13,
+      13,
+      13,
+      10,
+      13,
+      12,
+      13,
+      15,
+      14,
+      15,
+      15,
+      12,
+      15,
+      15,
+      16,
+      13,
+      13,
+      15,
+      15,
+      11,
+      13,
+      12,
+      14,
+      16,
+      14,
+      14,
+      16,
+      15,
+      11,
+      14,
+      15,
+      14,
+      13,
+      16,
+      11,
+      13,
+      14,
+      13,
+      16,
+      15,
+      13,
+      15,
+      13,
+      16,
+      15,
+      15,
+      11,
+      14,
+      15,
+      13,
+      15,
+      14,
+      12,
+      12,
+      11,
+      13,
+      13,
+      16,
+      12,
+      13,
+      16,
+      15,
+      13,
+      15,
+      11,
+      14,
+      13,
+      14,
+      11,
+      16,
+      12,
+      12,
+      15,
+      13,
+      13,
+      13,
+      11,
+      16,
+      13,
+      12,
+      16,
+      14,
+      14,
+      14,
+      16,
+      15,
+      13,
+      13,
+      13,
+      15,
+      12,
+      15,
+      16,
+      13,
+      15,
+      13,
+      16,
+      15,
+      13,
+      14,
+      15,
+      15,
+      13,
+      13,
+      13,
+      14,
+      13,
+      11,
+      15,
+      11,
+      12,
+      12,
+      12,
+      15,
+      15,
+      12,
+      15,
+      15,
+      13,
+      14,
+      14,
+      15,
+      11,
+      12,
+      12,
+      16,
+      15,
+      14,
+      15,
+      12,
+      13,
+      15,
+      14,
+      12,
+      14,
+      11,
+      15,
+      12,
+      13,
+      14,
+      15,
+      13,
+      12,
+      14,
+      12,
+      14,
+      13,
+      13,
+      14,
+      12,
+      13,
+      14,
+      10,
+      14,
+      10,
+      14,
+      12,
+      13,
+      13,
+      12,
+      13,
+      15,
+      13,
+      12,
+      13,
+      14,
+      12,
+      10,
+      10,
+      13,
+      13,
+      15,
+      12,
+      12,
+      14,
+      12,
+      11,
+      11,
+      10
+    ],
+    "minimum_x_letters_in_31_window": 10,
+    "relator_windows": 244
+  },
+  "global_height_bound": null,
+  "inherited_sha256": {
+    "astra_first_strike.json": "0e8291535c3a6525d08e99c6d7a4129c3ee86b22f0fa629b5dcf025f87e8ca3f",
+    "astra_second_strike.json": "d64cdf8862adcd7b5480f767ae5f86c202741102736e5065ac303985cd198dc3",
+    "astra_third_strike.json": "ff01205f64f0c22492d232270f0ba45032b71210010777b51c6d46d9ac814dff"
+  },
+  "macro_jump_over_liftable_shell": {
+    "initial": [
+      "xxxYYYY",
+      "xyxYXY"
+    ],
+    "steps": [
+      {
+        "after": [
+          "yyyyyyxxxYYYYYYYYYY",
+          "xyxYXY"
+        ],
+        "move": [
+          "C",
+          0,
+          "yyyyyy"
+        ]
+      }
+    ]
+  },
+  "multiplication_bound": null,
+  "multiplication_jump_over_16": {
+    "initial": [
+      "xxxYYYY",
+      "xyxYXY"
+    ],
+    "steps": [
+      {
+        "after": [
+          "YYYYxxx",
+          "xyxYXY"
+        ],
+        "move": [
+          "C",
+          0,
+          "XXX"
+        ]
+      },
+      {
+        "after": [
+          "YYYYxxx",
+          "YXYxyx"
+        ],
+        "move": [
+          "C",
+          1,
+          "XYX"
+        ]
+      },
+      {
+        "after": [
+          "YYYxxxY",
+          "YXYxyx"
+        ],
+        "move": [
+          "C",
+          0,
+          "y"
+        ]
+      },
+      {
+        "after": [
+          "YYYxxxY",
+          "XYXyxy"
+        ],
+        "move": [
+          "I",
+          1,
+          0
+        ]
+      },
+      {
+        "after": [
+          "YYYxxxY",
+          "yXYXyx"
+        ],
+        "move": [
+          "C",
+          1,
+          "XYxyx"
+        ]
+      },
+      {
+        "after": [
+          "YYYxxYXyx",
+          "yXYXyx"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "YYYxxYXyx",
+          "XYxyxY"
+        ],
+        "move": [
+          "I",
+          1,
+          0
+        ]
+      },
+      {
+        "after": [
+          "YYYxxYXyx",
+          "YXYxyx"
+        ],
+        "move": [
+          "C",
+          1,
+          "XYXyx"
+        ]
+      },
+      {
+        "after": [
+          "XYxyXXyyy",
+          "YXYxyx"
+        ],
+        "move": [
+          "I",
+          0,
+          0
+        ]
+      },
+      {
+        "after": [
+          "XyyyXYxyX",
+          "YXYxyx"
+        ],
+        "move": [
+          "C",
+          0,
+          "xYXyx"
+        ]
+      },
+      {
+        "after": [
+          "XyyyXYxyX",
+          "xYXYxy"
+        ],
+        "move": [
+          "C",
+          1,
+          "YXyxy"
+        ]
+      },
+      {
+        "after": [
+          "XyyyXYYxy",
+          "xYXYxy"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "YXyyxYYYx",
+          "xYXYxy"
+        ],
+        "move": [
+          "I",
+          0,
+          0
+        ]
+      },
+      {
+        "after": [
+          "YYYxYXyyx",
+          "xYXYxy"
+        ],
+        "move": [
+          "C",
+          0,
+          "XYYxy"
+        ]
+      },
+      {
+        "after": [
+          "YYYxYXyyx",
+          "YXYxyx"
+        ],
+        "move": [
+          "C",
+          1,
+          "X"
+        ]
+      },
+      {
+        "after": [
+          "yyxYYYxYX",
+          "YXYxyx"
+        ],
+        "move": [
+          "C",
+          0,
+          "xyXyyy"
+        ]
+      },
+      {
+        "after": [
+          "yyxYYYxYX",
+          "XYXyxy"
+        ],
+        "move": [
+          "I",
+          1,
+          0
+        ]
+      },
+      {
+        "after": [
+          "yyxYYYxYX",
+          "xyXYXy"
+        ],
+        "move": [
+          "C",
+          1,
+          "Yxyx"
+        ]
+      },
+      {
+        "after": [
+          "yyxYYYYXy",
+          "xyXYXy"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "YYYYXyyyx",
+          "xyXYXy"
+        ],
+        "move": [
+          "C",
+          0,
+          "XYY"
+        ]
+      },
+      {
+        "after": [
+          "YYYYXyyyx",
+          "YxyxYX"
+        ],
+        "move": [
+          "I",
+          1,
+          0
+        ]
+      },
+      {
+        "after": [
+          "YYYYXyyyx",
+          "YXYxyx"
+        ],
+        "move": [
+          "C",
+          1,
+          "XYXy"
+        ]
+      },
+      {
+        "after": [
+          "YXYxyx",
+          "YYYYXyyyx"
+        ],
+        "move": [
+          "P",
+          0,
+          1
+        ]
+      },
+      {
+        "after": [
+          "YXYxyxYYYYXyyyx",
+          "YYYYXyyyx"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  "retained_class_is_not_a_seam_type": {
+    "distinct_seam_pairs": 22,
+    "height": 23,
+    "initial": [
+      "x",
+      "y"
+    ],
+    "steps": [
+      {
+        "after": [
+          "xy",
+          "y"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "xyy",
+          "y"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "xyyy",
+          "y"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "xyyyy",
+          "y"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "xyyyyy",
+          "y"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "xyyyyyy",
+          "y"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "xyyyyyyy",
+          "y"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "xyyyyyyyy",
+          "y"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "xyyyyyyyyy",
+          "y"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "xyyyyyyyyyy",
+          "y"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "xyyyyyyyyyyy",
+          "y"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "xyyyyyyyyyyyy",
+          "y"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "xyyyyyyyyyyyyy",
+          "y"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "xyyyyyyyyyyyyyy",
+          "y"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "xyyyyyyyyyyyyyyy",
+          "y"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "xyyyyyyyyyyyyyyyy",
+          "y"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "xyyyyyyyyyyyyyyyyy",
+          "y"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "xyyyyyyyyyyyyyyyyyy",
+          "y"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "xyyyyyyyyyyyyyyyyyyy",
+          "y"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "xyyyyyyyyyyyyyyyyyyyy",
+          "y"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "xyyyyyyyyyyyyyyyyyyyyy",
+          "y"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  "same_target_high_seam": {
+    "high_peak": 23,
+    "initial": [
+      "YYYYxxx",
+      "YXYxyx"
+    ],
+    "low_peak": 15,
+    "lower_replacement": [
+      {
+        "after": [
+          "YYYYxxx",
+          "XYXyxy"
+        ],
+        "move": [
+          "I",
+          1,
+          0
+        ]
+      },
+      {
+        "after": [
+          "YYYYxxx",
+          "YXyxyX"
+        ],
+        "move": [
+          "C",
+          1,
+          "x"
+        ]
+      },
+      {
+        "after": [
+          "YxxYYYYxy",
+          "YXyxyX"
+        ],
+        "move": [
+          "C",
+          0,
+          "YXyyyy"
+        ]
+      },
+      {
+        "after": [
+          "YxxYYYxyX",
+          "YXyxyX"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "YYYxyXYxx",
+          "YXyxyX"
+        ],
+        "move": [
+          "C",
+          0,
+          "XXy"
+        ]
+      },
+      {
+        "after": [
+          "YYYxyXYxx",
+          "xYXYxy"
+        ],
+        "move": [
+          "I",
+          1,
+          0
+        ]
+      },
+      {
+        "after": [
+          "YYYxyXYxx",
+          "YXYxyx"
+        ],
+        "move": [
+          "C",
+          1,
+          "X"
+        ]
+      },
+      {
+        "after": [
+          "XXyxYXyyy",
+          "YXYxyx"
+        ],
+        "move": [
+          "I",
+          0,
+          0
+        ]
+      },
+      {
+        "after": [
+          "YXyyyXXyx",
+          "YXYxyx"
+        ],
+        "move": [
+          "C",
+          0,
+          "XYxx"
+        ]
+      },
+      {
+        "after": [
+          "YXyyyXXyx",
+          "XYxyxY"
+        ],
+        "move": [
+          "C",
+          1,
+          "y"
+        ]
+      },
+      {
+        "after": [
+          "YXyyyXyxY",
+          "XYxyxY"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "yXYxYYYxy",
+          "XYxyxY"
+        ],
+        "move": [
+          "I",
+          0,
+          0
+        ]
+      },
+      {
+        "after": [
+          "YYYxyyXYx",
+          "XYxyxY"
+        ],
+        "move": [
+          "C",
+          0,
+          "XyxY"
+        ]
+      },
+      {
+        "after": [
+          "YYYxyyXYx",
+          "YXYxyx"
+        ],
+        "move": [
+          "C",
+          1,
+          "XYXyx"
+        ]
+      }
+    ],
+    "minimum_M_in_height23": 2,
+    "signed_internal_seam_width": 23,
+    "steps": [
+      {
+        "after": [
+          "XXXyyyy",
+          "YXYxyx"
+        ],
+        "move": [
+          "I",
+          0,
+          0
+        ]
+      },
+      {
+        "after": [
+          "YYXyyyXXXyxyy",
+          "YXYxyx"
+        ],
+        "move": [
+          "C",
+          0,
+          "YYXYxxx"
+        ]
+      },
+      {
+        "after": [
+          "YYXyyyXXXyxyXYxyx",
+          "YXYxyx"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "XYXyxYXYxxxYYYxyy",
+          "YXYxyx"
+        ],
+        "move": [
+          "I",
+          0,
+          0
+        ]
+      },
+      {
+        "after": [
+          "YYYxyyXYXyxYXYxxx",
+          "YXYxyx"
+        ],
+        "move": [
+          "C",
+          0,
+          "XXXyxyXYxyx"
+        ]
+      },
+      {
+        "after": [
+          "YxxxYYYxyyXYXyxYX",
+          "YXYxyx"
+        ],
+        "move": [
+          "C",
+          0,
+          "xyXYxyxYYXyyy"
+        ]
+      },
+      {
+        "after": [
+          "YxxxYYYxyyXYXyxYX",
+          "XYXyxy"
+        ],
+        "move": [
+          "I",
+          1,
+          0
+        ]
+      },
+      {
+        "after": [
+          "YxxxYYYxyyXYXyxYX",
+          "xyXYXy"
+        ],
+        "move": [
+          "C",
+          1,
+          "Yxyx"
+        ]
+      },
+      {
+        "after": [
+          "YxxxYYYxyyXYXXy",
+          "xyXYXy"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "YYYxyyXYx",
+          "xyXYXy"
+        ],
+        "move": [
+          "C",
+          0,
+          "XXXy"
+        ]
+      },
+      {
+        "after": [
+          "YYYxyyXYx",
+          "YxyxYX"
+        ],
+        "move": [
+          "I",
+          1,
+          0
+        ]
+      },
+      {
+        "after": [
+          "YYYxyyXYx",
+          "YXYxyx"
+        ],
+        "move": [
+          "C",
+          1,
+          "XYXy"
+        ]
+      }
+    ],
+    "tree_indices": [
+      0,
+      70,
+      1355
+    ]
+  },
+  "schema": "hsc-fourth-controls-v1",
+  "scope": "CONDITIONAL THEOREMS AND FAILURE CONTROLS; NO SEPARATION",
+  "seam_bound": null,
+  "shell_sha256": "7920377813100aa6bc5bb0ff9e34d81fd7ad4409d2df715a06b1f71d54794691",
+  "two_M_family": [
+    {
+      "initial": [
+        "x",
+        "y"
+      ],
+      "minimal_signed_seam_width": 4,
+      "n": 2,
+      "raw_internal_seam_height": 5,
+      "replacement": [
+        {
+          "after": [
+            "xy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "after": [
+            "yyxYY",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "yy"
+          ]
+        },
+        {
+          "after": [
+            "yyxY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "yyx",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "YY"
+          ]
+        }
+      ]
+    },
+    {
+      "initial": [
+        "x",
+        "y"
+      ],
+      "minimal_signed_seam_width": 4,
+      "n": 3,
+      "raw_internal_seam_height": 7,
+      "replacement": [
+        {
+          "after": [
+            "xy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "after": [
+            "yyyxYYY",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "yyy"
+          ]
+        },
+        {
+          "after": [
+            "yyyxYY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "yyyxY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "YYY"
+          ]
+        }
+      ]
+    },
+    {
+      "initial": [
+        "x",
+        "y"
+      ],
+      "minimal_signed_seam_width": 4,
+      "n": 4,
+      "raw_internal_seam_height": 9,
+      "replacement": [
+        {
+          "after": [
+            "xy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "after": [
+            "yyyyxYYYY",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "yyyy"
+          ]
+        },
+        {
+          "after": [
+            "yyyyxYYY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "yyyyxYY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "YYYY"
+          ]
+        }
+      ]
+    },
+    {
+      "initial": [
+        "x",
+        "y"
+      ],
+      "minimal_signed_seam_width": 4,
+      "n": 5,
+      "raw_internal_seam_height": 11,
+      "replacement": [
+        {
+          "after": [
+            "xy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "after": [
+            "yyyyyxYYYYY",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "yyyyy"
+          ]
+        },
+        {
+          "after": [
+            "yyyyyxYYYY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "yyyyyxYYY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "YYYYY"
+          ]
+        }
+      ]
+    },
+    {
+      "initial": [
+        "x",
+        "y"
+      ],
+      "minimal_signed_seam_width": 4,
+      "n": 6,
+      "raw_internal_seam_height": 13,
+      "replacement": [
+        {
+          "after": [
+            "xy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "after": [
+            "yyyyyyxYYYYYY",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "yyyyyy"
+          ]
+        },
+        {
+          "after": [
+            "yyyyyyxYYYYY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "yyyyyyxYYYY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "YYYYYY"
+          ]
+        }
+      ]
+    },
+    {
+      "initial": [
+        "x",
+        "y"
+      ],
+      "minimal_signed_seam_width": 4,
+      "n": 7,
+      "raw_internal_seam_height": 15,
+      "replacement": [
+        {
+          "after": [
+            "xy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "after": [
+            "yyyyyyyxYYYYYYY",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "yyyyyyy"
+          ]
+        },
+        {
+          "after": [
+            "yyyyyyyxYYYYYY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "yyyyyyyxYYYYY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "YYYYYYY"
+          ]
+        }
+      ]
+    },
+    {
+      "initial": [
+        "x",
+        "y"
+      ],
+      "minimal_signed_seam_width": 4,
+      "n": 8,
+      "raw_internal_seam_height": 17,
+      "replacement": [
+        {
+          "after": [
+            "xy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "after": [
+            "yyyyyyyyxYYYYYYYY",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "yyyyyyyy"
+          ]
+        },
+        {
+          "after": [
+            "yyyyyyyyxYYYYYYY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "yyyyyyyyxYYYYYY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "YYYYYYYY"
+          ]
+        }
+      ]
+    },
+    {
+      "initial": [
+        "x",
+        "y"
+      ],
+      "minimal_signed_seam_width": 4,
+      "n": 9,
+      "raw_internal_seam_height": 19,
+      "replacement": [
+        {
+          "after": [
+            "xy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "after": [
+            "yyyyyyyyyxYYYYYYYYY",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "yyyyyyyyy"
+          ]
+        },
+        {
+          "after": [
+            "yyyyyyyyyxYYYYYYYY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "yyyyyyyyyxYYYYYYY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "YYYYYYYYY"
+          ]
+        }
+      ]
+    },
+    {
+      "initial": [
+        "x",
+        "y"
+      ],
+      "minimal_signed_seam_width": 4,
+      "n": 10,
+      "raw_internal_seam_height": 21,
+      "replacement": [
+        {
+          "after": [
+            "xy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "after": [
+            "yyyyyyyyyyxYYYYYYYYYY",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "yyyyyyyyyy"
+          ]
+        },
+        {
+          "after": [
+            "yyyyyyyyyyxYYYYYYYYY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "yyyyyyyyyyxYYYYYYYY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "YYYYYYYYYY"
+          ]
+        }
+      ]
+    },
+    {
+      "initial": [
+        "x",
+        "y"
+      ],
+      "minimal_signed_seam_width": 4,
+      "n": 11,
+      "raw_internal_seam_height": 23,
+      "replacement": [
+        {
+          "after": [
+            "xy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "after": [
+            "yyyyyyyyyyyxYYYYYYYYYYY",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "yyyyyyyyyyy"
+          ]
+        },
+        {
+          "after": [
+            "yyyyyyyyyyyxYYYYYYYYYY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "yyyyyyyyyyyxYYYYYYYYY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "YYYYYYYYYYY"
+          ]
+        }
+      ]
+    },
+    {
+      "initial": [
+        "x",
+        "y"
+      ],
+      "minimal_signed_seam_width": 4,
+      "n": 12,
+      "raw_internal_seam_height": 25,
+      "replacement": [
+        {
+          "after": [
+            "xy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "after": [
+            "yyyyyyyyyyyyxYYYYYYYYYYYY",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "yyyyyyyyyyyy"
+          ]
+        },
+        {
+          "after": [
+            "yyyyyyyyyyyyxYYYYYYYYYYY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "yyyyyyyyyyyyxYYYYYYYYYY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "YYYYYYYYYYYY"
+          ]
+        }
+      ]
+    },
+    {
+      "initial": [
+        "x",
+        "y"
+      ],
+      "minimal_signed_seam_width": 4,
+      "n": 13,
+      "raw_internal_seam_height": 27,
+      "replacement": [
+        {
+          "after": [
+            "xy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "after": [
+            "yyyyyyyyyyyyyxYYYYYYYYYYYYY",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "yyyyyyyyyyyyy"
+          ]
+        },
+        {
+          "after": [
+            "yyyyyyyyyyyyyxYYYYYYYYYYYY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "yyyyyyyyyyyyyxYYYYYYYYYYY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "YYYYYYYYYYYYY"
+          ]
+        }
+      ]
+    },
+    {
+      "initial": [
+        "x",
+        "y"
+      ],
+      "minimal_signed_seam_width": 4,
+      "n": 14,
+      "raw_internal_seam_height": 29,
+      "replacement": [
+        {
+          "after": [
+            "xy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "after": [
+            "yyyyyyyyyyyyyyxYYYYYYYYYYYYYY",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "yyyyyyyyyyyyyy"
+          ]
+        },
+        {
+          "after": [
+            "yyyyyyyyyyyyyyxYYYYYYYYYYYYY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "yyyyyyyyyyyyyyxYYYYYYYYYYYY",
+            "y"
+          ],
+          "move": [
+            "M",
+            0,
+            2
+          ]
+        },
+        {
+          "after": [
+            "xyy",
+            "y"
+          ],
+          "move": [
+            "C",
+            0,
+            "YYYYYYYYYYYYYY"
+          ]
+        }
+      ]
+    }
+  ],
+  "two_M_tree_analysis": {
+    "depth_counts": {
+      "0": 1,
+      "1": 504,
+      "2": 2187,
+      "3": 1371
+    },
+    "maximum_excess_examples": {
+      "same_target": {
+        "excess": 8,
+        "external_L": 15,
+        "indices": [
+          0,
+          70,
+          1355
+        ],
+        "seam_width": 23
+      },
+      "switched_target": {
+        "excess": 1,
+        "external_L": 17,
+        "indices": [
+          22,
+          972,
+          3869
+        ],
+        "seam_width": 18
+      }
+    },
+    "scope": "DISCOVERY TREE ONLY; NOT PEAK-MINIMALITY",
+    "type_counts": {
+      "same_target": 3378,
+      "switched_target": 180
+    }
+  },
+  "unbounded_cancellation_controls": [
+    {
+      "after": [
+        "y",
+        "YXy"
+      ],
+      "before": [
+        "xy",
+        "YXy"
+      ],
+      "cancelled_pairs": 2,
+      "move": [
+        "M",
+        0,
+        2
+      ],
+      "n": 1
+    },
+    {
+      "after": [
+        "y",
+        "YYXy"
+      ],
+      "before": [
+        "xyy",
+        "YYXy"
+      ],
+      "cancelled_pairs": 3,
+      "move": [
+        "M",
+        0,
+        2
+      ],
+      "n": 2
+    },
+    {
+      "after": [
+        "y",
+        "YYYXy"
+      ],
+      "before": [
+        "xyyy",
+        "YYYXy"
+      ],
+      "cancelled_pairs": 4,
+      "move": [
+        "M",
+        0,
+        2
+      ],
+      "n": 3
+    },
+    {
+      "after": [
+        "y",
+        "YYYYXy"
+      ],
+      "before": [
+        "xyyyy",
+        "YYYYXy"
+      ],
+      "cancelled_pairs": 5,
+      "move": [
+        "M",
+        0,
+        2
+      ],
+      "n": 4
+    },
+    {
+      "after": [
+        "y",
+        "YYYYYXy"
+      ],
+      "before": [
+        "xyyyyy",
+        "YYYYYXy"
+      ],
+      "cancelled_pairs": 6,
+      "move": [
+        "M",
+        0,
+        2
+      ],
+      "n": 5
+    },
+    {
+      "after": [
+        "y",
+        "YYYYYYXy"
+      ],
+      "before": [
+        "xyyyyyy",
+        "YYYYYYXy"
+      ],
+      "cancelled_pairs": 7,
+      "move": [
+        "M",
+        0,
+        2
+      ],
+      "n": 6
+    },
+    {
+      "after": [
+        "y",
+        "YYYYYYYXy"
+      ],
+      "before": [
+        "xyyyyyyy",
+        "YYYYYYYXy"
+      ],
+      "cancelled_pairs": 8,
+      "move": [
+        "M",
+        0,
+        2
+      ],
+      "n": 7
+    },
+    {
+      "after": [
+        "y",
+        "YYYYYYYYXy"
+      ],
+      "before": [
+        "xyyyyyyyy",
+        "YYYYYYYYXy"
+      ],
+      "cancelled_pairs": 9,
+      "move": [
+        "M",
+        0,
+        2
+      ],
+      "n": 8
+    },
+    {
+      "after": [
+        "y",
+        "YYYYYYYYYXy"
+      ],
+      "before": [
+        "xyyyyyyyyy",
+        "YYYYYYYYYXy"
+      ],
+      "cancelled_pairs": 10,
+      "move": [
+        "M",
+        0,
+        2
+      ],
+      "n": 9
+    },
+    {
+      "after": [
+        "y",
+        "YYYYYYYYYYXy"
+      ],
+      "before": [
+        "xyyyyyyyyyy",
+        "YYYYYYYYYYXy"
+      ],
+      "cancelled_pairs": 11,
+      "move": [
+        "M",
+        0,
+        2
+      ],
+      "n": 10
+    },
+    {
+      "after": [
+        "y",
+        "YYYYYYYYYYYXy"
+      ],
+      "before": [
+        "xyyyyyyyyyyy",
+        "YYYYYYYYYYYXy"
+      ],
+      "cancelled_pairs": 12,
+      "move": [
+        "M",
+        0,
+        2
+      ],
+      "n": 11
+    },
+    {
+      "after": [
+        "y",
+        "YYYYYYYYYYYYXy"
+      ],
+      "before": [
+        "xyyyyyyyyyyyy",
+        "YYYYYYYYYYYYXy"
+      ],
+      "cancelled_pairs": 13,
+      "move": [
+        "M",
+        0,
+        2
+      ],
+      "n": 12
+    },
+    {
+      "after": [
+        "y",
+        "YYYYYYYYYYYYYXy"
+      ],
+      "before": [
+        "xyyyyyyyyyyyyy",
+        "YYYYYYYYYYYYYXy"
+      ],
+      "cancelled_pairs": 14,
+      "move": [
+        "M",
+        0,
+        2
+      ],
+      "n": 13
+    }
+  ]
+}

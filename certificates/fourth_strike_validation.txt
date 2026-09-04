@@ -1,0 +1,47 @@
+........................................................................ [ 81%]
+................                                                         [100%]
+88 passed in 31.96s
+
+Independent fourth-strike checker, including full capped-prefix replay:
+{"controls": {"cancellation_controls": 13, "jump24_steps": 24, "relator_windows": 244, "same_target_shortcut_verified": true, "two_M_controls": 13, "two_M_type_counts": {"same_target": 3378, "switched_target": 180}}, "discoveries": {"complete_shell": false, "discovery_edges_verified": 4062}, "prefix_replay": {"accepted": 63680, "fully_processed_vertices": 1038, "replayed_events": 2000000}}
+runtime_seconds 3.564863
+
+SHA256SUMS:
+certificates/astra_first_strike.json: OK
+acsearch/first_strike.py: OK
+scripts/check_first_strike.py: OK
+tests/test_first_strike.py: OK
+certificates/first_strike_validation.txt: OK
+
+SECOND_STRIKE_SHA256SUMS:
+ASTRA_SECOND_STRIKE.md: OK
+SC_AC_SHORTEN_2.md: OK
+HSC_PEAK_LEMMA.md: OK
+acsearch/hsc_shortening.py: OK
+scripts/check_second_strike.py: OK
+tests/test_second_strike.py: OK
+certificates/astra_second_strike.json: OK
+certificates/second_strike_validation.txt: OK
+ASTRA_HANDOFF.md: OK
+OPEN_LANES.md: OK
+CLOSED_LANES.md: OK
+QUOTIENT_LEDGER.md: OK
+STATUS.md: OK
+
+THIRD_STRIKE_SHA256SUMS:
+ASTRA_THIRD_STRIKE.md: OK
+HSC_MIXED_PEAK_3.md: OK
+HSC_MIXED_BLOCK_NORMAL_FORM.md: OK
+HSC_HEIGHT_15_SHELL.md: OK
+acsearch/hsc_mixed.py: OK
+scripts/check_third_strike.py: OK
+tests/test_third_strike.py: OK
+certificates/astra_third_strike.json: OK
+certificates/hsc_standard_height15.json.gz: OK
+certificates/third_strike_pants_control.json: OK
+certificates/third_strike_validation.txt: OK
+experiments/third_strike/height15_preflight.txt: OK
+experiments/third_strike/probe_outputs.txt: OK
+experiments/third_strike/relative_coset_probe.py: OK
+experiments/third_strike/relative_cyclic_probe.py: OK
+experiments/third_strike/relative_kb_probe.py: OK

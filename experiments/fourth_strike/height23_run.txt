@@ -1,0 +1,2 @@
+{"accepted_events": 63680, "candidate_events": 2000000, "contact": null, "discovered_vertices": 4063, "event_cap": 2000000, "global_height_bound": null, "height": 23, "partial_vertex": 1038, "processed_vertices": 1038, "purpose": "POSITIVE_PATH_ATTEMPT_ONLY", "queued_vertices": 3024, "schema": "hsc-fourth-shell-v1", "standard_graph_sha256": "49af709facd0bd3ddcb341cef0422ba5cedf17320a0ec405c3d053900d8c28d6", "state_cap": 20000, "status": "EVENT_CAP"}
+runtime_seconds 33.23904
