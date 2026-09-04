@@ -20,4 +20,15 @@ trivial group under Andrews-Curtis (AC) moves:
 Run the tests with `python3 -m pytest tests`.
 
 Status of the conjecture itself (checked September 2026): open. No
-counterexample is known; see the literature notes in `docs/` as they are added.
+counterexample or counterexample certificate is known. The audited campaign
+documents are:
+
+- [`STATUS.md`](STATUS.md) — executive status and bounded calibration
+- [`FRONTIER_2026.md`](FRONTIER_2026.md) — canonical theorem-level frontier
+- [`INVARIANT_LEDGER.md`](INVARIANT_LEDGER.md) — invariant proof gates and no-go results
+- [`STABLE_VS_UNSTABLE.md`](STABLE_VS_UNSTABLE.md) — stabilization constraints and the corrected `AK(3)` status
+- [`CANDIDATE_LEDGER.md`](CANDIDATE_LEDGER.md) — exact candidate routing
+- [`ATTACK_MATRIX.md`](ATTACK_MATRIX.md) — ranked invariant-first attacks
+- [`ASTRA_HANDOFF.md`](ASTRA_HANDOFF.md) — bounded high-compute handoff and CE/CEC criteria
+
+Search failure is never treated as evidence of non-equivalence.

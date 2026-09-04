@@ -3,7 +3,9 @@ from acsearch.words import parse, unparse, reduce, inverse, mul, cyclic_canonica
 from acsearch.moves import all_moves, apply_move, apply_path, cyclic_neighbors
 from acsearch.presentation import Presentation, symmetry_canonical
 from acsearch.search import greedy_search, bfs_closure
-from acsearch.verify import verify_certificate, abelianization_is_trivial, presents_trivial_group
+from acsearch.verify import (verify_certificate, verify_equivalence_ledger,
+                             apply_packaged_move, abelianization_is_trivial,
+                             presents_trivial_group)
 from acsearch.candidates import AK, MS, CATALOGUE
 
 
@@ -42,6 +44,53 @@ def test_trivial_group_check():
     assert presents_trivial_group(AK(2))
     assert presents_trivial_group(AK(3))
     assert not presents_trivial_group(Presentation.from_strings(2, "x^2 y^-3", "y"))
+
+
+def test_packaged_cycle_is_elementary_conjugation():
+    p = Presentation.from_strings(2, "x y X y", "y")
+    cycled = apply_packaged_move(p.rels, ("cycle", 0, 1), p.n)
+    elementary = apply_move(p.rels, ("C", 0, -p.rels[0][0]))
+    assert cycled == elementary
+
+
+def test_carreras_length14_ms3_to_ak3_certificate():
+    """Carreras 2026, Theorem 4: 13 packaged / 22 classical moves.
+
+    Source artifact: joe-carr-data/ac-certificates tag v1.0,
+    cert_ms3_yinvx2yinv_equiv_ak3.json (MIT licensed).
+    """
+    p = MS(3, "Y x^2 Y")
+    moves = [
+        ("cycle", 0, 6), ("mul", 1, 0, -1), ("conj", 0, -2),
+        ("mul", 1, 0, 1), ("cycle", 1, 2), ("conj", 0, 1),
+        ("mul", 0, 1, -1), ("cycle", 0, 4), ("invert", 1),
+        ("cycle", 1, 4), ("mul", 1, 0, 1), ("conj", 1, -1),
+        ("mul", 1, 0, 1),
+    ]
+    assert verify_equivalence_ledger(p, AK(3), moves)
+    broken = moves.copy()
+    broken[-1] = ("mul", 1, 0, -1)
+    assert not verify_equivalence_ledger(p, AK(3), broken)
+
+
+def test_candidate_catalogue_lengths_and_trivial_groups():
+    """Small positive calibration only; this is not an AC-orbit search."""
+    expected_lengths = {
+        "AK(2)": 11, "AK(3)": 13, "AK(4)": 15, "AK(5)": 17,
+        "classical_2gen": 14, "classical_3gen": 15,
+        "MS(2, x^-2 y^-1 x^2 y)": 14,
+        "MS(2, x^-2 y^-1 x^2 y^-1)": 14,
+        "MS(3, y x^2 y)": 14,
+        "MS(3, y^-1 x^2 y^-1)": 14,
+        "MS(2, y x^2 y x^-2)": 14,
+        "MS(2, y x^2 y^-1 x^-2)": 14,
+    }
+    assert set(CATALOGUE) == set(expected_lengths)
+    for name, p in CATALOGUE.items():
+        assert p.total_length == expected_lengths[name]
+        assert p.is_balanced()
+        assert abelianization_is_trivial(p)
+        assert presents_trivial_group(p)
 
 
 def test_greedy_easy():

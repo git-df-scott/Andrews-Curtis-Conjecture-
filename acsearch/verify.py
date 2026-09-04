@@ -1,9 +1,17 @@
-"""Verification utilities: certificates and trivial-group checks."""
+"""Verification utilities: certificates and trivial-group checks.
+
+Search is never evidence of non-equivalence.  The routines in this module only
+certify positive claims by exact replay (or, separately, prove that a presented
+group has order one when Todd--Coxeter enumeration completes).
+"""
 from __future__ import annotations
 from typing import Sequence, Tuple
-from .words import Word, cyclic_canonical, unparse
+from .words import Word, cyclic_canonical, reduce, unparse
 from .moves import apply_path, Move
 from .presentation import Presentation, standard_key
+
+
+PackagedMove = tuple
 
 
 def verify_certificate(p: Presentation, path: Sequence[Move]) -> bool:
@@ -11,6 +19,75 @@ def verify_certificate(p: Presentation, path: Sequence[Move]) -> bool:
     presentation up to conjugating / inverting / permuting relators."""
     end = apply_path(p.rels, path)
     return tuple(sorted(cyclic_canonical(r) for r in end)) == standard_key(p.n)
+
+
+def apply_packaged_move(rels: Tuple[Word, ...], move: PackagedMove,
+                        n: int) -> Tuple[Word, ...]:
+    """Apply the public Carreras ledger vocabulary exactly.
+
+    Supported moves are ``("invert", i)``, ``("conj", i, g)``,
+    ``("mul", i, j, sign)``, and ``("cycle", i, k)``.  A cycle is a
+    packaged AC move: left rotation by one letter ``a`` is conjugation by
+    ``a^-1`` followed by free reduction.  Indices are zero-based.
+
+    This routine deliberately performs no canonicalization between steps.
+    Certificate replay must follow the recorded representatives, not merely a
+    quotient graph.
+    """
+    if not isinstance(move, (tuple, list)) or not move:
+        raise ValueError("malformed packaged move")
+    op = move[0]
+    out = list(rels)
+    if op == "invert" and len(move) == 2:
+        i = move[1]
+        if not isinstance(i, int) or not 0 <= i < len(out):
+            raise ValueError(move)
+        out[i] = tuple(-a for a in reversed(out[i]))
+    elif op == "conj" and len(move) == 3:
+        i, g = move[1:]
+        if (not isinstance(i, int) or not 0 <= i < len(out)
+                or not isinstance(g, int) or g == 0 or abs(g) > n):
+            raise ValueError(move)
+        out[i] = reduce((g,) + out[i] + (-g,))
+    elif op == "mul" and len(move) == 4:
+        i, j, sign = move[1:]
+        if (not all(isinstance(x, int) for x in (i, j, sign))
+                or not 0 <= i < len(out) or not 0 <= j < len(out)
+                or i == j or sign not in (-1, 1)):
+            raise ValueError(move)
+        rhs = out[j] if sign == 1 else tuple(-a for a in reversed(out[j]))
+        out[i] = reduce(out[i] + rhs)
+    elif op == "cycle" and len(move) == 3:
+        i, k = move[1:]
+        if (not isinstance(i, int) or not 0 <= i < len(out)
+                or not isinstance(k, int) or not out[i]):
+            raise ValueError(move)
+        k %= len(out[i])
+        out[i] = reduce(out[i][k:] + out[i][:k])
+    else:
+        raise ValueError(move)
+    return tuple(out)
+
+
+def apply_packaged_ledger(p: Presentation,
+                          moves: Sequence[PackagedMove]) -> Tuple[Word, ...]:
+    rels = p.rels
+    for move in moves:
+        rels = apply_packaged_move(rels, move, p.n)
+    return rels
+
+
+def verify_equivalence_ledger(p: Presentation, target: Presentation,
+                              moves: Sequence[PackagedMove]) -> bool:
+    """Certify that a ledger reaches the target's AC-realizable orbit.
+
+    The terminal comparison allows relator order, inversion, and cyclic
+    rotation, all of which are realizable by elementary AC moves.
+    """
+    if p.n != target.n:
+        return False
+    end = apply_packaged_ledger(p, moves)
+    return tuple(sorted(cyclic_canonical(r) for r in end)) == target.cyclic_key()
 
 
 def describe_path(p: Presentation, path: Sequence[Move]) -> str:
