@@ -1,141 +1,213 @@
-# Astra handoff
+# Astra handoff — hyperbolic-quotient feasibility strike
 
-## Mission
+## Decision
 
-Astra is not being handed a longer word search. It is being handed a sequence of theorem gates whose successful endpoint is a checkable AC-orbit separator.
+**HYPERBOLIC ROUTE: YELLOW.**
 
-## Ground truth to load
+The quotient argument is rigorous, and no theorem located forces rank-2 AC
+graphs of infinite torsion-free hyperbolic groups to be connected. The
+remaining obstacle is explicit: construct a nonconstant computable factor of
+the AC-component relation for normally generating pairs, or prove a terminating
+component algorithm. Word/conjugacy solutions, faithful action of the AC
+transformation group, and ordinary Nielsen classifications do not supply it.
 
-1. `AK(3)` is the smallest unresolved rank-2 object (length 13).
-2. At length 14, use three **certified connected blocks**, not six independent candidates:
-   - `C0={AK3,P3,P4}`;
-   - `C1={P1,P6}`;
-   - `C2={P2,P5}`.
-3. `C1~AK3` and `C2~AK3` are not public theorems with replayable ledgers. They remain possible equivalences.
-4. The full length-14 stratum has not been classified.
-5. `AK(4)` (length 15) is open. `AK(n>=5)` is length-reducible, not known trivializable.
-6. Corrected stable status of `AK(3)` is open; do not encode stable triviality as a fact.
-7. Any thickenable named candidate is AC-trivial by Lackenby.
+There is no counterexample and no counterexample certificate.
 
-## First 72 compute-hours
+## Canonical frontier retained from `47596ab`
 
-These are bounded gates, not a search launch.
+1. `AK(3)` is the smallest unresolved rank-2 object, total length 13.
+2. Its corrected stable status is open; stable triviality is not established.
+3. The six named length-14 Miller–Schupp cases form the certified blocks
+   `C0={AK3,P3,P4}`, `C1={P1,P6}`, and `C2={P2,P5}`. Only `C0` is publicly
+   connected to `AK(3)`.
+4. Carreras did not classify the whole length-14 stratum.
+5. `AK(4)` remains open at length 15; `AK(n>=5)` is length-reducible, not thereby
+   AC-trivial.
+6. Search failure has no CE weight.
 
-| Budget | Task | Required artifact | Stop/pass criterion |
-|---:|---|---|---|
-| 2 h | Reproduce repository tests in a pinned environment | test log with commit SHA | all tests pass, including corrupted-ledger rejection |
-| 6 h | Implement stepwise invariant harness interface | value recorded after every elementary/packaged move | known controls constant; otherwise reject implementation |
-| 16 h | Prototype Neuwirth thickenability encoding for rank 2 | independently checkable rotation-system or obstruction record | positive settles candidate; negative only routes onward |
-| 24 h | Survey 2–3 explicit torsion-free hyperbolic targets and exact normal-form libraries | target dossier with proofs of word/conjugacy decidability and explicit maps | reject any target whose proposed separator reduces to bounded BFS |
-| 24 h | Formalize the algebraic-specialization preflight | theorem statement plus mechanized tests on trace/Fox proposals | prune all proposals satisfying the finite-specialization hypotheses |
+Nothing in this strike changes an object-level frontier status.
 
-Do not automatically consume unused hours. Stop after producing the artifacts and request mathematical review.
+## What the strike established
 
-## Invariant harness contract
+### Exact functorial obstruction
 
-Every module must expose logically equivalent operations:
+For an epimorphism `q:F2->>H`, every elementary AC path maps to the identical
+sequence on the image pair. Therefore
 
 ```text
-value(presentation) -> exact serialized object
-check_invert(state, relator_index) -> proof/check result
-check_multiply(state, target, source, sign) -> proof/check result
-check_conjugate(state, relator_index, conjugator) -> proof/check result
-compare(value_a, value_b) -> exact equal / exact unequal / unknown
-stabilize(value) -> exact value or explicit unsupported
+q(R) and q(x,y) in different components of Delta_2(H)
+    =>
+R and (x,y) in different components of Delta_2(F2).
 ```
 
-The result `unknown` is valid. A timeout must map to `unknown`, never `unequal`.
+This is the complete soundness theorem. Quotients may merge orbits, so the
+reverse implication is unavailable.
 
-## Mandatory five-object test suite
+### Finite images remain unusable
 
-For each invariant candidate, compute only after the move proof passes:
+Borovik–Lubotzky–Myasnikov identify finite AC components with their
+abelianized components in the relevant rank. A balanced trivial-group
+presentation has a unimodular exponent matrix, so its image pair and the basis
+image agree in every finite quotient. This includes non-soluble finite groups
+and all finite images of an infinite target.
 
-| Role | Object |
-|---|---|
-| trivial endpoint | `<x,y|x,y>` |
-| AC-trivial control | `AK(2)` plus a one-move synthetic control |
-| primary frontier | `AK(3)` |
-| next frontier | `AK(4)` |
-| length-14 control/frontier | `P4=MS(3,y^-1 x^2 y^-1)` along all 13 packaged Carreras moves; then representatives `P1` and `P2` |
+### Hyperbolicity is not a solution by itself
 
-`P4` and `AK(3)` **must** have equal output because an exact certificate is present. If they differ, the object is not an invariant or the implementation is wrong.
+- exact word, conjugacy and centralizer algorithms are infrastructure;
+- the image pair normally generates but may not ordinarily generate;
+- ordinary Nielsen classes fail independent relator conjugation;
+- Gilman–Myasnikov's faithfulness theorem concerns transformations, not
+  transitivity or point-orbit decidability;
+- uniform Nielsen equivalence is already undecidable across torsion-free
+  hyperbolic/small-cancellation inputs.
 
-## What would constitute a genuine counterexample
+### Failed quantities
 
-For a balanced presentation `P=<x1,...,xn|r1,...,rn>`, a counterexample proof needs both:
+Raw word/translation length, individual conjugacy, axes and boundary data,
+commutator conjugacy, centralizer configuration, ordinary Nielsen/Whitehead
+class, ordinary subgroup geometry, scl and bounded-cohomology evaluations,
+marked traces/representation values, and bounded orbit balls all fail a move
+or fail to define useful information. Exact witnesses are frozen in
+`INVARIANT_GRAVEYARD.md` and the test suite.
 
-1. a rigorous proof that the normal closure of `(r1,...,rn)` is all of `F_n`, equivalently that `P` presents the trivial group; and
-2. a rigorous proof that `(r1,...,rn)` is not in the elementary AC orbit of `(x1,...,xn)`.
+## Ranked target groups
 
-Acceptable forms for item 2 are:
+| Rank | Target | Reason | Main obstacle |
+|---:|---|---|---|
+| 1 | `H_SC`, the repository's perfect torsion-free two-relator `C'(1/6)` group | exact Dehn word problem, cyclic centralizers, trivial abelianization, non-elementary, no finite theorem collapse at `H` itself | no AC-component algorithm |
+| 2 | `H_OR`, the repository's torsion-free one-relator `C'(1/6)` group | simpler presentation and exact algorithms; non-elementary certified via `H_ab=Z+Z/7` | abelian noise and same orbit gate |
+| 3 | `Delta(2,3,7)` | perfect, two-generated, geometric and algorithmically manageable | torsion; ordinary Nielsen/orbifold results are insufficient |
 
-- an explicitly defined invariant `I`, a proof that every elementary AC move preserves `I`, exact computations of `I(P)` and `I(standard)`, and a proof those values differ; or
-- a terminating, proved-correct decision procedure for AC orbit equivalence that returns “different,” with a replayable proof object.
+Use `C2*C3` only as a cheap Bass–Serre implementation calibration. Do not
+mistake a calibration success for evidence that the torsion-free targets are
+decidable.
 
-A **CEC** should package the presentation, trivial-group proof, invariant/decision theorem in a proof-checkable form, exact endpoint computations, tool versions/hashes, and an independent verifier that rejects corrupted inputs.
+## Strongest surviving invariant
 
-There is currently no known general finite certificate format for non-AC-equivalence. A positive path has an obvious finite certificate; nonexistence of all finite paths does not. Consequently there is no CEC now. A new invariant theorem or a complete orbit-decision theorem is required.
+```text
+I_H(a,b) = [a,b]_AC in pi_0(Delta_2(H)).
+```
 
-The following are not item 2:
+It is exactly invariant under every move and rank-sensitive under
+stabilization. Equality is semidecidable by enumerating paths. Inequality is
+not presently decidable or finitely certifiable for the selected targets.
+Thus the surviving item is the target relation, not yet the required
+computable separator.
 
-- a hard or famous presentation;
-- BFS/beam/greedy/RL/ATP failure;
-- non-membership in a published solved table;
-- a lower bound on AC distance, however large;
-- separation in a restricted move graph;
-- stable triviality or failure to find a stable path;
-- a numerical feature not proved invariant.
+The only acceptable upgrade is a total computable label constant on all AC
+edges, or a terminating orbit decider, with exact unequal values. No numerical
+proxy qualifies.
 
-## Decision tree
+## Exact first Astra experiment: `SC-AC-PEAK-1`
 
-1. **Thickenability positive?** Mark the object AC-trivial by Lackenby; archive the certificate; stop work on it.
-2. **Proposed invariant fails a single frozen move?** Reject the invariant; do not tune it on candidates.
-3. **Proposed quotient is finite, nilpotent/`MN`, or soluble?** Reject as a separator by theorem.
-4. **Proposed invariant is unchanged by stabilization?** It targets stable ACC; retain only if the candidate's stable status remains genuinely open and the theorem is otherwise sound.
-5. **Exact unequal values after all gates?** Freeze code/data, obtain independent replay, and turn the invariance argument into a formal theorem before using “counterexample.”
-6. **Equal or unknown?** Record which invariant/target was ruled out. Do not increase word-search depth as a fallback.
+### Input
 
-## Data and reproducibility requirements
+- repository commit containing this handoff;
+- the fixed marked group `H_SC` from `HYPERBOLIC_QUOTIENTS.md`;
+- elementary moves exactly as implemented in `acsearch.moves`;
+- rank fixed at two.
 
-- Pin the repository commit, Python packages, algebra system and target-group implementation.
-- Hash every presentation after parsing and every certificate ledger.
-- Store exact integers, rationals, algebraic numbers, finite presentations or normal forms—never only floating-point summaries.
-- Record whether equality is proved, disproved, or unknown.
-- Separate mathematical theorems from experimental search observations in every schema.
-- Expand packaged moves to elementary moves for final proof artifacts.
-- Make corrupted-value, corrupted-move and wrong-endpoint tests mandatory.
+### Task
 
-## Recommended program order
+Attempt a **theorem-bearing peak-reduction completion**, not a reachability
+search:
 
-1. Thickenability positive-pruning on `AK3`, `C1`, `C2`, `AK4`.
-2. Algebraic-specialization no-go theorem to prune linear representation ideas.
-3. Hyperbolic-quotient orbit invariant prototype.
-4. Based crossed-module degree/truncation prototype.
-5. Non-semisimple sliced-state-sum movie-relation verifier.
-6. Only after one of 3–5 passes its theorem gate, allocate high compute to the five-object suite.
+1. independently replay the exhaustive `C'(1/6)` and proper-power certificate;
+2. add independently tested exact conjugacy and centralizer routines for this
+   fixed group;
+3. define a well-founded exact complexity on Dehn-geodesic ordered pairs;
+4. orient only AC transformations that provably decrease that complexity;
+5. enumerate symbolic critical-peak *types* using the `C'(1/6)` overlap bound;
+6. prove termination and either confluence, or a finite plateau theorem giving
+   a canonical finite component label;
+7. make arbitrary independent conjugation part of the proof, not a sampled
+   generator bound;
+8. emit a standalone checker for every critical type and normal-form equality.
 
-## Approaches Astra must not repeat
+### Pass criterion
 
-- open-ended direct search for an `AK(3)` trivialization;
-- the rank-2 length-at-most-12 census or a broad length-13 census;
-- finite-group/finite-quotient enumeration for separation;
-- abelian, nilpotent, metabelian, or soluble representation sweeps;
-- semisimple Quinn/Bobtcheva state sums on contractible complexes;
-- raw augmented Fox determinants or Smith forms;
-- raw trace/character values without invariance under relator multiplication;
-- one arbitrarily chosen 4-thickening presented as an invariant of the presentation;
-- raw `u`-substitution groups without a functorial all-choice construction;
-- neural embeddings, t-SNE clusters, policy values, neighborhood sizes, or hardness labels as CE evidence;
-- treating Carreras's GS bottleneck 27 as a full-AC lower bound;
-- treating absent or private Shehper ledgers as published proof;
-- treating the invalidated stable `AK(3)` premise as settled;
-- converting spare compute into overnight BFS, beam, MCTS, PPO, or Prover9 runs.
+A paper-level proof plus checker that the resulting canonical label is total
+and constant under inversion, both signed multiplication directions, and
+independent conjugation by every element of `H_SC`.
+
+Only after that pass, run in order:
+
+1. standard presentation;
+2. `AK(2)` and `<x,y|xy^2,y>`;
+3. the three 128-move-and-inverse synthetic paths;
+4. every state of the Carreras `P4~AK3` ledger;
+5. `AK(3)`, then `AK(4)`, then one representative of `C1` and `C2`.
+
+### Exact stop condition
+
+Stop `SC-AC-PEAK-1` immediately if any elementary move changes the proposed
+label, if completeness requires an unproved global peak bound, or if symbolic
+critical types cannot be proved finite. In all cases stop after **96 CPU-hours
+or 32 GiB peak RAM**, archive `UNKNOWN`, and do not convert the cap into a pair
+reachability run. Do not compute frontier values before the pass criterion.
+
+### Result meanings
+
+- **Canonical labels differ after all gates:** freeze the artifacts and seek an
+  independent mathematical proof/replay; this is a serious CEC candidate.
+- **Labels agree:** this closes only this target/label.
+- **Peak theorem fails or remains unknown:** this teaches that Dehn normal forms
+  do not automatically lift to AC-orbit normal forms. It has no implication
+  for `AK(3)`.
+
+## Peiffer fallback disposition
+
+For a balanced trivial-group presentation the presentation complex is
+contractible. Its free crossed-module boundary has zero kernel and trivial
+cokernel, hence is an isomorphism. The unbased crossed module is therefore
+structurally incapable. Retaining its distinguished 2-cell generators restores
+the original relator-basis orbit problem.
+
+The only bounded fallback worth attempting is a degree-at-most-3 nonabelian
+based Peiffer filtration with a prior nonfactorization test. Stop if it factors
+through the augmented Fox matrix, a nilpotent/soluble boundary quotient, or a
+stable module. Do not increase the degree automatically.
+
+## Counterexample standard
+
+A genuine CE still requires:
+
+1. a proof that the presentation group is trivial; and
+2. a proof that its relator tuple is outside the standard elementary AC orbit.
+
+For a quotient attack, item 2 requires the explicit epimorphism, a total exact
+invariant/decision theorem in `H`, proofs for every move, exact unequal values,
+and independent replay. There is no known general finite certificate for
+non-AC-equivalence. A path is a positive finite certificate; absence of a path
+is not a negative certificate.
+
+## Astra must not repeat
+
+- any open-ended `AK(3)` trivialization search;
+- any rank-2 short census;
+- finite-group, finite-image, soluble, nilpotent or `MN` quotient sweeps;
+- raw trace, character, Fox, determinant or substitution values;
+- raw lengths, axes, boundary pictures, centralizers, commutators, scl or
+  subgroup geometry;
+- ordinary Nielsen classification presented as AC classification;
+- semisimple TQFT/state-sum invariants already known to collapse;
+- bounded component noncontact, learned embeddings, hardness scores or search
+  lower bounds as CE evidence;
+- candidate evaluation before the move theorem and controls;
+- automatic expansion of the Peiffer degree or the Astra resource cap.
 
 ## Final handoff state
 
-- **CE: no**
-- **CEC: no**
-- **Smallest genuinely unresolved objects:** `AK(3)` (length 13); the `C0` class at length 14 is the same question, while the `C1` and `C2` MS(2) blocks are not yet publicly connected to it; `AK(4)` follows at length 15.
-- **Strongest remaining invariant avenue:** exact rank-2 AC-orbit information in computable infinite non-soluble, preferably torsion-free hyperbolic, quotient groups.
-- **Three best Astra attacks:** (1) hyperbolic-quotient orbit invariant, (2) based crossed-module/Peiffer invariant, (3) non-semisimple sliced-2-complex state sum.
-- **Astra MUST NOT waste time repeating:** finite/soluble quotient sweeps, semisimple TQFTs, unproved numeric features, naive Fox/trace/substitution values, known censuses, restricted-graph noncontact, or longer direct search.
+- **Hyperbolic route verdict:** YELLOW
+- **Strongest surviving invariant:** exact rank-2 AC component in `H_SC`; valid
+  but not yet computably separable
+- **Exact first Astra experiment:** `SC-AC-PEAK-1` above
+- **Exact stop condition:** first invariance/completeness failure, nonfinite
+  symbolic peak family, or 96 CPU-hours / 32 GiB; no frontier computation before
+  theorem pass
+- **What was learned:** infinite torsion-free hyperbolic quotients escape the
+  finite blindness theorem, but their familiar geometry is destroyed by
+  independent coordinate conjugation and multiplication; the actual bottleneck
+  is AC-orbit decidability on normally generating pairs
+- **CE:** no
+- **CEC:** no

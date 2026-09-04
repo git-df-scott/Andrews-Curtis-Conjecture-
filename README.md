@@ -16,6 +16,10 @@ trivial group under Andrews-Curtis (AC) moves:
 - `acsearch.candidates` - Akbulut-Kirby AK(n), Miller-Schupp MS(n,w), the
   classical two- and three-generator candidates, and the six length-14
   Miller-Schupp presentations that resisted greedy search
+- `acsearch.hyperbolic` - exact `C'(1/6)` certificates and a Dehn word-problem
+  reducer for the two fixed infinite hyperbolic laboratory groups
+- `acsearch.invariant_audit` - bounded move-level controls and frozen
+  counterexamples for quantities that fail AC invariance
 
 Run the tests with `python3 -m pytest tests`.
 
@@ -30,5 +34,16 @@ documents are:
 - [`CANDIDATE_LEDGER.md`](CANDIDATE_LEDGER.md) — exact candidate routing
 - [`ATTACK_MATRIX.md`](ATTACK_MATRIX.md) — ranked invariant-first attacks
 - [`ASTRA_HANDOFF.md`](ASTRA_HANDOFF.md) — bounded high-compute handoff and CE/CEC criteria
+- [`HYPERBOLIC_QUOTIENTS.md`](HYPERBOLIC_QUOTIENTS.md) — exact quotient action,
+  finite blindness, concrete target families, and YELLOW verdict
+- [`INVARIANT_CANDIDATES.md`](INVARIANT_CANDIDATES.md) — the surviving orbit
+  object and theorem gates for a computable factor
+- [`INVARIANT_GRAVEYARD.md`](INVARIANT_GRAVEYARD.md) — elementary-move
+  counterexamples for rejected geometric/algebraic quantities
+- [`CONTROL_RESULTS.md`](CONTROL_RESULTS.md) — bounded replay and
+  small-cancellation validation
+- [`AK_RESULTS.md`](AK_RESULTS.md) — frontier outputs after the invariant gate
+- [`PEIFFER_FALLBACK.md`](PEIFFER_FALLBACK.md) — crossed-module collapse and
+  the smallest justified based experiment
 
 Search failure is never treated as evidence of non-equivalence.

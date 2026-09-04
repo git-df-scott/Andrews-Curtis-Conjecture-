@@ -32,8 +32,9 @@ Relator permutation and cyclic rotation are harmless only because each is realiz
 | Sliced Quinn-model / Kaden state sums | **KNOWN BUT INCOMPLETE** | Kaden identifies a missing local slicing relation; satisfying a subset is not enough | a fully 3-deformation invariant is stable and may target stable rather than unstable ACC | do not compute candidates until every movie relation, including change-of-slicing, is verified |
 | 4-thickening / handlebody quantum invariants | **KNOWN BUT INCOMPLETE** | normally invariant for a **chosen** thickening or trace; presentation-level independence and AC correspondence are separate obligations | many constructions normalize away handle stabilization | use the spectrum over all admissible thickenings or prove a canonical choice; raw single-thickening values are not ACC invariants |
 | Thickenability | **COMPUTATIONALLY POSSIBLE** positive-pruning property | no presentation-level AC invariance is needed for the implication “this presentation is thickenable” | Lackenby's stable theorem applies; his Theorem 1.3 is already unstable | positive result proves AC-triviality; negative result is not a CE and not a separating invariant |
-| AC orbit in a computable infinite non-soluble quotient | **COMPUTATIONALLY POSSIBLE** | exact by functoriality: a free-group AC path maps to the target AC path | rank-specific orbit invariants need not survive adding a trivial coordinate | finite/soluble no-go theorems do not cover non-elementary hyperbolic or suitable infinite simple targets; needs a terminating orbit separator, not bounded BFS |
-| Full rank-sensitive crossed-module / Peiffer invariant | **GENUINELY UNEXPLORED** for these candidates | must construct functorial maps for all three elementary moves and prove inverse laws | deliberately retain the free 1/2-cell basis so adding a cancelling pair changes the object | avoids reduction to the contractible homotopy type, but proof burden is high |
+| Exact AC orbit in a computable infinite non-soluble quotient | **KNOWN BUT INCOMPLETE — YELLOW** | exact by functoriality: a free-group AC path maps to the target AC path | rank-specific components can merge after adding a trivial coordinate | the exact component is valid but not yet a computable separator; no general hyperbolic connectivity theorem kills it, and no terminating orbit algorithm was found |
+| Unbased fundamental crossed module / Peiffer identities | **PROVABLY INCAPABLE** here | presentation moves induce crossed-module isomorphisms | homotopy-level object is stable | the balanced trivial-group presentation complex is contractible, so the boundary crossed module has zero kernel and trivial cokernel and is isomorphic to the free group |
+| Based rank-sensitive crossed-module / Peiffer filtration | **KNOWN BUT INCOMPLETE** | must construct functorial basis maps for all three elementary moves and prove inverse laws | retain the free 1/2-cell basis so adding a cancelling pair remains visible | retaining the full basis restates the AC orbit; only a nonstable computable quotient with a nonfactorization theorem could help |
 | Non-semisimple sliced-2-complex state sum with noninvertible bubble operator | **GENUINELY UNEXPLORED** at this frontier | verify the complete Kaden/Quinn movie presentation symbolically first | can be designed to record, rather than normalize, the stabilization operator | evades the semisimple homology-collapse theorem; no separator exists yet |
 | AC-invariant substitution **groupoid spectrum** | **GENUINELY UNEXPLORED** | raw `u`-substitution groups fail well-definedness; use all decompositions and prove AC moves induce equivalences | likely rank-sensitive if objects remember the basis | McDermott's 2026 counterexamples to naive invariance define the gate, not a finished invariant |
 
@@ -69,6 +70,13 @@ An infinite target `G` is eligible only if all of the following are supplied:
 
 Torsion-free non-elementary hyperbolic groups are a live laboratory: Gilman–Myasnikov prove faithfulness of the full AC transformation action on every nontrivial orbit. Faithfulness is useful structure but **does not itself decide whether two tuples share an orbit**.
 
+The focused strike in [HYPERBOLIC_QUOTIENTS.md](HYPERBOLIC_QUOTIENTS.md)
+strengthens this warning. Ordinary Nielsen equivalence is not the needed
+relation: independent AC conjugation can change the ordinarily generated
+subgroup, and uniform Nielsen equivalence is undecidable even across
+torsion-free hyperbolic/small-cancellation inputs. Exact move witnesses are in
+[INVARIANT_GRAVEYARD.md](INVARIANT_GRAVEYARD.md).
+
 ## Source ledger
 
 - Borovik–Lubotzky–Myasnikov, [The Finitary Andrews–Curtis Conjecture](https://arxiv.org/abs/1103.1295).
@@ -78,4 +86,5 @@ Torsion-free non-elementary hyperbolic groups are a live laboratory: Gilman–My
 - Kaden, [Considerations about Andrews–Curtis invariants based on sliced 2-complexes](https://arxiv.org/abs/1012.2228).
 - Quinn, [Representation theory, topological field theory, and the Andrews–Curtis conjecture](https://arxiv.org/abs/hep-th/9202044).
 - Gilman–Myasnikov, [Andrews–Curtis groups](https://arxiv.org/abs/2506.23031).
+- Kapovich–Weidmann, [Nielsen equivalence in small cancellation groups](https://arxiv.org/abs/1011.5862).
 - McDermott, [On u-substitutions for group presentations](https://arxiv.org/abs/2608.18929).

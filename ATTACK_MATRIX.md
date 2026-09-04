@@ -2,12 +2,20 @@
 
 No attack below earns candidate compute until its “AC gate” is proved. Costs are for the first theorem-bearing prototype, not an open-ended run.
 
+## Hyperbolic-strike disposition
+
+The focused audit leaves the hyperbolic route **YELLOW**. Its exact orbit is a
+valid invariant, but no nonconstant computable factor is known. The old generic
+hyperbolic prototype is replaced by the fixed `SC-AC-PEAK-1` experiment in
+`ASTRA_HANDOFF.md`. The unbased crossed-module lane is now structurally closed;
+only a based degree-at-most-3 nonfactorization gate remains.
+
 ## Ranked matrix
 
 | Rank | Attack | Why it might separate | Why no-go results do not kill it | Stabilization behavior | Exact computation | Positive result | Negative result | First-gate cost |
 |---:|---|---|---|---|---|---|---|---|
-| **1** | Infinite non-soluble hyperbolic-quotient orbit invariant | rank-2 tuple orbits can contain geometric/dynamical information absent from abelianization | finitary, `MN`, and soluble theorems do not cover non-elementary torsion-free hyperbolic targets; Gilman–Myasnikov show the AC action is faithful on nontrivial orbits | keep `G^2` rank-specific; do not pass to a stable direct limit | choose explicit automatic hyperbolic `G` and maps `F2->G`; compute exact normal forms, normal generation, and a *complete* orbit invariant/decision procedure (e.g. certified canonical JSJ/boundary/current data); prove all three AC moves preserve it | different values give a rigorous ACC counterexample | equality rules out that target/invariant only; use it to prune a target class | 1–4 CPU-weeks plus proof work; prototype controls in 10–100 CPU-hours |
-| **2** | Based crossed-module / Peiffer orbit invariant | retains identities among relators and the chosen 1/2-cell basis even though the presentation complex is contractible | ordinary homotopy and stable module no-go results discard precisely this based higher data | adjoining `<z|z>` must add a visible generator-relation pair, not a zero/stable summand | construct finite truncations of the free crossed module; derive explicit maps for inversion, multiplication and conjugation; quotient only by proved Peiffer relations; canonicalize rank-2 objects and compare controls/candidates | unequal exact based objects, plus the naturality theorem, certify non-AC | collapse at truncation `d` sets a lower bound on useful depth and may prove a whole family of module invariants blind | symbolic prototype 1–3 CPU-days; deep truncations 1–4 CPU-weeks and heavy RAM |
+| **1** | `SC-AC-PEAK-1` in fixed `H_SC` | a global `C'(1/6)` peak-reduction theorem could compress exact rank-2 AC components without finite images | finitary, `MN`, and soluble theorems do not cover this perfect non-elementary torsion-free hyperbolic target; AC faithfulness does not imply transitivity | keep `H_SC^2` rank-specific; do not pass to a stable direct limit | prove termination plus confluence or a finite plateau theorem for exact Dehn-geodesic pair rewrites, including arbitrary independent conjugation; then run controls | different canonical labels give a rigorous quotient obstruction | equality closes this target/label; nonfinite peak types kill the scheme, not ACC | hard cap 96 CPU-hours / 32 GiB for the theorem prototype; no frontier evaluation before proof |
+| **2** | Based crossed-module / Peiffer degree-3 gate | a nonstable based filtration might retain 2-cell-basis information | only the **unbased** crossed module is now proved to collapse; a based nonfactorizing quotient is not ruled out | adjoining `<z|z>` must remain visible | derive all three basis maps symbolically and first test factorization through boundary/Fox/nilpotent/stable data | a nonfactorizing exact functor earns controls, not yet a CE | factorization or one failed move closes degree 3; do not auto-increase depth | 1–3 CPU-days, bounded |
 | **3** | Non-semisimple sliced-2-complex state sum | noninvertible/nilpotent sectors may retain 2-deformation data that semisimple theories collapse to homology | Bobtcheva–Quinn's impossibility result assumes the semisimple setting; Kaden identifies the full local-relation issue rather than proving all theories trivial | record the bubble/stabilization operator; do not normalize it to the identity; rank-2 value may vanish after stabilization | implement the complete Quinn/Kaden movie generators and relations; use exact tensors over a number field/finite characteristic as algebra (not a finite group quotient); mechanically verify every movie relation before evaluating five controls | differing exact values after all relations give a CE certificate | equality for a theory closes that theory; failure of a movie relation rejects the theory before candidate use | relation gate 10–500 CPU-hours; candidate tensor contraction potentially GPU-days |
 | 4 | Algebraic-specialization no-go theorem | does not directly separate, but can eliminate enormous families of futile trace/character/determinant attacks | it extends rather than conflicts with the finite-quotient theorem; analytic, nonalgebraic, or non-specializable objects may escape | classify whether stabilization commutes with specialization | formalize: an AC-invariant difference over a finitely generated ring that persists under some maximal-ideal specialization induces forbidden finite-image separation; check hypotheses for proposed representation schemes using Gröbner/elimination certificates | a proof prunes a broad class and isolates exact loopholes | a failed hypothesis identifies the non-specializable feature Astra should exploit | 20–100 CPU-hours plus algebraic proof |
 | 5 | Spectrum of all admissible 4-thickenings with Floer/gauge labels | a set-valued spectrum removes the arbitrary choice of one thickening while retaining boundary/framing information | known reductions concern chosen thickenings or semisimple invariants; a presentation-level spectrum with non-semisimple labels is not covered | keep handle number and cancelling-pair action explicit; do not stable-normalize connected sums | enumerate rotation systems/framing data for rank-2 complexes; prove AC moves biject spectra; compute exact boundary 3-manifolds and certified Floer/correction-term packages | disjoint spectra certify non-AC | overlapping spectra close only the chosen label; enumeration blow-up quantifies infeasibility | high/extreme: weeks to months; proof gate before Floer compute |
@@ -29,19 +37,27 @@ A mismatch on step 2 or 3 is an implementation/theorem failure, not a discovery.
 
 ## Astra top three
 
-### 1. Hyperbolic-quotient orbit invariants
+### 1. `SC-AC-PEAK-1`
 
-Best balance of relevance and formal cleanliness. Functoriality supplies elementary AC invariance at the orbit level, word and conjugacy problems are decidable, and recent work supplies nontrivial action structure. The missing theorem is a computable complete-enough orbit obstruction.
+Run the exact theorem-gated peak-reduction experiment in the fixed perfect
+torsion-free `C'(1/6)` target. This is the most direct attempt to construct the
+missing computable factor of the true quotient AC orbit.
 
-### 2. Based crossed modules
+### 2. Bass–Serre classifier in `C2*C3`
 
-Best algebraic route to genuinely unstable information. It explicitly refuses the stable module quotient that makes familiar invariants blind. Begin by proving the move functor on a tiny nilpotent/degree truncation and run the Carreras stepwise gate.
+Use exact virtually-free normal forms to seek a terminating complete AC
+classifier for normally generating pairs. It is a cheaper calibration and a
+possible separator in its own right; transitivity would close only this target.
 
-### 3. Non-semisimple sliced state sums
+### 3. Orbifold classifier in `Delta(2,3,7)`
 
-Best topological route. The semisimple family is dead, but the precise Kaden movie-relation list gives a concrete proof harness. Candidate tensors come only after that harness is green.
+Exploit the perfect hyperbolic triangle group and its orbifold normal forms.
+Torsion requires fresh move proofs, and ordinary generating-pair Nielsen results
+cannot be substituted for normally generating AC classes.
 
-The specialization no-go project should run as a cheap preflight alongside attacks 1–3: its purpose is to kill attractive but doomed linear variants before they consume Astra time.
+The based Peiffer degree-3 test is fallback only. Non-semisimple sliced state
+sums remain an independent longer-term avenue, not one of the top three for this
+hyperbolic strike.
 
 ## Hard stop conditions
 

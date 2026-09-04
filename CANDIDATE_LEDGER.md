@@ -6,10 +6,10 @@ This ledger separates mathematical status, public certificates, and search label
 
 | Priority | ID | Defining relators in repository convention | Length | Mathematical class | Public positive certificate | Next theorem-bearing test |
 |---:|---|---|---:|---|---|---|
-| 1 | `AK3` | `x^3 y^-4`, `x y x y^-1 x^-1 y^-1` | 13 | open; unique minimal potential CE | none to standard; receives Carreras certificates from `P3`,`P4` | decide thickenability; then infinite non-soluble rank-2 orbit invariants |
+| 1 | `AK3` | `x^3 y^-4`, `x y x y^-1 x^-1 y^-1` | 13 | open; unique minimal potential CE | none to standard; receives Carreras certificates from `P3`,`P4` | do not evaluate in `H_SC` until `SC-AC-PEAK-1` proves a total AC-invariant label; thickenability remains independent positive pruning |
 | 2 | `C1/P1` | `MS(2,x^-2 y^-1 x^2 y)`; classical Solitar `P1` up to rotation | 14 | block open; uncertified claimed link to `AK3` | `P1~P6`, 36 packaged / 58 classical | recover/prove `P1~AK3` or compare invariant on `C1` versus `AK3` |
 | 3 | `C2/P2` | `MS(2,x^-2 y^-1 x^2 y^-1)` | 14 | block open; uncertified claimed link to `AK3` | `P5~P2`, 85 / 155 | recover/prove `P2~AK3` or compare invariant on `C2` versus `AK3` |
-| 4 | `AK4` | `x^4 y^-5`, `x y x y^-1 x^-1 y^-1` | 15 | open; no reduction from current family theorem | none | same invariant suite after rank-2 method is proved |
+| 4 | `AK4` | `x^4 y^-5`, `x y x y^-1 x^-1 y^-1` | 15 | open; no reduction from current family theorem | none | only after the same proved rank-2 invariant passes all controls and `AK3` |
 
 `P3=MS(3,y x^2 y)` and `P4=MS(3,y^-1 x^2 y^-1)` are not independent candidates: their public certificates put them in the `AK3` block.
 
@@ -25,6 +25,14 @@ This ledger separates mathematical status, public certificates, and search label
 | `P6` | `MS(2,y x^2 y^-1 x^-2)` | holdout | `~P1` certified; therefore belongs to an open MS(2) block |
 
 The names “holdout” and “GS-unsolved” record a campaign history, not distinct mathematical AC components.
+
+## Hyperbolic-quotient gate
+
+For every object above and every epimorphism `q:F2->>H`, the image relators
+normally generate `H` and have the same abelian AC class as the basis image.
+The exact hyperbolic AC-component comparison is currently `UNKNOWN`; no
+candidate-specific geometric number has invariant status. Thus the YELLOW
+hyperbolic audit changes routing, not mathematical status.
 
 ## Miller–Schupp routing rules
 

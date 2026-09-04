@@ -14,6 +14,32 @@
 
 The canonical object table is in [FRONTIER_2026.md](FRONTIER_2026.md). The proof obligations for any invariant are in [INVARIANT_LEDGER.md](INVARIANT_LEDGER.md), and the compute program is in [ATTACK_MATRIX.md](ATTACK_MATRIX.md).
 
+## Hyperbolic-quotient strike update
+
+- **Verdict:** **YELLOW**. Infinite torsion-free hyperbolic quotients escape the
+  finite blindness theorem, but no nonconstant computable AC-orbit label for
+  normally generating pairs survived this session.
+- **Strongest survivor:** the exact component `[q(R)]` in `Delta_2(H)`. It is
+  rigorously invariant and rank-sensitive, but equality is only semidecidable
+  by path enumeration and no exact inequality procedure is known for the fixed
+  targets.
+- **Best fixed target:** `H_SC`, a repository-certified perfect torsion-free
+  non-elementary `C'(1/6)` group on two generators and two length-61 relators.
+- **Failed before candidates:** raw Nielsen/Whitehead class, generated-subgroup
+  geometry, word/translation length, axes/boundary data, centralizer
+  configurations, commutator class, scl/bounded-cohomology evaluations,
+  marked representation values, and bounded orbit balls.
+- **Frontier computation:** none, because no nonconstant computable invariant
+  passed the move theorem. `AK(3)`, both unresolved length-14 MS(2) blocks, and
+  `AK(4)` all retain their prior status.
+- **Peiffer fallback:** the unbased free crossed module collapses for a
+  contractible balanced trivial-group presentation. A based version retains
+  the relator tuple and risks merely restating the original orbit problem.
+
+See [HYPERBOLIC_QUOTIENTS.md](HYPERBOLIC_QUOTIENTS.md),
+[INVARIANT_GRAVEYARD.md](INVARIANT_GRAVEYARD.md), and the current
+[ASTRA_HANDOFF.md](ASTRA_HANDOFF.md).
+
 ## What this audit changed
 
 1. It narrows Carreras's result correctly: the result certifies four equivalences inside the named six-case Miller–Schupp benchmark, not all balanced presentations of length 14.
@@ -51,6 +77,7 @@ The bounded calibration run checked:
 | `AK(2)`–`AK(5)` Todd–Coxeter order | 1 | independent finite coset enumeration terminates with the trivial group for these controls |
 | Six length-14 MS cases, order | 1 | each named benchmark passes the same positive group-order check |
 | Known `AK(2)` greedy attempt | no path in small cap | **no mathematical inference**; Havas–Ramsay's known optimum requires 14 essential moves and peak total length 15 |
+| Hyperbolic feasibility tests | 16 tests pass | exact small-cancellation certificates, Dehn word controls, 384 legal control moves, inverse replay, and failed-invariant witnesses; no frontier search |
 
 Todd–Coxeter termination at order one is a useful positive group check, not a general decision procedure for triviality. The literature supplies the actual family-level trivial-group arguments.
 
@@ -85,6 +112,6 @@ No open-ended `AK(3)` search, exhaustive length census, RL training, million-sta
 - **CE:** no
 - **CEC:** no
 - **Smallest genuinely unresolved objects:** `AK(3)` at length 13; at length 14, the certified `AK(3)/MS(3)` block and the two still-unjoined `MS(2)` blocks; then `AK(4)` at length 15.
-- **Strongest remaining invariant avenue:** a rank-sensitive orbit invariant in a computable infinite non-soluble quotient, with an exact proof of invariance and a terminating orbit-separation theorem.
-- **Three best Astra attacks:** infinite hyperbolic-quotient orbit invariants; unstable crossed-module/Peiffer invariants; non-semisimple sliced-2-complex state sums.
+- **Strongest remaining invariant avenue:** a computable nonconstant factor of the exact rank-2 AC component relation in the fixed perfect torsion-free hyperbolic target `H_SC`.
+- **Three best Astra attacks:** (1) `SC-AC-PEAK-1`, the theorem-gated `H_SC` peak-reduction experiment; (2) an exact Bass–Serre AC classifier in `C2*C3` as a calibration/possible separator; (3) the degree-at-most-3 based Peiffer nonfactorization gate.
 - **Do not repeat:** finite quotients; abelian/nilpotent/soluble representations; semisimple Quinn invariants; unproved neural scores; raw Fox/trace/determinant differences; raw substitution groups; bounded-search noncontact; exhaustive short censuses; or any overnight direct search for `AK(3)`.
