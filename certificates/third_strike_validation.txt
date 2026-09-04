@@ -1,0 +1,32 @@
+Third strike validation, 2026-09-04
+Base: ecaa80a263ce4ec739a953d1be0a69bdeafffb6c
+$ python -m pytest -q
+66 passed in 28.75s; exit=0
+Includes complete independent third-strike graph/control checker.
+$ python -m acsearch.hsc_mixed
+{"AK3": {"cyclic_heights": {"13": 2, "15": 24}, "directed_edges": 76, "normalized_multiplications": 168, "ordered_heights": {"13": 672, "15": 13056}, "ordered_vertices": 13728, "signed_cyclic_vertices": 26, "vertices": 26}, "runtime_seconds": 24.289990572000534, "standard": {"cyclic_heights": {"2": 1, "3": 4, "4": 4, "5": 8, "6": 12, "7": 60, "8": 100, "9": 360, "10": 608, "11": 2540, "12": 4392, "13": 18036, "14": 31168, "15": 128420}, "directed_edges": 210008, "normalized_multiplications": 940574, "ordered_heights": {"2": 8, "3": 64, "4": 128, "5": 576, "6": 992, "7": 6016, "8": 10560, "9": 56512, "10": 95936, "11": 535680, "12": 901088, "13": 4974656, "14": 8114688, "15": 43790720}, "ordered_vertices": 58487624, "signed_cyclic_vertices": 185713, "vertices": 23774}}
+Reproduced both frozen graph files byte-for-byte: PASS
+Producer wrapper runtime_seconds: 24.863699
+{"astra_third_strike.json": "ff01205f64f0c22492d232270f0ba45032b71210010777b51c6d46d9ac814dff", "hsc_standard_height15.json.gz": "49af709facd0bd3ddcb341cef0422ba5cedf17320a0ec405c3d053900d8c28d6"}
+$ sha256sum -c certificates/SHA256SUMS
+certificates/astra_first_strike.json: OK
+acsearch/first_strike.py: OK
+scripts/check_first_strike.py: OK
+tests/test_first_strike.py: OK
+certificates/first_strike_validation.txt: OK
+exit=0
+$ sha256sum -c certificates/SECOND_STRIKE_SHA256SUMS
+ASTRA_SECOND_STRIKE.md: OK
+SC_AC_SHORTEN_2.md: OK
+HSC_PEAK_LEMMA.md: OK
+acsearch/hsc_shortening.py: OK
+scripts/check_second_strike.py: OK
+tests/test_second_strike.py: OK
+certificates/astra_second_strike.json: OK
+certificates/second_strike_validation.txt: OK
+ASTRA_HANDOFF.md: OK
+OPEN_LANES.md: OK
+CLOSED_LANES.md: OK
+QUOTIENT_LEDGER.md: OK
+STATUS.md: OK
+exit=0

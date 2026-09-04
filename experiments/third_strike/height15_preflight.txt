@@ -1,0 +1,30 @@
+Height-15 completeness preflight (before graph enumeration)
+1. Inherited radius-30 unique geodesics and cyclic-core conjugacy below15.
+2. In any nonempty pair of sum<=15 both lengths<=14. All conjugations there
+   have exactly free conjugacy classes. Multiplication starts with total<=15
+   so its literal free product is a geodesic. Identity coordinates cannot
+   first occur from a free normally generating pair. Hence paths from AK3
+   or standard confined here lift to free AC paths with the same heights.
+3. Collapse independent free conjugacy, inversion and interchange to signed
+   cyclic pair classes. Each fiber is connected without exceeding15.
+4. For a multiplication (u,v)->(uv,v), write the retained word v=q b q^-1
+   freely with b cyclic and |v|=|b|+2|q|. Simultaneous conjugation by q^-1
+   gives (q^-1 u q,b)->(q^-1 uv q,b). Both sums are no larger, since each
+   changed first entry grows by at most2|q| and the retained entry shrinks
+   by exactly2|q|. This algebraic edge is a substitute between fibers;
+   we DO NOT assert the simultaneous-conjugation path itself stays bounded.
+5. Now q^-1u q=p a p^-1 freely for a cyclic rotation of the source cyclic
+   word. Thus |p|<=(15-|a|-|b|)/2. Enumerate every such p and rotations/signs
+   of a,b; keep exactly actual products with |p a p^-1 b|+|b|<=15.
+   Fiber-to-normalized-input and output-to-fiber paths use independent
+   conjugations between bounded endpoints, so every accepted edge is sound.
+   Steps4-5 prove every actual bounded edge is represented. Permutations
+   and inversions supply both targets/signs and height-preserving left moves.
+6. This decides only the complete induced sublevel graph, NOT full AC orbits.
+7. For the STANDARD component only, signed permutations of the FREE generators
+   act on this bounded graph, which has been proved identical to the free
+   graph on reachable pairs. They fix the standard signed cyclic vertex.
+   The standard component can be computed modulo this order-eight action,
+   then expanded by all eight maps. Any quotient-graph path lifts through
+   graph automorphisms because its root is fixed. This is NOT a claim these
+   maps are automorphisms of H_SC outside this shell, or AC moves on a vertex.

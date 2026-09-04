@@ -1,0 +1,780 @@
+{
+  "AK3": {
+    "counts": {
+      "cyclic_heights": {
+        "13": 2,
+        "15": 24
+      },
+      "directed_edges": 76,
+      "normalized_multiplications": 168,
+      "ordered_heights": {
+        "13": 672,
+        "15": 13056
+      },
+      "ordered_vertices": 13728,
+      "signed_cyclic_vertices": 26,
+      "vertices": 26
+    },
+    "generator_symmetry": false,
+    "nodes": [
+      [
+        [
+          "YYYYXyyyx",
+          "YXYxyx"
+        ],
+        [
+          3,
+          4
+        ],
+        4
+      ],
+      [
+        [
+          "YYYYxxx",
+          "YXYxyx"
+        ],
+        [
+          5,
+          7
+        ],
+        8
+      ],
+      [
+        [
+          "YYYYxyyyX",
+          "YXYxyx"
+        ],
+        [
+          8,
+          9
+        ],
+        4
+      ],
+      [
+        [
+          "YYYXyyXyx",
+          "YXYxyx"
+        ],
+        [
+          0,
+          10,
+          11
+        ],
+        6
+      ],
+      [
+        [
+          "YYYxYXyyx",
+          "YXYxyx"
+        ],
+        [
+          0,
+          5,
+          11
+        ],
+        6
+      ],
+      [
+        [
+          "YYYxxYXyx",
+          "YXYxyx"
+        ],
+        [
+          1,
+          4,
+          12
+        ],
+        8
+      ],
+      [
+        [
+          "YYYxxxx",
+          "YXYxyx"
+        ],
+        [
+          14,
+          15
+        ],
+        8
+      ],
+      [
+        [
+          "YYYxyXYxx",
+          "YXYxyx"
+        ],
+        [
+          1,
+          9,
+          16
+        ],
+        8
+      ],
+      [
+        [
+          "YYYxyXyyX",
+          "YXYxyx"
+        ],
+        [
+          2,
+          13,
+          17
+        ],
+        6
+      ],
+      [
+        [
+          "YYYxyyXYx",
+          "YXYxyx"
+        ],
+        [
+          2,
+          7,
+          17
+        ],
+        6
+      ],
+      [
+        [
+          "YYXyyXXyx",
+          "YXYxyx"
+        ],
+        [
+          3,
+          15,
+          23
+        ],
+        6
+      ],
+      [
+        [
+          "YYxYXyXyx",
+          "YXYxyx"
+        ],
+        [
+          3,
+          4,
+          12,
+          23
+        ],
+        8
+      ],
+      [
+        [
+          "YYxxYXXyx",
+          "YXYxyx"
+        ],
+        [
+          5,
+          11,
+          19
+        ],
+        6
+      ],
+      [
+        [
+          "YYxxYXyyx",
+          "YXYxyx"
+        ],
+        [
+          8,
+          14,
+          25
+        ],
+        6
+      ],
+      [
+        [
+          "YYxxxYXyx",
+          "YXYxyx"
+        ],
+        [
+          6,
+          13,
+          21
+        ],
+        8
+      ],
+      [
+        [
+          "YYxyXYxxx",
+          "YXYxyx"
+        ],
+        [
+          6,
+          10,
+          22
+        ],
+        8
+      ],
+      [
+        [
+          "YYxyXXYxx",
+          "YXYxyx"
+        ],
+        [
+          7,
+          17,
+          24
+        ],
+        6
+      ],
+      [
+        [
+          "YYxyXyXYx",
+          "YXYxyx"
+        ],
+        [
+          8,
+          9,
+          16,
+          25
+        ],
+        8
+      ],
+      [
+        [
+          "YXYxyx",
+          "YXXXXyxxx"
+        ],
+        [
+          19,
+          22
+        ],
+        4
+      ],
+      [
+        [
+          "YXYxyx",
+          "YXXXyxYxx"
+        ],
+        [
+          12,
+          18,
+          23
+        ],
+        6
+      ],
+      [
+        [
+          "YXYxyx",
+          "YXXXyxxxx"
+        ],
+        [
+          21,
+          24
+        ],
+        4
+      ],
+      [
+        [
+          "YXYxyx",
+          "YXXyxYxxx"
+        ],
+        [
+          14,
+          20,
+          25
+        ],
+        6
+      ],
+      [
+        [
+          "YXYxyx",
+          "YXyXXXyxx"
+        ],
+        [
+          15,
+          18,
+          23
+        ],
+        6
+      ],
+      [
+        [
+          "YXYxyx",
+          "YXyXXyxYx"
+        ],
+        [
+          10,
+          11,
+          19,
+          22
+        ],
+        8
+      ],
+      [
+        [
+          "YXYxyx",
+          "YXyXXyxxx"
+        ],
+        [
+          16,
+          20,
+          25
+        ],
+        6
+      ],
+      [
+        [
+          "YXYxyx",
+          "YXyXyxYxx"
+        ],
+        [
+          13,
+          17,
+          21,
+          24
+        ],
+        8
+      ]
+    ],
+    "root": 1,
+    "scope": "COMPLETE_HEIGHT_15_SUBLEVEL_ONLY"
+  },
+  "AK3_boundary": {
+    "escape_heights": {
+      "16": 24,
+      "17": 376,
+      "18": 288,
+      "19": 1256,
+      "20": 576,
+      "21": 4392,
+      "22": 1416,
+      "24": 3888
+    },
+    "first_exit_height": 16,
+    "normalized_candidates": 12384,
+    "normalized_height16_exits": [
+      {
+        "after": [
+          "YXyxYYYxx",
+          "xYYYYxx"
+        ],
+        "before": [
+          "YXyxyX",
+          "xYYYYxx"
+        ],
+        "source_fiber": [
+          "YYYYxxx",
+          "YXYxyx"
+        ]
+      },
+      {
+        "after": [
+          "YxyXYxxYY",
+          "YYxxxYY"
+        ],
+        "before": [
+          "YxyXYXyy",
+          "YYxxxYY"
+        ],
+        "source_fiber": [
+          "YYYYxxx",
+          "YXYxyx"
+        ]
+      },
+      {
+        "after": [
+          "XYxyXXyyy",
+          "yXXXyyy"
+        ],
+        "before": [
+          "XYxyxY",
+          "yXXXyyy"
+        ],
+        "source_fiber": [
+          "YYYYxxx",
+          "YXYxyx"
+        ]
+      },
+      {
+        "after": [
+          "XyxYXyyyX",
+          "XXyyyyX"
+        ],
+        "before": [
+          "XyxYXYxx",
+          "XXyyyyX"
+        ],
+        "source_fiber": [
+          "YYYYxxx",
+          "YXYxyx"
+        ]
+      },
+      {
+        "after": [
+          "xYXyxYYYx",
+          "xxYYYYx"
+        ],
+        "before": [
+          "xYXyxyXX",
+          "xxYYYYx"
+        ],
+        "source_fiber": [
+          "YYYYxxx",
+          "YXYxyx"
+        ]
+      },
+      {
+        "after": [
+          "xyXYxxYYY",
+          "YxxxYYY"
+        ],
+        "before": [
+          "xyXYXy",
+          "YxxxYYY"
+        ],
+        "source_fiber": [
+          "YYYYxxx",
+          "YXYxyx"
+        ]
+      },
+      {
+        "after": [
+          "yXYxyXXyy",
+          "yyXXXyy"
+        ],
+        "before": [
+          "yXYxyxYY",
+          "yyXXXyy"
+        ],
+        "source_fiber": [
+          "YYYYxxx",
+          "YXYxyx"
+        ]
+      },
+      {
+        "after": [
+          "yxYXyyyXX",
+          "XyyyyXX"
+        ],
+        "before": [
+          "yxYXYx",
+          "XyyyyXX"
+        ],
+        "source_fiber": [
+          "YYYYxxx",
+          "YXYxyx"
+        ]
+      },
+      {
+        "after": [
+          "xYYYYxx",
+          "YXyxYYYxx"
+        ],
+        "before": [
+          "xYXYxy",
+          "YXyxYYYxx"
+        ],
+        "source_fiber": [
+          "YYYxxYXyx",
+          "YXYxyx"
+        ]
+      },
+      {
+        "after": [
+          "yXXXyyy",
+          "XYxyXXyyy"
+        ],
+        "before": [
+          "yXYXyx",
+          "XYxyXXyyy"
+        ],
+        "source_fiber": [
+          "YYYxxYXyx",
+          "YXYxyx"
+        ]
+      },
+      {
+        "after": [
+          "YXyxYYxxx",
+          "xYYYxxx"
+        ],
+        "before": [
+          "YXyxyX",
+          "xYYYxxx"
+        ],
+        "source_fiber": [
+          "YYYxxxx",
+          "YXYxyx"
+        ]
+      },
+      {
+        "after": [
+          "YxyXYxxxY",
+          "YYxxxxY"
+        ],
+        "before": [
+          "YxyXYXyy",
+          "YYxxxxY"
+        ],
+        "source_fiber": [
+          "YYYxxxx",
+          "YXYxyx"
+        ]
+      },
+      {
+        "after": [
+          "XYxyXXXyy",
+          "yXXXXyy"
+        ],
+        "before": [
+          "XYxyxY",
+          "yXXXXyy"
+        ],
+        "source_fiber": [
+          "YYYxxxx",
+          "YXYxyx"
+        ]
+      },
+      {
+        "after": [
+          "XyxYXyyXX",
+          "XXyyyXX"
+        ],
+        "before": [
+          "XyxYXYxx",
+          "XXyyyXX"
+        ],
+        "source_fiber": [
+          "YYYxxxx",
+          "YXYxyx"
+        ]
+      },
+      {
+        "after": [
+          "xYXyxYYxx",
+          "xxYYYxx"
+        ],
+        "before": [
+          "xYXyxyXX",
+          "xxYYYxx"
+        ],
+        "source_fiber": [
+          "YYYxxxx",
+          "YXYxyx"
+        ]
+      },
+      {
+        "after": [
+          "xyXYxxxYY",
+          "YxxxxYY"
+        ],
+        "before": [
+          "xyXYXy",
+          "YxxxxYY"
+        ],
+        "source_fiber": [
+          "YYYxxxx",
+          "YXYxyx"
+        ]
+      },
+      {
+        "after": [
+          "yXYxyXXXy",
+          "yyXXXXy"
+        ],
+        "before": [
+          "yXYxyxYY",
+          "yyXXXXy"
+        ],
+        "source_fiber": [
+          "YYYxxxx",
+          "YXYxyx"
+        ]
+      },
+      {
+        "after": [
+          "yxYXyyXXX",
+          "XyyyXXX"
+        ],
+        "before": [
+          "yxYXYx",
+          "XyyyXXX"
+        ],
+        "source_fiber": [
+          "YYYxxxx",
+          "YXYxyx"
+        ]
+      },
+      {
+        "after": [
+          "YxxxYYY",
+          "xyXYxxYYY"
+        ],
+        "before": [
+          "YxyxYX",
+          "xyXYxxYYY"
+        ],
+        "source_fiber": [
+          "YYYxyXYxx",
+          "YXYxyx"
+        ]
+      },
+      {
+        "after": [
+          "XyyyyXX",
+          "yxYXyyyXX"
+        ],
+        "before": [
+          "XyxyXY",
+          "yxYXyyyXX"
+        ],
+        "source_fiber": [
+          "YYYxyXYxx",
+          "YXYxyx"
+        ]
+      },
+      {
+        "after": [
+          "xYYYxxx",
+          "YXyxYYxxx"
+        ],
+        "before": [
+          "xYXYxy",
+          "YXyxYYxxx"
+        ],
+        "source_fiber": [
+          "YYxxxYXyx",
+          "YXYxyx"
+        ]
+      },
+      {
+        "after": [
+          "yXXXXyy",
+          "XYxyXXXyy"
+        ],
+        "before": [
+          "yXYXyx",
+          "XYxyXXXyy"
+        ],
+        "source_fiber": [
+          "YYxxxYXyx",
+          "YXYxyx"
+        ]
+      },
+      {
+        "after": [
+          "YxxxxYY",
+          "xyXYxxxYY"
+        ],
+        "before": [
+          "YxyxYX",
+          "xyXYxxxYY"
+        ],
+        "source_fiber": [
+          "YYxyXYxxx",
+          "YXYxyx"
+        ]
+      },
+      {
+        "after": [
+          "XyyyXXX",
+          "yxYXyyXXX"
+        ],
+        "before": [
+          "XyxyXY",
+          "yxYXyyXXX"
+        ],
+        "source_fiber": [
+          "YYxyXYxxx",
+          "YXYxyx"
+        ]
+      }
+    ],
+    "scope": "normalized M-edges; arbitrary C-escape predicate is specified in the proof"
+  },
+  "AK3_unconditional_height_lower_bound": 16,
+  "complete_unrestricted_orbit_enumeration": false,
+  "conjugator_bound": "4*L**2+4*L+8",
+  "first_strike_commit": "82fe261",
+  "free_lifting_height": 23,
+  "full_orbit_result": "UNKNOWN",
+  "global_height_bound": null,
+  "height_shell": 15,
+  "hidden_peak_counterexample": {
+    "cyclic_output": [
+      "yx",
+      "x"
+    ],
+    "failure": "testing only cyclic output length hides the multiplication peak",
+    "height_cap": 4,
+    "heights": [
+      4,
+      5,
+      3
+    ],
+    "input": [
+      "Xyx",
+      "x"
+    ],
+    "raw_output": [
+      "Xyxx",
+      "x"
+    ]
+  },
+  "one_cell_pants": {
+    "faces": 1,
+    "perimeter": 61,
+    "relator": "YYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyX",
+    "u": "YYYYYYYYXYYxyxxyXXyX",
+    "v": "yxyXXXyyyxYXyxyxYxYx",
+    "w": "xYXyxYxyyxyyXyXYxxYYY"
+  },
+  "schema": "acc-third-strike-v1",
+  "second_certificate_sha256": "d64cdf8862adcd7b5480f767ae5f86c202741102736e5065ac303985cd198dc3",
+  "second_strike_commit": "ecaa80a263ce4ec739a953d1be0a69bdeafffb6c",
+  "single_m_bounds_at_L15": {
+    "area": 93,
+    "boundary_perimeter": 30,
+    "cut_path": 11524,
+    "derived_height": 46126,
+    "edges": 2851,
+    "scope": "linked single-multiplication block ONLY; not a global peak bound",
+    "single_m_height": 48000
+  },
+  "standard": {
+    "counts": {
+      "cyclic_heights": {
+        "2": 1,
+        "3": 4,
+        "4": 4,
+        "5": 8,
+        "6": 12,
+        "7": 60,
+        "8": 100,
+        "9": 360,
+        "10": 608,
+        "11": 2540,
+        "12": 4392,
+        "13": 18036,
+        "14": 31168,
+        "15": 128420
+      },
+      "directed_edges": 210008,
+      "normalized_multiplications": 940574,
+      "ordered_heights": {
+        "2": 8,
+        "3": 64,
+        "4": 128,
+        "5": 576,
+        "6": 992,
+        "7": 6016,
+        "8": 10560,
+        "9": 56512,
+        "10": 95936,
+        "11": 535680,
+        "12": 901088,
+        "13": 4974656,
+        "14": 8114688,
+        "15": 43790720
+      },
+      "ordered_vertices": 58487624,
+      "signed_cyclic_vertices": 185713,
+      "vertices": 23774
+    },
+    "file": "hsc_standard_height15.json.gz",
+    "sha256": "49af709facd0bd3ddcb341cef0422ba5cedf17320a0ec405c3d053900d8c28d6",
+    "uncompressed_sha256": "e823012172d56b8b9c1a1f3b9810200492e73ebe741f36de2c10ef1b49142cd6"
+  }
+}

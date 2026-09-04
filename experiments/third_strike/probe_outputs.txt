@@ -1,0 +1,31 @@
+Forced fixed-coordinate presentation <x,y | xyxYXY,R1,R2>.
+These are bounded proof-discovery failures, not word/orbit nonexistence claims.
+Commands require PYTHONPATH=. from the repository root. No AC component searched.
+
+$ PYTHONPATH=. python experiments/third_strike/relative_kb_probe.py
+initial_rules 22
+TimeoutError 20 second bounded probe exhausted
+rules 181
+runtime 20.000226975999794
+
+$ PYTHONPATH=. python experiments/third_strike/relative_coset_probe.py
+ValueError the coset enumeration has defined more than 512 cosets. Try with a greater value max number of cosets
+runtime 0.4227462460003153
+
+$ PYTHONPATH=. python experiments/third_strike/relative_cyclic_probe.py
+ValueError the coset enumeration has defined more than 512 cosets. Try with a greater value max number of cosets
+runtime 0.4243827149994104
+
+Uncompressed standard height-15 pilot, before the proved order-eight optimization:
+STATE_CAP vertices 50001; processed 9669; fiber_edges 183723;
+normalized_moves 824086; runtime 10.015979968000465.
+This partial traversal was superseded by the COMPLETE symmetric traversal.
+It supplied no noncontact conclusion; its transient graph was not retained.
+
+Final complete traversals:
+AK3: vertices 26; fiber_edges 76; normalized_moves 168;
+runtime 0.01306354900043516.
+Standard modulo eight generator maps: vertices 23774; orbit_edges 210008;
+normalized_moves 940574; runtime 20.611274861999846.
+
+Probe SymPy version: 1.14.0
