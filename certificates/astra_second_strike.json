@@ -1,0 +1,4559 @@
+{
+  "AK2_positive_path": {
+    "initial": [
+      "xxYYY",
+      "xyxYXY"
+    ],
+    "max_geodesic_sum": 15,
+    "published_steps": 14,
+    "source": "https://staff.itee.uq.edu.au/havas/2003hr.pdf",
+    "steps": [
+      {
+        "after": [
+          "xYYYx",
+          "xyxYXY"
+        ],
+        "move": [
+          "C",
+          0,
+          -1
+        ]
+      },
+      {
+        "after": [
+          "xYYYx",
+          "yxyXYX"
+        ],
+        "move": [
+          "I",
+          1,
+          0
+        ]
+      },
+      {
+        "after": [
+          "xYYYx",
+          "xyXYXy"
+        ],
+        "move": [
+          "C",
+          1,
+          -2
+        ]
+      },
+      {
+        "after": [
+          "xYYYx",
+          "yXYXyx"
+        ],
+        "move": [
+          "C",
+          1,
+          -1
+        ]
+      },
+      {
+        "after": [
+          "xYYYx",
+          "XYXyxy"
+        ],
+        "move": [
+          "C",
+          1,
+          -2
+        ]
+      },
+      {
+        "after": [
+          "xYYYx",
+          "YXyxyX"
+        ],
+        "move": [
+          "C",
+          1,
+          1
+        ]
+      },
+      {
+        "after": [
+          "xYYYx",
+          "YXyxYYx"
+        ],
+        "move": [
+          "M",
+          1,
+          1
+        ]
+      },
+      {
+        "after": [
+          "xYYYx",
+          "XyxYYxY"
+        ],
+        "move": [
+          "C",
+          1,
+          2
+        ]
+      },
+      {
+        "after": [
+          "xYYxYYxY",
+          "XyxYYxY"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "xYYxYYxY",
+          "yXyyXYx"
+        ],
+        "move": [
+          "I",
+          1,
+          0
+        ]
+      },
+      {
+        "after": [
+          "xYYxYYxY",
+          "xyXyyXY"
+        ],
+        "move": [
+          "C",
+          1,
+          1
+        ]
+      },
+      {
+        "after": [
+          "xYYxYYxY",
+          "YxyXyyX"
+        ],
+        "move": [
+          "C",
+          1,
+          -2
+        ]
+      },
+      {
+        "after": [
+          "xYYxYYxY",
+          "YxYxY"
+        ],
+        "move": [
+          "M",
+          1,
+          1
+        ]
+      },
+      {
+        "after": [
+          "YYxYYxYx",
+          "YxYxY"
+        ],
+        "move": [
+          "C",
+          0,
+          -1
+        ]
+      },
+      {
+        "after": [
+          "YYxYYxYx",
+          "yXyXy"
+        ],
+        "move": [
+          "I",
+          1,
+          0
+        ]
+      },
+      {
+        "after": [
+          "YYxYYxYx",
+          "XyXyy"
+        ],
+        "move": [
+          "C",
+          1,
+          -2
+        ]
+      },
+      {
+        "after": [
+          "YYx",
+          "XyXyy"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "YYx",
+          "Xy"
+        ],
+        "move": [
+          "M",
+          1,
+          1
+        ]
+      },
+      {
+        "after": [
+          "Y",
+          "Xy"
+        ],
+        "move": [
+          "M",
+          0,
+          2
+        ]
+      },
+      {
+        "after": [
+          "Y",
+          "X"
+        ],
+        "move": [
+          "M",
+          1,
+          1
+        ]
+      },
+      {
+        "after": [
+          "y",
+          "X"
+        ],
+        "move": [
+          "I",
+          0,
+          0
+        ]
+      },
+      {
+        "after": [
+          "y",
+          "x"
+        ],
+        "move": [
+          "I",
+          1,
+          0
+        ]
+      },
+      {
+        "after": [
+          "x",
+          "y"
+        ],
+        "move": [
+          "P",
+          0,
+          1
+        ]
+      }
+    ]
+  },
+  "AK3_peak_lower_bound": 15,
+  "annular_positive": {
+    "g": "Y",
+    "relator": "YYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXY",
+    "u": "YYYYYYXYYxyxxyXXyXyxyXXXyyyxYX",
+    "v": "yxYXyxYxyyxyyXyXYxxYYYXyXyXYX"
+  },
+  "bounded_walk_control": {
+    "cap": 24,
+    "interpretation": "bounded diagnostic only; no orbit or completeness conclusion",
+    "moves_per_walk": 48,
+    "seed": 26090402,
+    "states_tested": 3232,
+    "transcript_sha256": "3e5c965d3b366181d6e7f6cfbef4692feec57cbcb4d7b843ab17a70b105c27de",
+    "traps": [],
+    "walks": 128
+  },
+  "comparison": {
+    "AK3": [
+      "xxxYYYY",
+      "xyxYXY"
+    ],
+    "standard": [
+      "x",
+      "y"
+    ]
+  },
+  "complete_component_enumeration": false,
+  "conjugator_bound": "4*L**2+4*L+8",
+  "geodesic_radius": 30,
+  "mixed_reorder_failure": {
+    "conjugator_minimum_length": 3,
+    "g": "yxy",
+    "original": [
+      [
+        "x",
+        "y"
+      ],
+      [
+        "yxyxYXY",
+        "y"
+      ],
+      [
+        "yxyxYX",
+        "y"
+      ]
+    ],
+    "original_peak": 8,
+    "reordered": [
+      [
+        "x",
+        "y"
+      ],
+      [
+        "x",
+        "YXyxy"
+      ],
+      [
+        "xYXyxy",
+        "YXyxy"
+      ],
+      [
+        "yxyxYX",
+        "YXyxy"
+      ],
+      [
+        "yxyxYX",
+        "y"
+      ]
+    ],
+    "reordered_peak": 11,
+    "scope": "this reorder fails; no claim that all peak lowering fails"
+  },
+  "peak_upper_bound": null,
+  "piece_cover": {
+    "max_covered": [
+      8,
+      13,
+      17,
+      23,
+      28
+    ],
+    "max_piece": 8,
+    "piece_count": 202,
+    "rows": [
+      {
+        "max_covered": [
+          7,
+          12,
+          16,
+          20,
+          24
+        ],
+        "relator": "YYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyX"
+      },
+      {
+        "max_covered": [
+          7,
+          11,
+          15,
+          19,
+          23
+        ],
+        "relator": "YYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXY"
+      },
+      {
+        "max_covered": [
+          6,
+          10,
+          14,
+          18,
+          22
+        ],
+        "relator": "YYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYY"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          13,
+          17,
+          21
+        ],
+        "relator": "YYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYY"
+      },
+      {
+        "max_covered": [
+          6,
+          10,
+          14,
+          18,
+          22
+        ],
+        "relator": "YYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYY"
+      },
+      {
+        "max_covered": [
+          6,
+          11,
+          15,
+          20,
+          24
+        ],
+        "relator": "YYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyX"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          13,
+          17,
+          21
+        ],
+        "relator": "YYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYY"
+      },
+      {
+        "max_covered": [
+          5,
+          10,
+          14,
+          19,
+          23
+        ],
+        "relator": "YYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXY"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          17,
+          21,
+          26
+        ],
+        "relator": "YYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxx"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          12,
+          15,
+          20
+        ],
+        "relator": "YYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyX"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          16,
+          20,
+          24
+        ],
+        "relator": "YYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXX"
+      },
+      {
+        "max_covered": [
+          6,
+          11,
+          16,
+          23,
+          27
+        ],
+        "relator": "YYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYX"
+      },
+      {
+        "max_covered": [
+          6,
+          10,
+          16,
+          22,
+          26
+        ],
+        "relator": "YYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYx"
+      },
+      {
+        "max_covered": [
+          5,
+          8,
+          12,
+          16,
+          20
+        ],
+        "relator": "YYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYY"
+      },
+      {
+        "max_covered": [
+          5,
+          11,
+          16,
+          21,
+          28
+        ],
+        "relator": "YYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYY"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          13,
+          17,
+          24
+        ],
+        "relator": "YYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyX"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          13,
+          20,
+          24
+        ],
+        "relator": "YYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYX"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          12,
+          18,
+          22
+        ],
+        "relator": "YYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyx"
+      },
+      {
+        "max_covered": [
+          5,
+          12,
+          17,
+          21,
+          25
+        ],
+        "relator": "YYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYX"
+      },
+      {
+        "max_covered": [
+          5,
+          8,
+          12,
+          16,
+          20
+        ],
+        "relator": "YYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYx"
+      },
+      {
+        "max_covered": [
+          5,
+          10,
+          16,
+          20,
+          25
+        ],
+        "relator": "YYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxY"
+      },
+      {
+        "max_covered": [
+          3,
+          8,
+          11,
+          15,
+          19
+        ],
+        "relator": "YYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyX"
+      },
+      {
+        "max_covered": [
+          4,
+          7,
+          10,
+          15,
+          19
+        ],
+        "relator": "YYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYX"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          13,
+          16,
+          21
+        ],
+        "relator": "YYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXY"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          13,
+          17,
+          25
+        ],
+        "relator": "YYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYX"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          15,
+          19,
+          23
+        ],
+        "relator": "YYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXY"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          13,
+          18,
+          25
+        ],
+        "relator": "YXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYX"
+      },
+      {
+        "max_covered": [
+          5,
+          10,
+          15,
+          22,
+          26
+        ],
+        "relator": "YXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXY"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          15,
+          21,
+          25
+        ],
+        "relator": "YXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxY"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          12,
+          17,
+          21
+        ],
+        "relator": "YXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYx"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          13,
+          17,
+          21
+        ],
+        "relator": "YXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYY"
+      },
+      {
+        "max_covered": [
+          4,
+          10,
+          15,
+          20,
+          27
+        ],
+        "relator": "YXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYY"
+      },
+      {
+        "max_covered": [
+          5,
+          8,
+          12,
+          16,
+          23
+        ],
+        "relator": "YXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXY"
+      },
+      {
+        "max_covered": [
+          5,
+          8,
+          14,
+          19,
+          23
+        ],
+        "relator": "YXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyX"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          11,
+          16,
+          23
+        ],
+        "relator": "YXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxx"
+      },
+      {
+        "max_covered": [
+          8,
+          11,
+          16,
+          20,
+          23
+        ],
+        "relator": "YXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyX"
+      },
+      {
+        "max_covered": [
+          8,
+          12,
+          16,
+          21,
+          25
+        ],
+        "relator": "YXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyx"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          13,
+          19,
+          23
+        ],
+        "relator": "YXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXY"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          16,
+          21,
+          25
+        ],
+        "relator": "YXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxx"
+      },
+      {
+        "max_covered": [
+          3,
+          7,
+          11,
+          17,
+          21
+        ],
+        "relator": "YXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxY"
+      },
+      {
+        "max_covered": [
+          4,
+          11,
+          16,
+          20,
+          24
+        ],
+        "relator": "YXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXY"
+      },
+      {
+        "max_covered": [
+          4,
+          7,
+          11,
+          15,
+          19
+        ],
+        "relator": "YXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxY"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          15,
+          19,
+          24
+        ],
+        "relator": "YXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYY"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          14,
+          21,
+          25
+        ],
+        "relator": "YXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYX"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          13,
+          16,
+          19
+        ],
+        "relator": "YXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyx"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          14,
+          20,
+          25
+        ],
+        "relator": "YXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyx"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          13,
+          16,
+          20
+        ],
+        "relator": "YXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyx"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          15,
+          20,
+          25
+        ],
+        "relator": "YXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXX"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          13,
+          19,
+          23
+        ],
+        "relator": "YXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYX"
+      },
+      {
+        "max_covered": [
+          5,
+          10,
+          17,
+          22,
+          26
+        ],
+        "relator": "YxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyx"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          14,
+          18,
+          22
+        ],
+        "relator": "YxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXY"
+      },
+      {
+        "max_covered": [
+          3,
+          7,
+          11,
+          14,
+          19
+        ],
+        "relator": "YxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyx"
+      },
+      {
+        "max_covered": [
+          4,
+          7,
+          12,
+          17,
+          23
+        ],
+        "relator": "YxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYX"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          13,
+          17,
+          21
+        ],
+        "relator": "YxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXX"
+      },
+      {
+        "max_covered": [
+          5,
+          8,
+          13,
+          19,
+          23
+        ],
+        "relator": "YxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyx"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          14,
+          20,
+          24
+        ],
+        "relator": "YxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyX"
+      },
+      {
+        "max_covered": [
+          4,
+          7,
+          12,
+          19,
+          24
+        ],
+        "relator": "YxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYx"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          13,
+          18,
+          22
+        ],
+        "relator": "YxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXY"
+      },
+      {
+        "max_covered": [
+          3,
+          8,
+          12,
+          15,
+          20
+        ],
+        "relator": "YxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYY"
+      },
+      {
+        "max_covered": [
+          3,
+          6,
+          11,
+          15,
+          19
+        ],
+        "relator": "YxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxx"
+      },
+      {
+        "max_covered": [
+          7,
+          12,
+          16,
+          20,
+          24
+        ],
+        "relator": "YxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyX"
+      },
+      {
+        "max_covered": [
+          7,
+          11,
+          16,
+          19,
+          24
+        ],
+        "relator": "YxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYX"
+      },
+      {
+        "max_covered": [
+          6,
+          10,
+          14,
+          19,
+          23
+        ],
+        "relator": "YxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYX"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          12,
+          16,
+          24
+        ],
+        "relator": "YxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXY"
+      },
+      {
+        "max_covered": [
+          5,
+          10,
+          14,
+          18,
+          22
+        ],
+        "relator": "YxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYY"
+      },
+      {
+        "max_covered": [
+          5,
+          8,
+          11,
+          15,
+          19
+        ],
+        "relator": "YxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYx"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          13,
+          17,
+          22
+        ],
+        "relator": "YxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxx"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          12,
+          15,
+          20
+        ],
+        "relator": "YxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyx"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          12,
+          17,
+          21
+        ],
+        "relator": "YxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYx"
+      },
+      {
+        "max_covered": [
+          5,
+          11,
+          15,
+          19,
+          23
+        ],
+        "relator": "XYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxy"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          14,
+          19,
+          24
+        ],
+        "relator": "XYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXy"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          13,
+          16,
+          21
+        ],
+        "relator": "XYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxy"
+      },
+      {
+        "max_covered": [
+          5,
+          10,
+          17,
+          21,
+          25
+        ],
+        "relator": "XYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYX"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          14,
+          18,
+          24
+        ],
+        "relator": "XYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXY"
+      },
+      {
+        "max_covered": [
+          5,
+          10,
+          14,
+          18,
+          25
+        ],
+        "relator": "XYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyy"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          14,
+          21,
+          25
+        ],
+        "relator": "XYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYY"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          14,
+          20,
+          24
+        ],
+        "relator": "XYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYY"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          12,
+          16,
+          20
+        ],
+        "relator": "XYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxy"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          11,
+          16,
+          20
+        ],
+        "relator": "XYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxY"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          12,
+          16,
+          20
+        ],
+        "relator": "XYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYY"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          14,
+          19,
+          26
+        ],
+        "relator": "XYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYY"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          15,
+          20,
+          24
+        ],
+        "relator": "XYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxy"
+      },
+      {
+        "max_covered": [
+          4,
+          10,
+          14,
+          19,
+          22
+        ],
+        "relator": "XYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXy"
+      },
+      {
+        "max_covered": [
+          4,
+          7,
+          11,
+          15,
+          22
+        ],
+        "relator": "XYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYY"
+      },
+      {
+        "max_covered": [
+          5,
+          10,
+          16,
+          21,
+          26
+        ],
+        "relator": "XYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYX"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          14,
+          20,
+          24
+        ],
+        "relator": "XYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXY"
+      },
+      {
+        "max_covered": [
+          5,
+          8,
+          13,
+          18,
+          24
+        ],
+        "relator": "XYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxY"
+      },
+      {
+        "max_covered": [
+          5,
+          10,
+          14,
+          18,
+          22
+        ],
+        "relator": "XYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXX"
+      },
+      {
+        "max_covered": [
+          3,
+          6,
+          11,
+          15,
+          21
+        ],
+        "relator": "XYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXy"
+      },
+      {
+        "max_covered": [
+          8,
+          13,
+          17,
+          21,
+          25
+        ],
+        "relator": "XYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXy"
+      },
+      {
+        "max_covered": [
+          8,
+          12,
+          17,
+          20,
+          25
+        ],
+        "relator": "XYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXY"
+      },
+      {
+        "max_covered": [
+          7,
+          11,
+          15,
+          20,
+          24
+        ],
+        "relator": "XYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxY"
+      },
+      {
+        "max_covered": [
+          3,
+          8,
+          12,
+          18,
+          22
+        ],
+        "relator": "XXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYY"
+      },
+      {
+        "max_covered": [
+          3,
+          8,
+          15,
+          20,
+          24
+        ],
+        "relator": "XXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxY"
+      },
+      {
+        "max_covered": [
+          3,
+          7,
+          11,
+          15,
+          19
+        ],
+        "relator": "XXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyX"
+      },
+      {
+        "max_covered": [
+          3,
+          8,
+          12,
+          16,
+          20
+        ],
+        "relator": "XXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXy"
+      },
+      {
+        "max_covered": [
+          3,
+          11,
+          16,
+          20,
+          23
+        ],
+        "relator": "XXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxy"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          13,
+          18,
+          23
+        ],
+        "relator": "XXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYY"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          12,
+          19,
+          23
+        ],
+        "relator": "XXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxy"
+      },
+      {
+        "max_covered": [
+          3,
+          7,
+          12,
+          16,
+          22
+        ],
+        "relator": "XXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyy"
+      },
+      {
+        "max_covered": [
+          4,
+          7,
+          13,
+          17,
+          22
+        ],
+        "relator": "XXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXy"
+      },
+      {
+        "max_covered": [
+          4,
+          11,
+          15,
+          19,
+          22
+        ],
+        "relator": "XXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyX"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          14,
+          18,
+          23
+        ],
+        "relator": "XyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxy"
+      },
+      {
+        "max_covered": [
+          4,
+          12,
+          16,
+          21,
+          24
+        ],
+        "relator": "XyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXy"
+      },
+      {
+        "max_covered": [
+          5,
+          8,
+          13,
+          17,
+          23
+        ],
+        "relator": "XyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyy"
+      },
+      {
+        "max_covered": [
+          5,
+          11,
+          17,
+          21,
+          25
+        ],
+        "relator": "XyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYY"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          14,
+          18,
+          22
+        ],
+        "relator": "XyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYY"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          12,
+          17,
+          22
+        ],
+        "relator": "XyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYX"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          14,
+          18,
+          23
+        ],
+        "relator": "XyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYY"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          13,
+          20,
+          24
+        ],
+        "relator": "XyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXY"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          17,
+          22,
+          26
+        ],
+        "relator": "XyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyX"
+      },
+      {
+        "max_covered": [
+          5,
+          11,
+          15,
+          21,
+          27
+        ],
+        "relator": "XyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyX"
+      },
+      {
+        "max_covered": [
+          5,
+          10,
+          15,
+          18,
+          23
+        ],
+        "relator": "XyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxY"
+      },
+      {
+        "max_covered": [
+          3,
+          7,
+          11,
+          18,
+          22
+        ],
+        "relator": "XyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXy"
+      },
+      {
+        "max_covered": [
+          5,
+          10,
+          13,
+          19,
+          24
+        ],
+        "relator": "XyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxY"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          16,
+          20,
+          24
+        ],
+        "relator": "XyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXy"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          12,
+          15,
+          19
+        ],
+        "relator": "XyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxY"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          13,
+          18,
+          24
+        ],
+        "relator": "XyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyy"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          14,
+          19,
+          23
+        ],
+        "relator": "XyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyX"
+      },
+      {
+        "max_covered": [
+          5,
+          12,
+          17,
+          21,
+          26
+        ],
+        "relator": "XyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXY"
+      },
+      {
+        "max_covered": [
+          5,
+          10,
+          14,
+          18,
+          21
+        ],
+        "relator": "XyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXX"
+      },
+      {
+        "max_covered": [
+          5,
+          11,
+          16,
+          20,
+          24
+        ],
+        "relator": "XyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXY"
+      },
+      {
+        "max_covered": [
+          3,
+          8,
+          12,
+          18,
+          22
+        ],
+        "relator": "xYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYx"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          16,
+          21,
+          25
+        ],
+        "relator": "xYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxY"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          12,
+          16,
+          21
+        ],
+        "relator": "xYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyy"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          13,
+          17,
+          21
+        ],
+        "relator": "xYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYY"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          12,
+          17,
+          22
+        ],
+        "relator": "xYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxY"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          12,
+          17,
+          24
+        ],
+        "relator": "xYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxx"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          13,
+          17,
+          22
+        ],
+        "relator": "xYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxy"
+      },
+      {
+        "max_covered": [
+          3,
+          8,
+          13,
+          19,
+          24
+        ],
+        "relator": "xYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYx"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          14,
+          17,
+          20
+        ],
+        "relator": "xYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyy"
+      },
+      {
+        "max_covered": [
+          6,
+          10,
+          15,
+          21,
+          26
+        ],
+        "relator": "xYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyy"
+      },
+      {
+        "max_covered": [
+          6,
+          10,
+          14,
+          17,
+          21
+        ],
+        "relator": "xYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyy"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          13,
+          19,
+          25
+        ],
+        "relator": "xYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXy"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          12,
+          15,
+          20
+        ],
+        "relator": "xYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyy"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          11,
+          15,
+          20
+        ],
+        "relator": "xYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxy"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          13,
+          20,
+          25
+        ],
+        "relator": "xYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXY"
+      },
+      {
+        "max_covered": [
+          4,
+          7,
+          12,
+          16,
+          20
+        ],
+        "relator": "xYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYx"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          12,
+          16,
+          20
+        ],
+        "relator": "xYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXY"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          14,
+          18,
+          23
+        ],
+        "relator": "xYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxx"
+      },
+      {
+        "max_covered": [
+          5,
+          10,
+          13,
+          16,
+          21
+        ],
+        "relator": "xYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXy"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          13,
+          18,
+          22
+        ],
+        "relator": "xYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxY"
+      },
+      {
+        "max_covered": [
+          3,
+          8,
+          13,
+          19,
+          23
+        ],
+        "relator": "xxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXY"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          11,
+          16,
+          21
+        ],
+        "relator": "xxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYx"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          14,
+          20,
+          25
+        ],
+        "relator": "xxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxY"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          13,
+          17,
+          21
+        ],
+        "relator": "xxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYY"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          15,
+          19,
+          24
+        ],
+        "relator": "xxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyx"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          12,
+          17,
+          22
+        ],
+        "relator": "xxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYY"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          16,
+          20,
+          25
+        ],
+        "relator": "xxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXy"
+      },
+      {
+        "max_covered": [
+          3,
+          7,
+          11,
+          15,
+          22
+        ],
+        "relator": "xxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxy"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          14,
+          18,
+          22
+        ],
+        "relator": "xxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxY"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          14,
+          18,
+          22
+        ],
+        "relator": "xxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyy"
+      },
+      {
+        "max_covered": [
+          6,
+          11,
+          15,
+          19,
+          23
+        ],
+        "relator": "xyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXY"
+      },
+      {
+        "max_covered": [
+          6,
+          10,
+          15,
+          18,
+          23
+        ],
+        "relator": "xyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXY"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          13,
+          18,
+          22
+        ],
+        "relator": "xyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXY"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          13,
+          18,
+          24
+        ],
+        "relator": "xyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXy"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          14,
+          18,
+          22
+        ],
+        "relator": "xyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXy"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          12,
+          20,
+          25
+        ],
+        "relator": "xyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyx"
+      },
+      {
+        "max_covered": [
+          3,
+          9,
+          13,
+          18,
+          23
+        ],
+        "relator": "xyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyy"
+      },
+      {
+        "max_covered": [
+          4,
+          11,
+          15,
+          19,
+          24
+        ],
+        "relator": "xyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxy"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          13,
+          17,
+          22
+        ],
+        "relator": "xyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXy"
+      },
+      {
+        "max_covered": [
+          3,
+          7,
+          11,
+          15,
+          23
+        ],
+        "relator": "xyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYY"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          13,
+          17,
+          21
+        ],
+        "relator": "xyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYY"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          13,
+          17,
+          21
+        ],
+        "relator": "xyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxY"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          13,
+          17,
+          21
+        ],
+        "relator": "xyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyy"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          13,
+          17,
+          21
+        ],
+        "relator": "xyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYx"
+      },
+      {
+        "max_covered": [
+          5,
+          8,
+          11,
+          16,
+          20
+        ],
+        "relator": "xyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyy"
+      },
+      {
+        "max_covered": [
+          5,
+          12,
+          16,
+          21,
+          27
+        ],
+        "relator": "xyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxY"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          12,
+          16,
+          22
+        ],
+        "relator": "xyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxy"
+      },
+      {
+        "max_covered": [
+          5,
+          10,
+          14,
+          18,
+          22
+        ],
+        "relator": "xyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyy"
+      },
+      {
+        "max_covered": [
+          6,
+          11,
+          14,
+          19,
+          23
+        ],
+        "relator": "xyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxY"
+      },
+      {
+        "max_covered": [
+          6,
+          11,
+          15,
+          19,
+          23
+        ],
+        "relator": "xyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyx"
+      },
+      {
+        "max_covered": [
+          4,
+          7,
+          11,
+          16,
+          20
+        ],
+        "relator": "xyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxY"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          13,
+          17,
+          20
+        ],
+        "relator": "xyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxy"
+      },
+      {
+        "max_covered": [
+          5,
+          11,
+          16,
+          21,
+          26
+        ],
+        "relator": "xyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyy"
+      },
+      {
+        "max_covered": [
+          6,
+          12,
+          16,
+          20,
+          24
+        ],
+        "relator": "yXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYx"
+      },
+      {
+        "max_covered": [
+          6,
+          10,
+          15,
+          20,
+          25
+        ],
+        "relator": "yXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyX"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          14,
+          17,
+          22
+        ],
+        "relator": "yXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYx"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          11,
+          15,
+          19
+        ],
+        "relator": "yXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxy"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          12,
+          17,
+          21
+        ],
+        "relator": "yXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYx"
+      },
+      {
+        "max_covered": [
+          5,
+          10,
+          16,
+          21,
+          25
+        ],
+        "relator": "yXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyx"
+      },
+      {
+        "max_covered": [
+          5,
+          11,
+          15,
+          20,
+          23
+        ],
+        "relator": "yXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyX"
+      },
+      {
+        "max_covered": [
+          4,
+          7,
+          12,
+          16,
+          22
+        ],
+        "relator": "yXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyX"
+      },
+      {
+        "max_covered": [
+          4,
+          10,
+          16,
+          20,
+          24
+        ],
+        "relator": "yXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYX"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          13,
+          17,
+          21
+        ],
+        "relator": "yXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYX"
+      },
+      {
+        "max_covered": [
+          4,
+          12,
+          17,
+          21,
+          24
+        ],
+        "relator": "yXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyx"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          13,
+          20,
+          24
+        ],
+        "relator": "yXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxx"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          13,
+          17,
+          23
+        ],
+        "relator": "yXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyy"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          14,
+          18,
+          23
+        ],
+        "relator": "yXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXX"
+      },
+      {
+        "max_covered": [
+          5,
+          10,
+          15,
+          19,
+          24
+        ],
+        "relator": "yXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyx"
+      },
+      {
+        "max_covered": [
+          5,
+          13,
+          17,
+          22,
+          25
+        ],
+        "relator": "yXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYX"
+      },
+      {
+        "max_covered": [
+          5,
+          8,
+          13,
+          18,
+          24
+        ],
+        "relator": "yXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyxy"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          12,
+          19,
+          23
+        ],
+        "relator": "yXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYX"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          16,
+          21,
+          25
+        ],
+        "relator": "yXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXX"
+      },
+      {
+        "max_covered": [
+          3,
+          10,
+          14,
+          19,
+          25
+        ],
+        "relator": "yXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxy"
+      },
+      {
+        "max_covered": [
+          3,
+          6,
+          10,
+          14,
+          20
+        ],
+        "relator": "yxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxy"
+      },
+      {
+        "max_covered": [
+          4,
+          10,
+          14,
+          18,
+          23
+        ],
+        "relator": "yxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyx"
+      },
+      {
+        "max_covered": [
+          6,
+          10,
+          15,
+          18,
+          21
+        ],
+        "relator": "yxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyy"
+      },
+      {
+        "max_covered": [
+          7,
+          11,
+          16,
+          22,
+          27
+        ],
+        "relator": "yxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXy"
+      },
+      {
+        "max_covered": [
+          7,
+          11,
+          15,
+          18,
+          22
+        ],
+        "relator": "yxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyy"
+      },
+      {
+        "max_covered": [
+          5,
+          10,
+          14,
+          20,
+          26
+        ],
+        "relator": "yxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXX"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          13,
+          16,
+          21
+        ],
+        "relator": "yxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyy"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          12,
+          16,
+          21
+        ],
+        "relator": "yxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyx"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          14,
+          17,
+          22
+        ],
+        "relator": "yxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYX"
+      },
+      {
+        "max_covered": [
+          3,
+          8,
+          12,
+          17,
+          21
+        ],
+        "relator": "yxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyX"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          12,
+          16,
+          23
+        ],
+        "relator": "yxxyXXyXyxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYx"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          15,
+          19,
+          23
+        ],
+        "relator": "yxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyy"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          12,
+          18,
+          23
+        ],
+        "relator": "yxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYX"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          15,
+          19,
+          23
+        ],
+        "relator": "yxyXXXyyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyX"
+      },
+      {
+        "max_covered": [
+          4,
+          10,
+          14,
+          19,
+          24
+        ],
+        "relator": "yxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXy"
+      },
+      {
+        "max_covered": [
+          5,
+          12,
+          16,
+          20,
+          25
+        ],
+        "relator": "yxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYx"
+      },
+      {
+        "max_covered": [
+          5,
+          10,
+          14,
+          18,
+          23
+        ],
+        "relator": "yxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYX"
+      },
+      {
+        "max_covered": [
+          4,
+          10,
+          14,
+          18,
+          22
+        ],
+        "relator": "yxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxy"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          12,
+          17,
+          21
+        ],
+        "relator": "yxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxy"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          13,
+          17,
+          23
+        ],
+        "relator": "yxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYx"
+      },
+      {
+        "max_covered": [
+          5,
+          11,
+          15,
+          19,
+          23
+        ],
+        "relator": "yxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxy"
+      },
+      {
+        "max_covered": [
+          6,
+          10,
+          14,
+          18,
+          21
+        ],
+        "relator": "yxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyx"
+      },
+      {
+        "max_covered": [
+          6,
+          12,
+          17,
+          22,
+          27
+        ],
+        "relator": "yxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXy"
+      },
+      {
+        "max_covered": [
+          3,
+          8,
+          12,
+          16,
+          20
+        ],
+        "relator": "yyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxx"
+      },
+      {
+        "max_covered": [
+          3,
+          8,
+          14,
+          18,
+          24
+        ],
+        "relator": "yyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYxy"
+      },
+      {
+        "max_covered": [
+          4,
+          7,
+          10,
+          15,
+          19
+        ],
+        "relator": "yyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYxyyx"
+      },
+      {
+        "max_covered": [
+          4,
+          11,
+          15,
+          20,
+          26
+        ],
+        "relator": "yyXyyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYx"
+      },
+      {
+        "max_covered": [
+          4,
+          7,
+          11,
+          15,
+          21
+        ],
+        "relator": "yyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyx"
+      },
+      {
+        "max_covered": [
+          7,
+          11,
+          16,
+          19,
+          22
+        ],
+        "relator": "yyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyy"
+      },
+      {
+        "max_covered": [
+          8,
+          12,
+          17,
+          23,
+          28
+        ],
+        "relator": "yyxYXyxyXYXYXyyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyX"
+      },
+      {
+        "max_covered": [
+          8,
+          12,
+          16,
+          19,
+          23
+        ],
+        "relator": "yyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXy"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          12,
+          16,
+          21
+        ],
+        "relator": "yyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxyy"
+      },
+      {
+        "max_covered": [
+          3,
+          9,
+          14,
+          18,
+          22
+        ],
+        "relator": "yyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXy"
+      },
+      {
+        "max_covered": [
+          4,
+          8,
+          13,
+          18,
+          22
+        ],
+        "relator": "yyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxYYXyXXXYxYxyxyyxYYXXyXX"
+      },
+      {
+        "max_covered": [
+          4,
+          9,
+          13,
+          17,
+          21
+        ],
+        "relator": "yyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyx"
+      },
+      {
+        "max_covered": [
+          5,
+          10,
+          13,
+          18,
+          22
+        ],
+        "relator": "yyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyyyyyxYXyxYx"
+      },
+      {
+        "max_covered": [
+          5,
+          10,
+          14,
+          18,
+          22
+        ],
+        "relator": "yyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxx"
+      },
+      {
+        "max_covered": [
+          5,
+          11,
+          16,
+          20,
+          25
+        ],
+        "relator": "yyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYX"
+      },
+      {
+        "max_covered": [
+          3,
+          6,
+          10,
+          15,
+          19
+        ],
+        "relator": "yyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXXyyyxYXyxyxYxYx"
+      },
+      {
+        "max_covered": [
+          8,
+          12,
+          17,
+          20,
+          23
+        ],
+        "relator": "yyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyyy"
+      },
+      {
+        "max_covered": [
+          8,
+          13,
+          17,
+          20,
+          24
+        ],
+        "relator": "yyyxYXyxyxYxYxyyyXXyxYxYYXYYXyXYxyXYYYYYYYYXYYxyxxyXXyXyxyXXX"
+      },
+      {
+        "max_covered": [
+          5,
+          9,
+          13,
+          17,
+          22
+        ],
+        "relator": "yyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyxy"
+      },
+      {
+        "max_covered": [
+          4,
+          10,
+          15,
+          19,
+          23
+        ],
+        "relator": "yyyxxyyxyyxyxyyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYX"
+      },
+      {
+        "max_covered": [
+          6,
+          11,
+          16,
+          21,
+          24
+        ],
+        "relator": "yyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyyy"
+      },
+      {
+        "max_covered": [
+          6,
+          10,
+          14,
+          18,
+          23
+        ],
+        "relator": "yyyyxYxYXYYxxYxxyyXYYXYXyXyxxxYxyyXyyxYXyxyXYXYXyyyxxyyxyyxyx"
+      },
+      {
+        "max_covered": [
+          5,
+          10,
+          14,
+          19,
+          22
+        ],
+        "relator": "yyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyyy"
+      },
+      {
+        "max_covered": [
+          6,
+          11,
+          15,
+          20,
+          23
+        ],
+        "relator": "yyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxyy"
+      },
+      {
+        "max_covered": [
+          7,
+          12,
+          16,
+          21,
+          24
+        ],
+        "relator": "yyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyxy"
+      },
+      {
+        "max_covered": [
+          7,
+          13,
+          17,
+          22,
+          25
+        ],
+        "relator": "yyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYxxYXXYXyyx"
+      }
+    ],
+    "symmetrized_size": 244
+  },
+  "plateaus": [
+    {
+      "candidate": "AK(2)",
+      "min_cyclic_product": 7,
+      "pair": [
+        "xxYYY",
+        "xyxYXY"
+      ],
+      "product_count": 120,
+      "rotations_inversions": [
+        10,
+        12
+      ],
+      "rows": [
+        {
+          "a": "YYYxx",
+          "b": "YXYxyx",
+          "cyclic_product": "YYYxxYXYxyx",
+          "product": "YYYxxYXYxyx"
+        },
+        {
+          "a": "YYYxx",
+          "b": "YXyxyX",
+          "cyclic_product": "YYYxxYXyxyX",
+          "product": "YYYxxYXyxyX"
+        },
+        {
+          "a": "YYYxx",
+          "b": "YxyxYX",
+          "cyclic_product": "YYYxxYxyxYX",
+          "product": "YYYxxYxyxYX"
+        },
+        {
+          "a": "YYYxx",
+          "b": "XYXyxy",
+          "cyclic_product": "YYxYXyx",
+          "product": "YYYxYXyxy"
+        },
+        {
+          "a": "YYYxx",
+          "b": "XYxyxY",
+          "cyclic_product": "YYYxYxyxY",
+          "product": "YYYxYxyxY"
+        },
+        {
+          "a": "YYYxx",
+          "b": "XyxyXY",
+          "cyclic_product": "YYYxyxyXY",
+          "product": "YYYxyxyXY"
+        },
+        {
+          "a": "YYYxx",
+          "b": "xYXYxy",
+          "cyclic_product": "YYxxxYXYx",
+          "product": "YYYxxxYXYxy"
+        },
+        {
+          "a": "YYYxx",
+          "b": "xyXYXy",
+          "cyclic_product": "YYxxxyXYX",
+          "product": "YYYxxxyXYXy"
+        },
+        {
+          "a": "YYYxx",
+          "b": "xyxYXY",
+          "cyclic_product": "YYYxxxyxYXY",
+          "product": "YYYxxxyxYXY"
+        },
+        {
+          "a": "YYYxx",
+          "b": "yXYXyx",
+          "cyclic_product": "YYYxxyXYXyx",
+          "product": "YYYxxyXYXyx"
+        },
+        {
+          "a": "YYYxx",
+          "b": "yxYXYx",
+          "cyclic_product": "YYYxxyxYXYx",
+          "product": "YYYxxyxYXYx"
+        },
+        {
+          "a": "YYYxx",
+          "b": "yxyXYX",
+          "cyclic_product": "YYYxxyxyXYX",
+          "product": "YYYxxyxyXYX"
+        },
+        {
+          "a": "YYxxY",
+          "b": "YXYxyx",
+          "cyclic_product": "YYxxYYXYxyx",
+          "product": "YYxxYYXYxyx"
+        },
+        {
+          "a": "YYxxY",
+          "b": "YXyxyX",
+          "cyclic_product": "YYxxYYXyxyX",
+          "product": "YYxxYYXyxyX"
+        },
+        {
+          "a": "YYxxY",
+          "b": "YxyxYX",
+          "cyclic_product": "YYxxYYxyxYX",
+          "product": "YYxxYYxyxYX"
+        },
+        {
+          "a": "YYxxY",
+          "b": "XYXyxy",
+          "cyclic_product": "YxxYXYXyx",
+          "product": "YYxxYXYXyxy"
+        },
+        {
+          "a": "YYxxY",
+          "b": "XYxyxY",
+          "cyclic_product": "YYxxYXYxyxY",
+          "product": "YYxxYXYxyxY"
+        },
+        {
+          "a": "YYxxY",
+          "b": "XyxyXY",
+          "cyclic_product": "YYxxYXyxyXY",
+          "product": "YYxxYXyxyXY"
+        },
+        {
+          "a": "YYxxY",
+          "b": "xYXYxy",
+          "cyclic_product": "YxxYxYXYx",
+          "product": "YYxxYxYXYxy"
+        },
+        {
+          "a": "YYxxY",
+          "b": "xyXYXy",
+          "cyclic_product": "YxxYxyXYX",
+          "product": "YYxxYxyXYXy"
+        },
+        {
+          "a": "YYxxY",
+          "b": "xyxYXY",
+          "cyclic_product": "YYxxYxyxYXY",
+          "product": "YYxxYxyxYXY"
+        },
+        {
+          "a": "YYxxY",
+          "b": "yXYXyx",
+          "cyclic_product": "YYxYXyx",
+          "product": "YYxYXyx"
+        },
+        {
+          "a": "YYxxY",
+          "b": "yxYXYx",
+          "cyclic_product": "YYxxxYXYx",
+          "product": "YYxxxYXYx"
+        },
+        {
+          "a": "YYxxY",
+          "b": "yxyXYX",
+          "cyclic_product": "YYxxxyXYX",
+          "product": "YYxxxyXYX"
+        },
+        {
+          "a": "YxxYY",
+          "b": "YXYxyx",
+          "cyclic_product": "YxxYYYXYxyx",
+          "product": "YxxYYYXYxyx"
+        },
+        {
+          "a": "YxxYY",
+          "b": "YXyxyX",
+          "cyclic_product": "YxxYYYXyxyX",
+          "product": "YxxYYYXyxyX"
+        },
+        {
+          "a": "YxxYY",
+          "b": "YxyxYX",
+          "cyclic_product": "YxxYYYxyxYX",
+          "product": "YxxYYYxyxYX"
+        },
+        {
+          "a": "YxxYY",
+          "b": "XYXyxy",
+          "cyclic_product": "xxYYXYXyx",
+          "product": "YxxYYXYXyxy"
+        },
+        {
+          "a": "YxxYY",
+          "b": "XYxyxY",
+          "cyclic_product": "YxxYYXYxyxY",
+          "product": "YxxYYXYxyxY"
+        },
+        {
+          "a": "YxxYY",
+          "b": "XyxyXY",
+          "cyclic_product": "YxxYYXyxyXY",
+          "product": "YxxYYXyxyXY"
+        },
+        {
+          "a": "YxxYY",
+          "b": "xYXYxy",
+          "cyclic_product": "xxYYxYXYx",
+          "product": "YxxYYxYXYxy"
+        },
+        {
+          "a": "YxxYY",
+          "b": "xyXYXy",
+          "cyclic_product": "xYYxyXY",
+          "product": "YxxYYxyXYXy"
+        },
+        {
+          "a": "YxxYY",
+          "b": "xyxYXY",
+          "cyclic_product": "YxxYYxyxYXY",
+          "product": "YxxYYxyxYXY"
+        },
+        {
+          "a": "YxxYY",
+          "b": "yXYXyx",
+          "cyclic_product": "YxxYXYXyx",
+          "product": "YxxYXYXyx"
+        },
+        {
+          "a": "YxxYY",
+          "b": "yxYXYx",
+          "cyclic_product": "YxxYxYXYx",
+          "product": "YxxYxYXYx"
+        },
+        {
+          "a": "YxxYY",
+          "b": "yxyXYX",
+          "cyclic_product": "YxxYxyXYX",
+          "product": "YxxYxyXYX"
+        },
+        {
+          "a": "XXyyy",
+          "b": "YXYxyx",
+          "cyclic_product": "XyyXYxy",
+          "product": "XXyyXYxyx"
+        },
+        {
+          "a": "XXyyy",
+          "b": "YXyxyX",
+          "cyclic_product": "XXyyXyxyX",
+          "product": "XXyyXyxyX"
+        },
+        {
+          "a": "XXyyy",
+          "b": "YxyxYX",
+          "cyclic_product": "XXyyxyxYX",
+          "product": "XXyyxyxYX"
+        },
+        {
+          "a": "XXyyy",
+          "b": "XYXyxy",
+          "cyclic_product": "XXyyyXYXyxy",
+          "product": "XXyyyXYXyxy"
+        },
+        {
+          "a": "XXyyy",
+          "b": "XYxyxY",
+          "cyclic_product": "XXyyyXYxyxY",
+          "product": "XXyyyXYxyxY"
+        },
+        {
+          "a": "XXyyy",
+          "b": "XyxyXY",
+          "cyclic_product": "XXyyyXyxyXY",
+          "product": "XXyyyXyxyXY"
+        },
+        {
+          "a": "XXyyy",
+          "b": "xYXYxy",
+          "cyclic_product": "XXyyyxYXYxy",
+          "product": "XXyyyxYXYxy"
+        },
+        {
+          "a": "XXyyy",
+          "b": "xyXYXy",
+          "cyclic_product": "XXyyyxyXYXy",
+          "product": "XXyyyxyXYXy"
+        },
+        {
+          "a": "XXyyy",
+          "b": "xyxYXY",
+          "cyclic_product": "XXyyyxyxYXY",
+          "product": "XXyyyxyxYXY"
+        },
+        {
+          "a": "XXyyy",
+          "b": "yXYXyx",
+          "cyclic_product": "XyyyyXYXy",
+          "product": "XXyyyyXYXyx"
+        },
+        {
+          "a": "XXyyy",
+          "b": "yxYXYx",
+          "cyclic_product": "XyyyyxYXY",
+          "product": "XXyyyyxYXYx"
+        },
+        {
+          "a": "XXyyy",
+          "b": "yxyXYX",
+          "cyclic_product": "XXyyyyxyXYX",
+          "product": "XXyyyyxyXYX"
+        },
+        {
+          "a": "XyyyX",
+          "b": "YXYxyx",
+          "cyclic_product": "yyyXYXYxy",
+          "product": "XyyyXYXYxyx"
+        },
+        {
+          "a": "XyyyX",
+          "b": "YXyxyX",
+          "cyclic_product": "XyyyXYXyxyX",
+          "product": "XyyyXYXyxyX"
+        },
+        {
+          "a": "XyyyX",
+          "b": "YxyxYX",
+          "cyclic_product": "XyyyXYxyxYX",
+          "product": "XyyyXYxyxYX"
+        },
+        {
+          "a": "XyyyX",
+          "b": "XYXyxy",
+          "cyclic_product": "XyyyXXYXyxy",
+          "product": "XyyyXXYXyxy"
+        },
+        {
+          "a": "XyyyX",
+          "b": "XYxyxY",
+          "cyclic_product": "XyyyXXYxyxY",
+          "product": "XyyyXXYxyxY"
+        },
+        {
+          "a": "XyyyX",
+          "b": "XyxyXY",
+          "cyclic_product": "XyyyXXyxyXY",
+          "product": "XyyyXXyxyXY"
+        },
+        {
+          "a": "XyyyX",
+          "b": "xYXYxy",
+          "cyclic_product": "XyyXYxy",
+          "product": "XyyXYxy"
+        },
+        {
+          "a": "XyyyX",
+          "b": "xyXYXy",
+          "cyclic_product": "XyyyyXYXy",
+          "product": "XyyyyXYXy"
+        },
+        {
+          "a": "XyyyX",
+          "b": "xyxYXY",
+          "cyclic_product": "XyyyyxYXY",
+          "product": "XyyyyxYXY"
+        },
+        {
+          "a": "XyyyX",
+          "b": "yXYXyx",
+          "cyclic_product": "yyyXyXYXy",
+          "product": "XyyyXyXYXyx"
+        },
+        {
+          "a": "XyyyX",
+          "b": "yxYXYx",
+          "cyclic_product": "yyXyxYX",
+          "product": "XyyyXyxYXYx"
+        },
+        {
+          "a": "XyyyX",
+          "b": "yxyXYX",
+          "cyclic_product": "XyyyXyxyXYX",
+          "product": "XyyyXyxyXYX"
+        },
+        {
+          "a": "xYYYx",
+          "b": "YXYxyx",
+          "cyclic_product": "xYYYxYXYxyx",
+          "product": "xYYYxYXYxyx"
+        },
+        {
+          "a": "xYYYx",
+          "b": "YXyxyX",
+          "cyclic_product": "YYxYXyx",
+          "product": "xYYYxYXyxyX"
+        },
+        {
+          "a": "xYYYx",
+          "b": "YxyxYX",
+          "cyclic_product": "YYYxYxyxY",
+          "product": "xYYYxYxyxYX"
+        },
+        {
+          "a": "xYYYx",
+          "b": "XYXyxy",
+          "cyclic_product": "xYYYYXyxy",
+          "product": "xYYYYXyxy"
+        },
+        {
+          "a": "xYYYx",
+          "b": "XYxyxY",
+          "cyclic_product": "xYYYYxyxY",
+          "product": "xYYYYxyxY"
+        },
+        {
+          "a": "xYYYx",
+          "b": "XyxyXY",
+          "cyclic_product": "xYYxyXY",
+          "product": "xYYxyXY"
+        },
+        {
+          "a": "xYYYx",
+          "b": "xYXYxy",
+          "cyclic_product": "xYYYxxYXYxy",
+          "product": "xYYYxxYXYxy"
+        },
+        {
+          "a": "xYYYx",
+          "b": "xyXYXy",
+          "cyclic_product": "xYYYxxyXYXy",
+          "product": "xYYYxxyXYXy"
+        },
+        {
+          "a": "xYYYx",
+          "b": "xyxYXY",
+          "cyclic_product": "xYYYxxyxYXY",
+          "product": "xYYYxxyxYXY"
+        },
+        {
+          "a": "xYYYx",
+          "b": "yXYXyx",
+          "cyclic_product": "xYYYxyXYXyx",
+          "product": "xYYYxyXYXyx"
+        },
+        {
+          "a": "xYYYx",
+          "b": "yxYXYx",
+          "cyclic_product": "xYYYxyxYXYx",
+          "product": "xYYYxyxYXYx"
+        },
+        {
+          "a": "xYYYx",
+          "b": "yxyXYX",
+          "cyclic_product": "YYYxyxyXY",
+          "product": "xYYYxyxyXYX"
+        },
+        {
+          "a": "xxYYY",
+          "b": "YXYxyx",
+          "cyclic_product": "xxYYYYXYxyx",
+          "product": "xxYYYYXYxyx"
+        },
+        {
+          "a": "xxYYY",
+          "b": "YXyxyX",
+          "cyclic_product": "xYYYYXyxy",
+          "product": "xxYYYYXyxyX"
+        },
+        {
+          "a": "xxYYY",
+          "b": "YxyxYX",
+          "cyclic_product": "xYYYYxyxY",
+          "product": "xxYYYYxyxYX"
+        },
+        {
+          "a": "xxYYY",
+          "b": "XYXyxy",
+          "cyclic_product": "xxYYYXYXyxy",
+          "product": "xxYYYXYXyxy"
+        },
+        {
+          "a": "xxYYY",
+          "b": "XYxyxY",
+          "cyclic_product": "xxYYYXYxyxY",
+          "product": "xxYYYXYxyxY"
+        },
+        {
+          "a": "xxYYY",
+          "b": "XyxyXY",
+          "cyclic_product": "xxYYYXyxyXY",
+          "product": "xxYYYXyxyXY"
+        },
+        {
+          "a": "xxYYY",
+          "b": "xYXYxy",
+          "cyclic_product": "xxYYYxYXYxy",
+          "product": "xxYYYxYXYxy"
+        },
+        {
+          "a": "xxYYY",
+          "b": "xyXYXy",
+          "cyclic_product": "xxYYYxyXYXy",
+          "product": "xxYYYxyXYXy"
+        },
+        {
+          "a": "xxYYY",
+          "b": "xyxYXY",
+          "cyclic_product": "xxYYYxyxYXY",
+          "product": "xxYYYxyxYXY"
+        },
+        {
+          "a": "xxYYY",
+          "b": "yXYXyx",
+          "cyclic_product": "xxYYXYXyx",
+          "product": "xxYYXYXyx"
+        },
+        {
+          "a": "xxYYY",
+          "b": "yxYXYx",
+          "cyclic_product": "xxYYxYXYx",
+          "product": "xxYYxYXYx"
+        },
+        {
+          "a": "xxYYY",
+          "b": "yxyXYX",
+          "cyclic_product": "xYYxyXY",
+          "product": "xxYYxyXYX"
+        },
+        {
+          "a": "yXXyy",
+          "b": "YXYxyx",
+          "cyclic_product": "yXXyXYxyx",
+          "product": "yXXyXYxyx"
+        },
+        {
+          "a": "yXXyy",
+          "b": "YXyxyX",
+          "cyclic_product": "yXXyXyxyX",
+          "product": "yXXyXyxyX"
+        },
+        {
+          "a": "yXXyy",
+          "b": "YxyxYX",
+          "cyclic_product": "yXXyxyxYX",
+          "product": "yXXyxyxYX"
+        },
+        {
+          "a": "yXXyy",
+          "b": "XYXyxy",
+          "cyclic_product": "yXXyyXYXyxy",
+          "product": "yXXyyXYXyxy"
+        },
+        {
+          "a": "yXXyy",
+          "b": "XYxyxY",
+          "cyclic_product": "XyyXYxy",
+          "product": "yXXyyXYxyxY"
+        },
+        {
+          "a": "yXXyy",
+          "b": "XyxyXY",
+          "cyclic_product": "XXyyXyxyX",
+          "product": "yXXyyXyxyXY"
+        },
+        {
+          "a": "yXXyy",
+          "b": "xYXYxy",
+          "cyclic_product": "yXXyyxYXYxy",
+          "product": "yXXyyxYXYxy"
+        },
+        {
+          "a": "yXXyy",
+          "b": "xyXYXy",
+          "cyclic_product": "yXXyyxyXYXy",
+          "product": "yXXyyxyXYXy"
+        },
+        {
+          "a": "yXXyy",
+          "b": "xyxYXY",
+          "cyclic_product": "XXyyxyxYX",
+          "product": "yXXyyxyxYXY"
+        },
+        {
+          "a": "yXXyy",
+          "b": "yXYXyx",
+          "cyclic_product": "yXXyyyXYXyx",
+          "product": "yXXyyyXYXyx"
+        },
+        {
+          "a": "yXXyy",
+          "b": "yxYXYx",
+          "cyclic_product": "yXXyyyxYXYx",
+          "product": "yXXyyyxYXYx"
+        },
+        {
+          "a": "yXXyy",
+          "b": "yxyXYX",
+          "cyclic_product": "yXXyyyxyXYX",
+          "product": "yXXyyyxyXYX"
+        },
+        {
+          "a": "yyXXy",
+          "b": "YXYxyx",
+          "cyclic_product": "yyXXXYxyx",
+          "product": "yyXXXYxyx"
+        },
+        {
+          "a": "yyXXy",
+          "b": "YXyxyX",
+          "cyclic_product": "yyXXXyxyX",
+          "product": "yyXXXyxyX"
+        },
+        {
+          "a": "yyXXy",
+          "b": "YxyxYX",
+          "cyclic_product": "yyXyxYX",
+          "product": "yyXyxYX"
+        },
+        {
+          "a": "yyXXy",
+          "b": "XYXyxy",
+          "cyclic_product": "yyXXyXYXyxy",
+          "product": "yyXXyXYXyxy"
+        },
+        {
+          "a": "yyXXy",
+          "b": "XYxyxY",
+          "cyclic_product": "yXXyXYxyx",
+          "product": "yyXXyXYxyxY"
+        },
+        {
+          "a": "yyXXy",
+          "b": "XyxyXY",
+          "cyclic_product": "yXXyXyxyX",
+          "product": "yyXXyXyxyXY"
+        },
+        {
+          "a": "yyXXy",
+          "b": "xYXYxy",
+          "cyclic_product": "yyXXyxYXYxy",
+          "product": "yyXXyxYXYxy"
+        },
+        {
+          "a": "yyXXy",
+          "b": "xyXYXy",
+          "cyclic_product": "yyXXyxyXYXy",
+          "product": "yyXXyxyXYXy"
+        },
+        {
+          "a": "yyXXy",
+          "b": "xyxYXY",
+          "cyclic_product": "yXXyxyxYX",
+          "product": "yyXXyxyxYXY"
+        },
+        {
+          "a": "yyXXy",
+          "b": "yXYXyx",
+          "cyclic_product": "yyXXyyXYXyx",
+          "product": "yyXXyyXYXyx"
+        },
+        {
+          "a": "yyXXy",
+          "b": "yxYXYx",
+          "cyclic_product": "yyXXyyxYXYx",
+          "product": "yyXXyyxYXYx"
+        },
+        {
+          "a": "yyXXy",
+          "b": "yxyXYX",
+          "cyclic_product": "yyXXyyxyXYX",
+          "product": "yyXXyyxyXYX"
+        },
+        {
+          "a": "yyyXX",
+          "b": "YXYxyx",
+          "cyclic_product": "yyyXXYXYxyx",
+          "product": "yyyXXYXYxyx"
+        },
+        {
+          "a": "yyyXX",
+          "b": "YXyxyX",
+          "cyclic_product": "yyyXXYXyxyX",
+          "product": "yyyXXYXyxyX"
+        },
+        {
+          "a": "yyyXX",
+          "b": "YxyxYX",
+          "cyclic_product": "yyyXXYxyxYX",
+          "product": "yyyXXYxyxYX"
+        },
+        {
+          "a": "yyyXX",
+          "b": "XYXyxy",
+          "cyclic_product": "yyyXXXYXyxy",
+          "product": "yyyXXXYXyxy"
+        },
+        {
+          "a": "yyyXX",
+          "b": "XYxyxY",
+          "cyclic_product": "yyXXXYxyx",
+          "product": "yyyXXXYxyxY"
+        },
+        {
+          "a": "yyyXX",
+          "b": "XyxyXY",
+          "cyclic_product": "yyXXXyxyX",
+          "product": "yyyXXXyxyXY"
+        },
+        {
+          "a": "yyyXX",
+          "b": "xYXYxy",
+          "cyclic_product": "yyyXYXYxy",
+          "product": "yyyXYXYxy"
+        },
+        {
+          "a": "yyyXX",
+          "b": "xyXYXy",
+          "cyclic_product": "yyyXyXYXy",
+          "product": "yyyXyXYXy"
+        },
+        {
+          "a": "yyyXX",
+          "b": "xyxYXY",
+          "cyclic_product": "yyXyxYX",
+          "product": "yyyXyxYXY"
+        },
+        {
+          "a": "yyyXX",
+          "b": "yXYXyx",
+          "cyclic_product": "yyyXXyXYXyx",
+          "product": "yyyXXyXYXyx"
+        },
+        {
+          "a": "yyyXX",
+          "b": "yxYXYx",
+          "cyclic_product": "yyyXXyxYXYx",
+          "product": "yyyXXyxYXYx"
+        },
+        {
+          "a": "yyyXX",
+          "b": "yxyXYX",
+          "cyclic_product": "yyyXXyxyXYX",
+          "product": "yyyXXyxyXYX"
+        }
+      ]
+    },
+    {
+      "candidate": "AK(3)",
+      "min_cyclic_product": 9,
+      "pair": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "product_count": 168,
+      "rotations_inversions": [
+        14,
+        12
+      ],
+      "rows": [
+        {
+          "a": "YYYYxxx",
+          "b": "YXYxyx",
+          "cyclic_product": "YYYYxxxYXYxyx",
+          "product": "YYYYxxxYXYxyx"
+        },
+        {
+          "a": "YYYYxxx",
+          "b": "YXyxyX",
+          "cyclic_product": "YYYYxxxYXyxyX",
+          "product": "YYYYxxxYXyxyX"
+        },
+        {
+          "a": "YYYYxxx",
+          "b": "YxyxYX",
+          "cyclic_product": "YYYYxxxYxyxYX",
+          "product": "YYYYxxxYxyxYX"
+        },
+        {
+          "a": "YYYYxxx",
+          "b": "XYXyxy",
+          "cyclic_product": "YYYxxYXyx",
+          "product": "YYYYxxYXyxy"
+        },
+        {
+          "a": "YYYYxxx",
+          "b": "XYxyxY",
+          "cyclic_product": "YYYYxxYxyxY",
+          "product": "YYYYxxYxyxY"
+        },
+        {
+          "a": "YYYYxxx",
+          "b": "XyxyXY",
+          "cyclic_product": "YYYYxxyxyXY",
+          "product": "YYYYxxyxyXY"
+        },
+        {
+          "a": "YYYYxxx",
+          "b": "xYXYxy",
+          "cyclic_product": "YYYxxxxYXYx",
+          "product": "YYYYxxxxYXYxy"
+        },
+        {
+          "a": "YYYYxxx",
+          "b": "xyXYXy",
+          "cyclic_product": "YYYxxxxyXYX",
+          "product": "YYYYxxxxyXYXy"
+        },
+        {
+          "a": "YYYYxxx",
+          "b": "xyxYXY",
+          "cyclic_product": "YYYYxxxxyxYXY",
+          "product": "YYYYxxxxyxYXY"
+        },
+        {
+          "a": "YYYYxxx",
+          "b": "yXYXyx",
+          "cyclic_product": "YYYYxxxyXYXyx",
+          "product": "YYYYxxxyXYXyx"
+        },
+        {
+          "a": "YYYYxxx",
+          "b": "yxYXYx",
+          "cyclic_product": "YYYYxxxyxYXYx",
+          "product": "YYYYxxxyxYXYx"
+        },
+        {
+          "a": "YYYYxxx",
+          "b": "yxyXYX",
+          "cyclic_product": "YYYYxxxyxyXYX",
+          "product": "YYYYxxxyxyXYX"
+        },
+        {
+          "a": "YYYxxxY",
+          "b": "YXYxyx",
+          "cyclic_product": "YYYxxxYYXYxyx",
+          "product": "YYYxxxYYXYxyx"
+        },
+        {
+          "a": "YYYxxxY",
+          "b": "YXyxyX",
+          "cyclic_product": "YYYxxxYYXyxyX",
+          "product": "YYYxxxYYXyxyX"
+        },
+        {
+          "a": "YYYxxxY",
+          "b": "YxyxYX",
+          "cyclic_product": "YYYxxxYYxyxYX",
+          "product": "YYYxxxYYxyxYX"
+        },
+        {
+          "a": "YYYxxxY",
+          "b": "XYXyxy",
+          "cyclic_product": "YYxxxYXYXyx",
+          "product": "YYYxxxYXYXyxy"
+        },
+        {
+          "a": "YYYxxxY",
+          "b": "XYxyxY",
+          "cyclic_product": "YYYxxxYXYxyxY",
+          "product": "YYYxxxYXYxyxY"
+        },
+        {
+          "a": "YYYxxxY",
+          "b": "XyxyXY",
+          "cyclic_product": "YYYxxxYXyxyXY",
+          "product": "YYYxxxYXyxyXY"
+        },
+        {
+          "a": "YYYxxxY",
+          "b": "xYXYxy",
+          "cyclic_product": "YYxxxYxYXYx",
+          "product": "YYYxxxYxYXYxy"
+        },
+        {
+          "a": "YYYxxxY",
+          "b": "xyXYXy",
+          "cyclic_product": "YYxxxYxyXYX",
+          "product": "YYYxxxYxyXYXy"
+        },
+        {
+          "a": "YYYxxxY",
+          "b": "xyxYXY",
+          "cyclic_product": "YYYxxxYxyxYXY",
+          "product": "YYYxxxYxyxYXY"
+        },
+        {
+          "a": "YYYxxxY",
+          "b": "yXYXyx",
+          "cyclic_product": "YYYxxYXyx",
+          "product": "YYYxxYXyx"
+        },
+        {
+          "a": "YYYxxxY",
+          "b": "yxYXYx",
+          "cyclic_product": "YYYxxxxYXYx",
+          "product": "YYYxxxxYXYx"
+        },
+        {
+          "a": "YYYxxxY",
+          "b": "yxyXYX",
+          "cyclic_product": "YYYxxxxyXYX",
+          "product": "YYYxxxxyXYX"
+        },
+        {
+          "a": "YYxxxYY",
+          "b": "YXYxyx",
+          "cyclic_product": "YYxxxYYYXYxyx",
+          "product": "YYxxxYYYXYxyx"
+        },
+        {
+          "a": "YYxxxYY",
+          "b": "YXyxyX",
+          "cyclic_product": "YYxxxYYYXyxyX",
+          "product": "YYxxxYYYXyxyX"
+        },
+        {
+          "a": "YYxxxYY",
+          "b": "YxyxYX",
+          "cyclic_product": "YYxxxYYYxyxYX",
+          "product": "YYxxxYYYxyxYX"
+        },
+        {
+          "a": "YYxxxYY",
+          "b": "XYXyxy",
+          "cyclic_product": "YxxxYYXYXyx",
+          "product": "YYxxxYYXYXyxy"
+        },
+        {
+          "a": "YYxxxYY",
+          "b": "XYxyxY",
+          "cyclic_product": "YYxxxYYXYxyxY",
+          "product": "YYxxxYYXYxyxY"
+        },
+        {
+          "a": "YYxxxYY",
+          "b": "XyxyXY",
+          "cyclic_product": "YYxxxYYXyxyXY",
+          "product": "YYxxxYYXyxyXY"
+        },
+        {
+          "a": "YYxxxYY",
+          "b": "xYXYxy",
+          "cyclic_product": "YxxxYYxYXYx",
+          "product": "YYxxxYYxYXYxy"
+        },
+        {
+          "a": "YYxxxYY",
+          "b": "xyXYXy",
+          "cyclic_product": "YxxxYYxyXYX",
+          "product": "YYxxxYYxyXYXy"
+        },
+        {
+          "a": "YYxxxYY",
+          "b": "xyxYXY",
+          "cyclic_product": "YYxxxYYxyxYXY",
+          "product": "YYxxxYYxyxYXY"
+        },
+        {
+          "a": "YYxxxYY",
+          "b": "yXYXyx",
+          "cyclic_product": "YYxxxYXYXyx",
+          "product": "YYxxxYXYXyx"
+        },
+        {
+          "a": "YYxxxYY",
+          "b": "yxYXYx",
+          "cyclic_product": "YYxxxYxYXYx",
+          "product": "YYxxxYxYXYx"
+        },
+        {
+          "a": "YYxxxYY",
+          "b": "yxyXYX",
+          "cyclic_product": "YYxxxYxyXYX",
+          "product": "YYxxxYxyXYX"
+        },
+        {
+          "a": "YxxxYYY",
+          "b": "YXYxyx",
+          "cyclic_product": "YxxxYYYYXYxyx",
+          "product": "YxxxYYYYXYxyx"
+        },
+        {
+          "a": "YxxxYYY",
+          "b": "YXyxyX",
+          "cyclic_product": "YxxxYYYYXyxyX",
+          "product": "YxxxYYYYXyxyX"
+        },
+        {
+          "a": "YxxxYYY",
+          "b": "YxyxYX",
+          "cyclic_product": "YxxxYYYYxyxYX",
+          "product": "YxxxYYYYxyxYX"
+        },
+        {
+          "a": "YxxxYYY",
+          "b": "XYXyxy",
+          "cyclic_product": "xxxYYYXYXyx",
+          "product": "YxxxYYYXYXyxy"
+        },
+        {
+          "a": "YxxxYYY",
+          "b": "XYxyxY",
+          "cyclic_product": "YxxxYYYXYxyxY",
+          "product": "YxxxYYYXYxyxY"
+        },
+        {
+          "a": "YxxxYYY",
+          "b": "XyxyXY",
+          "cyclic_product": "YxxxYYYXyxyXY",
+          "product": "YxxxYYYXyxyXY"
+        },
+        {
+          "a": "YxxxYYY",
+          "b": "xYXYxy",
+          "cyclic_product": "xxxYYYxYXYx",
+          "product": "YxxxYYYxYXYxy"
+        },
+        {
+          "a": "YxxxYYY",
+          "b": "xyXYXy",
+          "cyclic_product": "xxYYYxyXY",
+          "product": "YxxxYYYxyXYXy"
+        },
+        {
+          "a": "YxxxYYY",
+          "b": "xyxYXY",
+          "cyclic_product": "YxxxYYYxyxYXY",
+          "product": "YxxxYYYxyxYXY"
+        },
+        {
+          "a": "YxxxYYY",
+          "b": "yXYXyx",
+          "cyclic_product": "YxxxYYXYXyx",
+          "product": "YxxxYYXYXyx"
+        },
+        {
+          "a": "YxxxYYY",
+          "b": "yxYXYx",
+          "cyclic_product": "YxxxYYxYXYx",
+          "product": "YxxxYYxYXYx"
+        },
+        {
+          "a": "YxxxYYY",
+          "b": "yxyXYX",
+          "cyclic_product": "YxxxYYxyXYX",
+          "product": "YxxxYYxyXYX"
+        },
+        {
+          "a": "XXXyyyy",
+          "b": "YXYxyx",
+          "cyclic_product": "XXyyyXYxy",
+          "product": "XXXyyyXYxyx"
+        },
+        {
+          "a": "XXXyyyy",
+          "b": "YXyxyX",
+          "cyclic_product": "XXXyyyXyxyX",
+          "product": "XXXyyyXyxyX"
+        },
+        {
+          "a": "XXXyyyy",
+          "b": "YxyxYX",
+          "cyclic_product": "XXXyyyxyxYX",
+          "product": "XXXyyyxyxYX"
+        },
+        {
+          "a": "XXXyyyy",
+          "b": "XYXyxy",
+          "cyclic_product": "XXXyyyyXYXyxy",
+          "product": "XXXyyyyXYXyxy"
+        },
+        {
+          "a": "XXXyyyy",
+          "b": "XYxyxY",
+          "cyclic_product": "XXXyyyyXYxyxY",
+          "product": "XXXyyyyXYxyxY"
+        },
+        {
+          "a": "XXXyyyy",
+          "b": "XyxyXY",
+          "cyclic_product": "XXXyyyyXyxyXY",
+          "product": "XXXyyyyXyxyXY"
+        },
+        {
+          "a": "XXXyyyy",
+          "b": "xYXYxy",
+          "cyclic_product": "XXXyyyyxYXYxy",
+          "product": "XXXyyyyxYXYxy"
+        },
+        {
+          "a": "XXXyyyy",
+          "b": "xyXYXy",
+          "cyclic_product": "XXXyyyyxyXYXy",
+          "product": "XXXyyyyxyXYXy"
+        },
+        {
+          "a": "XXXyyyy",
+          "b": "xyxYXY",
+          "cyclic_product": "XXXyyyyxyxYXY",
+          "product": "XXXyyyyxyxYXY"
+        },
+        {
+          "a": "XXXyyyy",
+          "b": "yXYXyx",
+          "cyclic_product": "XXyyyyyXYXy",
+          "product": "XXXyyyyyXYXyx"
+        },
+        {
+          "a": "XXXyyyy",
+          "b": "yxYXYx",
+          "cyclic_product": "XXyyyyyxYXY",
+          "product": "XXXyyyyyxYXYx"
+        },
+        {
+          "a": "XXXyyyy",
+          "b": "yxyXYX",
+          "cyclic_product": "XXXyyyyyxyXYX",
+          "product": "XXXyyyyyxyXYX"
+        },
+        {
+          "a": "XXyyyyX",
+          "b": "YXYxyx",
+          "cyclic_product": "XyyyyXYXYxy",
+          "product": "XXyyyyXYXYxyx"
+        },
+        {
+          "a": "XXyyyyX",
+          "b": "YXyxyX",
+          "cyclic_product": "XXyyyyXYXyxyX",
+          "product": "XXyyyyXYXyxyX"
+        },
+        {
+          "a": "XXyyyyX",
+          "b": "YxyxYX",
+          "cyclic_product": "XXyyyyXYxyxYX",
+          "product": "XXyyyyXYxyxYX"
+        },
+        {
+          "a": "XXyyyyX",
+          "b": "XYXyxy",
+          "cyclic_product": "XXyyyyXXYXyxy",
+          "product": "XXyyyyXXYXyxy"
+        },
+        {
+          "a": "XXyyyyX",
+          "b": "XYxyxY",
+          "cyclic_product": "XXyyyyXXYxyxY",
+          "product": "XXyyyyXXYxyxY"
+        },
+        {
+          "a": "XXyyyyX",
+          "b": "XyxyXY",
+          "cyclic_product": "XXyyyyXXyxyXY",
+          "product": "XXyyyyXXyxyXY"
+        },
+        {
+          "a": "XXyyyyX",
+          "b": "xYXYxy",
+          "cyclic_product": "XXyyyXYxy",
+          "product": "XXyyyXYxy"
+        },
+        {
+          "a": "XXyyyyX",
+          "b": "xyXYXy",
+          "cyclic_product": "XXyyyyyXYXy",
+          "product": "XXyyyyyXYXy"
+        },
+        {
+          "a": "XXyyyyX",
+          "b": "xyxYXY",
+          "cyclic_product": "XXyyyyyxYXY",
+          "product": "XXyyyyyxYXY"
+        },
+        {
+          "a": "XXyyyyX",
+          "b": "yXYXyx",
+          "cyclic_product": "XyyyyXyXYXy",
+          "product": "XXyyyyXyXYXyx"
+        },
+        {
+          "a": "XXyyyyX",
+          "b": "yxYXYx",
+          "cyclic_product": "XyyyyXyxYXY",
+          "product": "XXyyyyXyxYXYx"
+        },
+        {
+          "a": "XXyyyyX",
+          "b": "yxyXYX",
+          "cyclic_product": "XXyyyyXyxyXYX",
+          "product": "XXyyyyXyxyXYX"
+        },
+        {
+          "a": "XyyyyXX",
+          "b": "YXYxyx",
+          "cyclic_product": "yyyyXXYXYxy",
+          "product": "XyyyyXXYXYxyx"
+        },
+        {
+          "a": "XyyyyXX",
+          "b": "YXyxyX",
+          "cyclic_product": "XyyyyXXYXyxyX",
+          "product": "XyyyyXXYXyxyX"
+        },
+        {
+          "a": "XyyyyXX",
+          "b": "YxyxYX",
+          "cyclic_product": "XyyyyXXYxyxYX",
+          "product": "XyyyyXXYxyxYX"
+        },
+        {
+          "a": "XyyyyXX",
+          "b": "XYXyxy",
+          "cyclic_product": "XyyyyXXXYXyxy",
+          "product": "XyyyyXXXYXyxy"
+        },
+        {
+          "a": "XyyyyXX",
+          "b": "XYxyxY",
+          "cyclic_product": "XyyyyXXXYxyxY",
+          "product": "XyyyyXXXYxyxY"
+        },
+        {
+          "a": "XyyyyXX",
+          "b": "XyxyXY",
+          "cyclic_product": "XyyyyXXXyxyXY",
+          "product": "XyyyyXXXyxyXY"
+        },
+        {
+          "a": "XyyyyXX",
+          "b": "xYXYxy",
+          "cyclic_product": "XyyyyXYXYxy",
+          "product": "XyyyyXYXYxy"
+        },
+        {
+          "a": "XyyyyXX",
+          "b": "xyXYXy",
+          "cyclic_product": "XyyyyXyXYXy",
+          "product": "XyyyyXyXYXy"
+        },
+        {
+          "a": "XyyyyXX",
+          "b": "xyxYXY",
+          "cyclic_product": "XyyyyXyxYXY",
+          "product": "XyyyyXyxYXY"
+        },
+        {
+          "a": "XyyyyXX",
+          "b": "yXYXyx",
+          "cyclic_product": "yyyyXXyXYXy",
+          "product": "XyyyyXXyXYXyx"
+        },
+        {
+          "a": "XyyyyXX",
+          "b": "yxYXYx",
+          "cyclic_product": "yyyXXyxYX",
+          "product": "XyyyyXXyxYXYx"
+        },
+        {
+          "a": "XyyyyXX",
+          "b": "yxyXYX",
+          "cyclic_product": "XyyyyXXyxyXYX",
+          "product": "XyyyyXXyxyXYX"
+        },
+        {
+          "a": "xYYYYxx",
+          "b": "YXYxyx",
+          "cyclic_product": "xYYYYxxYXYxyx",
+          "product": "xYYYYxxYXYxyx"
+        },
+        {
+          "a": "xYYYYxx",
+          "b": "YXyxyX",
+          "cyclic_product": "YYYxxYXyx",
+          "product": "xYYYYxxYXyxyX"
+        },
+        {
+          "a": "xYYYYxx",
+          "b": "YxyxYX",
+          "cyclic_product": "YYYYxxYxyxY",
+          "product": "xYYYYxxYxyxYX"
+        },
+        {
+          "a": "xYYYYxx",
+          "b": "XYXyxy",
+          "cyclic_product": "xYYYYxYXyxy",
+          "product": "xYYYYxYXyxy"
+        },
+        {
+          "a": "xYYYYxx",
+          "b": "XYxyxY",
+          "cyclic_product": "xYYYYxYxyxY",
+          "product": "xYYYYxYxyxY"
+        },
+        {
+          "a": "xYYYYxx",
+          "b": "XyxyXY",
+          "cyclic_product": "xYYYYxyxyXY",
+          "product": "xYYYYxyxyXY"
+        },
+        {
+          "a": "xYYYYxx",
+          "b": "xYXYxy",
+          "cyclic_product": "xYYYYxxxYXYxy",
+          "product": "xYYYYxxxYXYxy"
+        },
+        {
+          "a": "xYYYYxx",
+          "b": "xyXYXy",
+          "cyclic_product": "xYYYYxxxyXYXy",
+          "product": "xYYYYxxxyXYXy"
+        },
+        {
+          "a": "xYYYYxx",
+          "b": "xyxYXY",
+          "cyclic_product": "xYYYYxxxyxYXY",
+          "product": "xYYYYxxxyxYXY"
+        },
+        {
+          "a": "xYYYYxx",
+          "b": "yXYXyx",
+          "cyclic_product": "xYYYYxxyXYXyx",
+          "product": "xYYYYxxyXYXyx"
+        },
+        {
+          "a": "xYYYYxx",
+          "b": "yxYXYx",
+          "cyclic_product": "xYYYYxxyxYXYx",
+          "product": "xYYYYxxyxYXYx"
+        },
+        {
+          "a": "xYYYYxx",
+          "b": "yxyXYX",
+          "cyclic_product": "YYYYxxyxyXY",
+          "product": "xYYYYxxyxyXYX"
+        },
+        {
+          "a": "xxYYYYx",
+          "b": "YXYxyx",
+          "cyclic_product": "xxYYYYxYXYxyx",
+          "product": "xxYYYYxYXYxyx"
+        },
+        {
+          "a": "xxYYYYx",
+          "b": "YXyxyX",
+          "cyclic_product": "xYYYYxYXyxy",
+          "product": "xxYYYYxYXyxyX"
+        },
+        {
+          "a": "xxYYYYx",
+          "b": "YxyxYX",
+          "cyclic_product": "xYYYYxYxyxY",
+          "product": "xxYYYYxYxyxYX"
+        },
+        {
+          "a": "xxYYYYx",
+          "b": "XYXyxy",
+          "cyclic_product": "xxYYYYYXyxy",
+          "product": "xxYYYYYXyxy"
+        },
+        {
+          "a": "xxYYYYx",
+          "b": "XYxyxY",
+          "cyclic_product": "xxYYYYYxyxY",
+          "product": "xxYYYYYxyxY"
+        },
+        {
+          "a": "xxYYYYx",
+          "b": "XyxyXY",
+          "cyclic_product": "xxYYYxyXY",
+          "product": "xxYYYxyXY"
+        },
+        {
+          "a": "xxYYYYx",
+          "b": "xYXYxy",
+          "cyclic_product": "xxYYYYxxYXYxy",
+          "product": "xxYYYYxxYXYxy"
+        },
+        {
+          "a": "xxYYYYx",
+          "b": "xyXYXy",
+          "cyclic_product": "xxYYYYxxyXYXy",
+          "product": "xxYYYYxxyXYXy"
+        },
+        {
+          "a": "xxYYYYx",
+          "b": "xyxYXY",
+          "cyclic_product": "xxYYYYxxyxYXY",
+          "product": "xxYYYYxxyxYXY"
+        },
+        {
+          "a": "xxYYYYx",
+          "b": "yXYXyx",
+          "cyclic_product": "xxYYYYxyXYXyx",
+          "product": "xxYYYYxyXYXyx"
+        },
+        {
+          "a": "xxYYYYx",
+          "b": "yxYXYx",
+          "cyclic_product": "xxYYYYxyxYXYx",
+          "product": "xxYYYYxyxYXYx"
+        },
+        {
+          "a": "xxYYYYx",
+          "b": "yxyXYX",
+          "cyclic_product": "xYYYYxyxyXY",
+          "product": "xxYYYYxyxyXYX"
+        },
+        {
+          "a": "xxxYYYY",
+          "b": "YXYxyx",
+          "cyclic_product": "xxxYYYYYXYxyx",
+          "product": "xxxYYYYYXYxyx"
+        },
+        {
+          "a": "xxxYYYY",
+          "b": "YXyxyX",
+          "cyclic_product": "xxYYYYYXyxy",
+          "product": "xxxYYYYYXyxyX"
+        },
+        {
+          "a": "xxxYYYY",
+          "b": "YxyxYX",
+          "cyclic_product": "xxYYYYYxyxY",
+          "product": "xxxYYYYYxyxYX"
+        },
+        {
+          "a": "xxxYYYY",
+          "b": "XYXyxy",
+          "cyclic_product": "xxxYYYYXYXyxy",
+          "product": "xxxYYYYXYXyxy"
+        },
+        {
+          "a": "xxxYYYY",
+          "b": "XYxyxY",
+          "cyclic_product": "xxxYYYYXYxyxY",
+          "product": "xxxYYYYXYxyxY"
+        },
+        {
+          "a": "xxxYYYY",
+          "b": "XyxyXY",
+          "cyclic_product": "xxxYYYYXyxyXY",
+          "product": "xxxYYYYXyxyXY"
+        },
+        {
+          "a": "xxxYYYY",
+          "b": "xYXYxy",
+          "cyclic_product": "xxxYYYYxYXYxy",
+          "product": "xxxYYYYxYXYxy"
+        },
+        {
+          "a": "xxxYYYY",
+          "b": "xyXYXy",
+          "cyclic_product": "xxxYYYYxyXYXy",
+          "product": "xxxYYYYxyXYXy"
+        },
+        {
+          "a": "xxxYYYY",
+          "b": "xyxYXY",
+          "cyclic_product": "xxxYYYYxyxYXY",
+          "product": "xxxYYYYxyxYXY"
+        },
+        {
+          "a": "xxxYYYY",
+          "b": "yXYXyx",
+          "cyclic_product": "xxxYYYXYXyx",
+          "product": "xxxYYYXYXyx"
+        },
+        {
+          "a": "xxxYYYY",
+          "b": "yxYXYx",
+          "cyclic_product": "xxxYYYxYXYx",
+          "product": "xxxYYYxYXYx"
+        },
+        {
+          "a": "xxxYYYY",
+          "b": "yxyXYX",
+          "cyclic_product": "xxYYYxyXY",
+          "product": "xxxYYYxyXYX"
+        },
+        {
+          "a": "yXXXyyy",
+          "b": "YXYxyx",
+          "cyclic_product": "yXXXyyXYxyx",
+          "product": "yXXXyyXYxyx"
+        },
+        {
+          "a": "yXXXyyy",
+          "b": "YXyxyX",
+          "cyclic_product": "yXXXyyXyxyX",
+          "product": "yXXXyyXyxyX"
+        },
+        {
+          "a": "yXXXyyy",
+          "b": "YxyxYX",
+          "cyclic_product": "yXXXyyxyxYX",
+          "product": "yXXXyyxyxYX"
+        },
+        {
+          "a": "yXXXyyy",
+          "b": "XYXyxy",
+          "cyclic_product": "yXXXyyyXYXyxy",
+          "product": "yXXXyyyXYXyxy"
+        },
+        {
+          "a": "yXXXyyy",
+          "b": "XYxyxY",
+          "cyclic_product": "XXyyyXYxy",
+          "product": "yXXXyyyXYxyxY"
+        },
+        {
+          "a": "yXXXyyy",
+          "b": "XyxyXY",
+          "cyclic_product": "XXXyyyXyxyX",
+          "product": "yXXXyyyXyxyXY"
+        },
+        {
+          "a": "yXXXyyy",
+          "b": "xYXYxy",
+          "cyclic_product": "yXXXyyyxYXYxy",
+          "product": "yXXXyyyxYXYxy"
+        },
+        {
+          "a": "yXXXyyy",
+          "b": "xyXYXy",
+          "cyclic_product": "yXXXyyyxyXYXy",
+          "product": "yXXXyyyxyXYXy"
+        },
+        {
+          "a": "yXXXyyy",
+          "b": "xyxYXY",
+          "cyclic_product": "XXXyyyxyxYX",
+          "product": "yXXXyyyxyxYXY"
+        },
+        {
+          "a": "yXXXyyy",
+          "b": "yXYXyx",
+          "cyclic_product": "yXXXyyyyXYXyx",
+          "product": "yXXXyyyyXYXyx"
+        },
+        {
+          "a": "yXXXyyy",
+          "b": "yxYXYx",
+          "cyclic_product": "yXXXyyyyxYXYx",
+          "product": "yXXXyyyyxYXYx"
+        },
+        {
+          "a": "yXXXyyy",
+          "b": "yxyXYX",
+          "cyclic_product": "yXXXyyyyxyXYX",
+          "product": "yXXXyyyyxyXYX"
+        },
+        {
+          "a": "yyXXXyy",
+          "b": "YXYxyx",
+          "cyclic_product": "yyXXXyXYxyx",
+          "product": "yyXXXyXYxyx"
+        },
+        {
+          "a": "yyXXXyy",
+          "b": "YXyxyX",
+          "cyclic_product": "yyXXXyXyxyX",
+          "product": "yyXXXyXyxyX"
+        },
+        {
+          "a": "yyXXXyy",
+          "b": "YxyxYX",
+          "cyclic_product": "yyXXXyxyxYX",
+          "product": "yyXXXyxyxYX"
+        },
+        {
+          "a": "yyXXXyy",
+          "b": "XYXyxy",
+          "cyclic_product": "yyXXXyyXYXyxy",
+          "product": "yyXXXyyXYXyxy"
+        },
+        {
+          "a": "yyXXXyy",
+          "b": "XYxyxY",
+          "cyclic_product": "yXXXyyXYxyx",
+          "product": "yyXXXyyXYxyxY"
+        },
+        {
+          "a": "yyXXXyy",
+          "b": "XyxyXY",
+          "cyclic_product": "yXXXyyXyxyX",
+          "product": "yyXXXyyXyxyXY"
+        },
+        {
+          "a": "yyXXXyy",
+          "b": "xYXYxy",
+          "cyclic_product": "yyXXXyyxYXYxy",
+          "product": "yyXXXyyxYXYxy"
+        },
+        {
+          "a": "yyXXXyy",
+          "b": "xyXYXy",
+          "cyclic_product": "yyXXXyyxyXYXy",
+          "product": "yyXXXyyxyXYXy"
+        },
+        {
+          "a": "yyXXXyy",
+          "b": "xyxYXY",
+          "cyclic_product": "yXXXyyxyxYX",
+          "product": "yyXXXyyxyxYXY"
+        },
+        {
+          "a": "yyXXXyy",
+          "b": "yXYXyx",
+          "cyclic_product": "yyXXXyyyXYXyx",
+          "product": "yyXXXyyyXYXyx"
+        },
+        {
+          "a": "yyXXXyy",
+          "b": "yxYXYx",
+          "cyclic_product": "yyXXXyyyxYXYx",
+          "product": "yyXXXyyyxYXYx"
+        },
+        {
+          "a": "yyXXXyy",
+          "b": "yxyXYX",
+          "cyclic_product": "yyXXXyyyxyXYX",
+          "product": "yyXXXyyyxyXYX"
+        },
+        {
+          "a": "yyyXXXy",
+          "b": "YXYxyx",
+          "cyclic_product": "yyyXXXXYxyx",
+          "product": "yyyXXXXYxyx"
+        },
+        {
+          "a": "yyyXXXy",
+          "b": "YXyxyX",
+          "cyclic_product": "yyyXXXXyxyX",
+          "product": "yyyXXXXyxyX"
+        },
+        {
+          "a": "yyyXXXy",
+          "b": "YxyxYX",
+          "cyclic_product": "yyyXXyxYX",
+          "product": "yyyXXyxYX"
+        },
+        {
+          "a": "yyyXXXy",
+          "b": "XYXyxy",
+          "cyclic_product": "yyyXXXyXYXyxy",
+          "product": "yyyXXXyXYXyxy"
+        },
+        {
+          "a": "yyyXXXy",
+          "b": "XYxyxY",
+          "cyclic_product": "yyXXXyXYxyx",
+          "product": "yyyXXXyXYxyxY"
+        },
+        {
+          "a": "yyyXXXy",
+          "b": "XyxyXY",
+          "cyclic_product": "yyXXXyXyxyX",
+          "product": "yyyXXXyXyxyXY"
+        },
+        {
+          "a": "yyyXXXy",
+          "b": "xYXYxy",
+          "cyclic_product": "yyyXXXyxYXYxy",
+          "product": "yyyXXXyxYXYxy"
+        },
+        {
+          "a": "yyyXXXy",
+          "b": "xyXYXy",
+          "cyclic_product": "yyyXXXyxyXYXy",
+          "product": "yyyXXXyxyXYXy"
+        },
+        {
+          "a": "yyyXXXy",
+          "b": "xyxYXY",
+          "cyclic_product": "yyXXXyxyxYX",
+          "product": "yyyXXXyxyxYXY"
+        },
+        {
+          "a": "yyyXXXy",
+          "b": "yXYXyx",
+          "cyclic_product": "yyyXXXyyXYXyx",
+          "product": "yyyXXXyyXYXyx"
+        },
+        {
+          "a": "yyyXXXy",
+          "b": "yxYXYx",
+          "cyclic_product": "yyyXXXyyxYXYx",
+          "product": "yyyXXXyyxYXYx"
+        },
+        {
+          "a": "yyyXXXy",
+          "b": "yxyXYX",
+          "cyclic_product": "yyyXXXyyxyXYX",
+          "product": "yyyXXXyyxyXYX"
+        },
+        {
+          "a": "yyyyXXX",
+          "b": "YXYxyx",
+          "cyclic_product": "yyyyXXXYXYxyx",
+          "product": "yyyyXXXYXYxyx"
+        },
+        {
+          "a": "yyyyXXX",
+          "b": "YXyxyX",
+          "cyclic_product": "yyyyXXXYXyxyX",
+          "product": "yyyyXXXYXyxyX"
+        },
+        {
+          "a": "yyyyXXX",
+          "b": "YxyxYX",
+          "cyclic_product": "yyyyXXXYxyxYX",
+          "product": "yyyyXXXYxyxYX"
+        },
+        {
+          "a": "yyyyXXX",
+          "b": "XYXyxy",
+          "cyclic_product": "yyyyXXXXYXyxy",
+          "product": "yyyyXXXXYXyxy"
+        },
+        {
+          "a": "yyyyXXX",
+          "b": "XYxyxY",
+          "cyclic_product": "yyyXXXXYxyx",
+          "product": "yyyyXXXXYxyxY"
+        },
+        {
+          "a": "yyyyXXX",
+          "b": "XyxyXY",
+          "cyclic_product": "yyyXXXXyxyX",
+          "product": "yyyyXXXXyxyXY"
+        },
+        {
+          "a": "yyyyXXX",
+          "b": "xYXYxy",
+          "cyclic_product": "yyyyXXYXYxy",
+          "product": "yyyyXXYXYxy"
+        },
+        {
+          "a": "yyyyXXX",
+          "b": "xyXYXy",
+          "cyclic_product": "yyyyXXyXYXy",
+          "product": "yyyyXXyXYXy"
+        },
+        {
+          "a": "yyyyXXX",
+          "b": "xyxYXY",
+          "cyclic_product": "yyyXXyxYX",
+          "product": "yyyyXXyxYXY"
+        },
+        {
+          "a": "yyyyXXX",
+          "b": "yXYXyx",
+          "cyclic_product": "yyyyXXXyXYXyx",
+          "product": "yyyyXXXyXYXyx"
+        },
+        {
+          "a": "yyyyXXX",
+          "b": "yxYXYx",
+          "cyclic_product": "yyyyXXXyxYXYx",
+          "product": "yyyyXXXyxYXYx"
+        },
+        {
+          "a": "yyyyXXX",
+          "b": "yxyXYX",
+          "cyclic_product": "yyyyXXXyxyXYX",
+          "product": "yyyyXXXyxyXYX"
+        }
+      ]
+    }
+  ],
+  "relators": [
+    "YXyXXXYxYxyxyyxYYXXyXXyyxyXyXYYYYXYXYYXYYXXYYYxyxyxYXYxyXYYxY",
+    "xYXXYXyyxyyyyyyyyxYXyxYxyyxyyXyXYxxYYYXyXyXYXYxyXYYYxxxYXYxYx"
+  ],
+  "schema": "hsc-second-strike-v1"
+}

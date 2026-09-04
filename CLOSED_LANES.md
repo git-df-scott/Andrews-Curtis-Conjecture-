@@ -18,3 +18,20 @@ is a counterexample because a computation failed.
 The whole infinite-hyperbolic quotient architecture is **not** closed.
 Different markings of the modular or triangle groups are not automatically
 closed. No new nonconstant AC invariant was constructed.
+
+
+## Second-strike additions (same date)
+
+- **Endpoint-height monotonicity for geodesic sum or maximum: DISPROVED.**
+  The normally generating AK(2) control connects to standard by a fixed
+  23-move certificate, but cannot do so inside its initial sum-11 or maximum-6
+  sublevel. This does not disprove an upper bound allowing larger peaks.
+- **The obvious mixed reorder with a shortest conjugator always lowers
+  peaks: DISPROVED.** For (u,v,g)=(x,y,yxy), its peak increases from 8 to 11.
+  All lengths and identities are exact. Other reorders remain possible.
+- **A uniform conjugator bound from source length alone: DISPROVED.**
+  The source x has infinitely many conjugation outputs. The proved bound
+  K(L)=4L²+4L+8 requires the output also to have length <=L.
+
+The fixed H_SC comparison remains UNKNOWN, and the fixed-endpoint peak bound
+remains OPEN. Full proofs and scoped certificates: `HSC_PEAK_LEMMA.md`.

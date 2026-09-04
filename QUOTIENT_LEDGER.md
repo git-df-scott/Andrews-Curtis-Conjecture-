@@ -32,3 +32,15 @@ cases non-elementarity supplies nonabelian free subgroups and non-solubility.
 No quotient family was scaled. No row supplies an exact *general* AC orbit
 algorithm. The marked modular/triangle equality is a proved positive answer,
 not a separator and not a free-group trivialization.
+
+
+## Second-strike update for the existing H_SC row
+
+No quotient or marking was changed. Unique geodesics through radius 30 and
+an annular rotation-and-piece conjugacy algorithm are now proved, with
+K(L)=4L²+4L+8 for bounded source/output. These certify individual edges,
+not an AC component algorithm. AK(3) remains **UNKNOWN**; any connecting path
+must reach total geodesic length at least 15. No component was enumerated.
+The new finite hypotheses and controls are in
+`certificates/astra_second_strike.json`; proofs in `HSC_PEAK_LEMMA.md`.
+H_OR and all first-strike closed markings retain their previous status.

@@ -1,0 +1,22 @@
+Second strike validation, 2026-09-04
+Base commit: 82fe261d3ef925db37bdc293210005aa63d8eb7d
+No component enumeration performed.
+Producer bytes equal frozen certificate: PASS
+Producer runtime_seconds: 0.334830
+$ python scripts/check_first_strike.py
+{"dehn_witnesses": "PASS (literal rewrite proofs)", "modular_path": "PASS (normal forms and PSL matrices)", "separation_claim": "NONE", "small_cancellation": "PASS (independent prefix counts)"}
+exit=0; runtime_seconds=0.027916
+$ python scripts/check_second_strike.py
+{"AK2_positive_path": "PASS (23 moves in F2; maximum sum 15)", "AK3_orbit_separation": "NOT CLAIMED", "certificate_sha256": "d64cdf8862adcd7b5480f767ae5f86c202741102736e5065ac303985cd198dc3", "mathematical_scope": "finite certificate checks; annular implications require written proof", "mixed_reorder_counterexample": "PASS (peak 8 becomes 11)", "nonfree_conjugacy": "PASS (literal single-relator annulus)", "piece_cover": "PASS (pairwise prefixes / recursive partitions)", "short_plateau_products": "PASS (all 120+168 products)"}
+exit=0; runtime_seconds=0.065897
+$ python -m pytest -q
+................................................                         [100%]
+48 passed in 1.53s
+exit=0; runtime_seconds=1.767431
+$ sha256sum -c certificates/SHA256SUMS
+certificates/astra_first_strike.json: OK
+acsearch/first_strike.py: OK
+scripts/check_first_strike.py: OK
+tests/test_first_strike.py: OK
+certificates/first_strike_validation.txt: OK
+exit=0; runtime_seconds=0.001828

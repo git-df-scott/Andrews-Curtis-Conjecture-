@@ -1,5 +1,16 @@
 # Astra handoff — hyperbolic-quotient feasibility strike
 
+## Latest continuation: second Astra strike
+
+Read [ASTRA_SECOND_STRIKE.md](ASTRA_SECOND_STRIKE.md) before the historical
+handoff below. For the same H_SC, individual conjugacy and the explicit
+bounded-output conjugator bound K(L)=4L²+4L+8 are now proved. The fixed AK(3)
+peak upper bound remains OPEN; a lower bound of 15 is certified. No AC
+component enumeration or AK(3) connecting path was produced. The next task
+is `HSC-MIXED-PEAK-3`, specified in `OPEN_LANES.md`; the original geometry and
+first-strike records remain preserved below.
+
+
 ## First-strike supersession — 2026-09-04
 
 The current entry point is [ASTRA_FIRST_STRIKE.md](ASTRA_FIRST_STRIKE.md).

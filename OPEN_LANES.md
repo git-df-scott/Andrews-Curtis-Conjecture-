@@ -1,5 +1,26 @@
 # Live boundary and single next strike
 
+## Latest: HSC-MIXED-PEAK-3 (after the second strike)
+
+The new canonical continuation is [ASTRA_SECOND_STRIKE.md](ASTRA_SECOND_STRIKE.md).
+Individual conjugacy in the fixed H_SC now has a complete rotation-and-piece
+algorithm and the explicit bounded-output witness bound K(L)=4L²+4L+8.
+The radius-30 geodesic ball is certified. AK(3) must reach sum height at least
+15 to escape its short plateau. These results do not provide a peak upper bound.
+
+**Single next strike: HSC-MIXED-PEAK-3.** Prove an effective replacement theorem
+for alternating multiplication/conjugation blocks on a peak-minimal path
+between the fixed AK(3) state and the standard pair, with an explicit
+exceptional height B>=15. Require a well-founded decrease of peak height or
+peak multiplicity. The theorem must survive the frozen AK(2) monotonicity
+counterexample and the shortest-conjugator mixed reorder that raises height
+8 to 11. Exact statements and proofs are in
+[HSC_PEAK_LEMMA.md](HSC_PEAK_LEMMA.md). Do not rederive the single-conjugation
+bound or enumerate an AC component before obtaining the block theorem.
+
+The earlier second-strike instructions below are preserved as history. Their
+conjugacy-algorithm obligation is now met; their peak-height obligation is not.
+
 Date: 2026-09-04.
 
 The strongest retained group is the fixed `H_SC`. Its exact group operations
